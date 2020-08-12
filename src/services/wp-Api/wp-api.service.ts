@@ -1,5 +1,6 @@
 import { Global } from './../../app/models/global';
 import { HttpClient } from '@angular/common/http';
+
 import { ApiServiceService } from './../api-service.service';
 import { Injectable } from '@angular/core';
 
@@ -22,12 +23,16 @@ export class WpApiService extends ApiServiceService {
     return this.getPosts(url);
   }
 
-  getPageSlug(slug:any){
-   
+  getPageSlug(slug:any){   
     let url:string = this._global.server +"Content_"+ this._global.getUserLanguage() +"?slug="+slug;
     console.log("getPageSlug URL: " + url);    
     return this.getPosts(url);       
+  }
 
+  postRegisterUser(formdata:any){   
+    let url:string = this._global.postserver +"?post_typ=RegisterUser";
+    console.log("getPageSlug URL: " + url);    
+    return this.doPost(url,formdata);       
   }
 
 }

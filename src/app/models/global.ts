@@ -7,12 +7,15 @@ import {Injectable } from "@angular/core";
 export class Global {
   private _liveserver:string = "https://centrestageonline.org";
   private _devserver:string = "http://localhost:81/centrestageonline.org";
-  private _wpApi:string = "/wpAdmin/wp-json/wp/v2/";      
+  private _wpApi:string = "/wpAdmin/wp-json/wp/v2/";
+  private _wpApiPost:string = "/wpAdmin/wp-json/addreg/v2/";      
   
   // storageHandler:LocalStorageHandler
   currentlanguage:string 
+  userregistered:string 
 
-  server:string = this._devserver + this._wpApi;    
+  server:string = this._devserver + this._wpApi;
+  postserver:string = this._devserver + this._wpApiPost;        
   devkey:string = "/devkey/alf/?type=json";     
    
   constructor(private router: Router ) {  
@@ -22,7 +25,7 @@ export class Global {
   public getUserGuidLanguage() {
     return [
       { id: 1, name: 'English', type: "EN" },
-      { id: 2, name: 'Swedish', type: "SE" },
+      { id: 2, name: 'Swedish', type: "SV" },
       { id: 3, name: 'Spainish', type: "SP" },
       { id: 4, name: 'Polish', type: "PL" },
       { id: 5, name: 'France', type: "FR"  },
@@ -30,15 +33,18 @@ export class Global {
     ];
   }
   public getUserLanguage(){
-    return this.currentlanguage;
-    
+    if(!this.currentlanguage){
+      this.setUserLanguage("EN")      
+    }    
+    return this.currentlanguage;  
+        
   }
 
-  public setUserLanguage(langId:number){      
-    if(!langId){
-      langId=1;
+  public setUserLanguage(langtyp:string){      
+    if(!langtyp){
+      langtyp="EN";
     };
-    let usrlang = this.getUserGuidLanguage().find(i => i.id === langId);             
+    let usrlang = this.getUserGuidLanguage().find(i => i.type === langtyp);             
     return this.setLanguage(usrlang.type)
   }
   
@@ -61,19 +67,19 @@ export class Global {
       
   public isUserRegistred(){   
     
-    console.log("registered: " +localStorage.getItem("userlang"));
-    if(this.currentlanguage){
-      return true;        
-    }else{
-      this.RedirectNotRegisterd();
-      return false;
-    }
-
+    console.log("registered: " +localStorage.getItem("userreg"));
+    // if(this.userregistered){
+    //   return true;        
+    // }else{
+    //   //this.RedirectNotRegisterd();
+    //   return false;
+    // }
+    return !!localStorage.getItem("userreg");
   }
     
-  RedirectNotRegisterd(){
-    this.router.navigate(['/register']);
-  }
+  // RedirectNotRegisterd(){
+  //   this.router.navigate(['/register']);
+  // }
 
   public isEmptyObj = (obj) => {
     return obj === null || undefined

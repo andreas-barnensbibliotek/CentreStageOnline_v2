@@ -1,6 +1,12 @@
 <div class="container-grid wrap-main-text row">
     <div class="container p-3 my-3 text-center">
-        <h1>Välkommen!</h1> 
+        <h1>Välkommen!</h1>
+        <span [innerHTML]="mainPageData[0].content.rendered"></span>
+        <select [(ngModel)]='selectedval' id="drplang" (change)="selectLanguageChangeHandler($event)" >
+            
+            <option *ngFor="let langitm of langdrp" [value]="langitm.type" >{{langitm.name}}</option>
+        </select>
+     
     </div>    
 </div>
 

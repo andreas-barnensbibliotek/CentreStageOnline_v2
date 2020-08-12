@@ -1,9 +1,13 @@
+import { registerUserFormData } from './models/RegisteruserFormData';
+import { AuthGuard } from './shared/authguard/auth.guard';
+import { LectionRouterModule } from './lections/lection-router/lection-router.module';
 import { AppGlobalErrorHandler } from './../services/errorhandlers/appGlobalErrorHandler';
 import { ErrorHandler } from '@angular/core';
 import { Global } from './models/global';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +20,9 @@ import { LocalStorageHandler } from './models/localstorageHandler';
 import { redirectHandler } from './models/redirecthandler';
 import { GenericLectionsComponent } from './lections/generic-lections/generic-lections.component';
 import { StartComponent } from './start/start.component';
+import { Err404pageComponent } from './shared/err404page/err404page.component';
+import { LectionMainComponent } from './lections/lection-main/lection-main.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -24,17 +31,24 @@ import { StartComponent } from './start/start.component';
     CoursenavComponent,
     MainfooterComponent,
     GenericLectionsComponent,
-    StartComponent
+    StartComponent,
+    Err404pageComponent,
+    LectionMainComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CookieLawModule,
-    HttpClientModule
+    HttpClientModule,   
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     Global,
+    AuthGuard,
+    registerUserFormData,
     LocalStorageHandler,
     redirectHandler,
     {provide: ErrorHandler, useClass: AppGlobalErrorHandler}
