@@ -32,7 +32,7 @@ export class Global {
       { id: 6, name: 'German', type: "DE" }
     ];
   }
-  public getUserLanguage(){
+  public getUserShortLanguage(){
     if(!this.currentlanguage){
       this.setUserLanguage("EN")      
     }    
@@ -48,6 +48,14 @@ export class Global {
     return this.setLanguage(usrlang.type)
   }
   
+  public getUserfullLanguage(langtyp:string){      
+    if(!langtyp){
+      langtyp="EN";
+    };
+    let usrlang = this.getUserGuidLanguage().find(i => i.type === langtyp);             
+    return usrlang.name
+  }
+
   private setLanguage(lang){                       
     localStorage.setItem("userlang",lang);  
     this.currentlanguage = localStorage.getItem("userlang")
@@ -76,7 +84,16 @@ export class Global {
     // }
     return !!localStorage.getItem("userreg");
   }
+  public registerUser(){   
+    try{
+      localStorage.setItem("userreg", "true");
+      this.router.navigate(['/lektion']);
+      return true;
+    }catch{
+      return false;
+    };
     
+  }
   // RedirectNotRegisterd(){
   //   this.router.navigate(['/register']);
   // }

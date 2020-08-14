@@ -6,25 +6,28 @@
 </div>
 <div class="container-grid wrap-main-text row">
     <div class="container p-3 my-3 text-left">
-        <form>
+        <form [formGroup]="regFormgoup" (ngSubmit)="onSubmit()">
             <div class="form-group">
                 <label for="txtformlanguage">{{formlangdata.lang.labeltxt}}</label>
-                <input type="text" class="form-control" id="txtformlanguage" aria-describedby="{{formlangdata.lang.placeholdertxt}}" placeholder="{{formlangdata.lang.placeholdertxt}}">
+                <select formControlName="drpChooselang">                    
+                    <option *ngFor="let lang of tmpAllLanguages" [ngValue]="lang.name" >{{lang.name}}
+                    </option>
+                 </select>
                 <small id="hlpformlanguage" class="form-text text-muted">{{formlangdata.lang.hlptxt}}</small>
-            </div>
+            </div>           
             <div class="form-group">
                 <label for="txtformGender">{{formlangdata.gender.labeltxt}}</label>
-                <input type="text" class="form-control" id="txtformGender" aria-describedby="{{formlangdata.gender.placeholdertxt}}" placeholder="{{formlangdata.gender.placeholdertxt}}">
+                <input type="text" class="form-control" formControlName="txtformGender" id="txtformGender"  placeholder="{{formlangdata.gender.placeholdertxt}}">
                 <small id="hlpformGender" class="form-text text-muted">{{formlangdata.gender.hlptxt}}</small>                  
             </div>
             <div class="form-group ">
                 <label for="txtformbefattning">{{formlangdata.befatting.labeltxt}}</label>
-                <input type="text" class="form-control" id="txtformbefattning" aria-describedby="{{formlangdata.befatting.placeholdertxt}}" placeholder="{{formlangdata.befatting.placeholdertxt}}">
+                <input type="text" class="form-control" formControlName="txtformbefattning" id="txtformbefattning" placeholder="{{formlangdata.befatting.placeholdertxt}}">
                 <small id="hlpformbefattning" class="form-text text-muted">{{formlangdata.befatting.hlptxt}}</small>
             </div>
             <button type="submit" class="btn btn-primary">{{formlangdata.submit.btntext}}</button>
         </form>
-     
+     {{regFormgoup.value | json}}
     </div>    
 </div>
 

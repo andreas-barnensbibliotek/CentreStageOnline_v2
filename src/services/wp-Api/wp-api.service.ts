@@ -19,12 +19,12 @@ export class WpApiService extends ApiServiceService {
   }
 
   getMeny(meny:any){
-    let url:string = this._global.server +"menu_"+ this._global.getUserLanguage() +"?filter[orderby]=date&order=desc";
+    let url:string = this._global.server +"menu_"+ this._global.getUserShortLanguage() +"?filter[orderby]=date&order=desc";
     return this.getPosts(url);
   }
 
   getPageSlug(slug:any){   
-    let url:string = this._global.server +"Content_"+ this._global.getUserLanguage() +"?slug="+slug;
+    let url:string = this._global.server +"Content_"+ this._global.getUserShortLanguage() +"?slug="+slug;
     console.log("getPageSlug URL: " + url);    
     return this.getPosts(url);       
   }

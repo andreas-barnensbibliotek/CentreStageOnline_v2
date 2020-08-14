@@ -11,7 +11,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class StartComponent implements OnInit {
   langdrp:any=[];  
-  selectedval:any =this.glb.getUserLanguage();
+  selectedval:any =this.glb.getUserShortLanguage();
   mainPageData:any=[];
 
   constructor(private wpApi:WpApiService, private glb:Global) { 

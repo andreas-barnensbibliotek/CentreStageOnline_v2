@@ -77,7 +77,7 @@ export class registerUserFormData {
         
     }      
    
-    public getRegFormLanguage(langtyp:string){      
+    public getRegFormLanguageText(langtyp:string){      
         if(!langtyp){
           langtyp="EN";
         };

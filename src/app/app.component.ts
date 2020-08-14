@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
 
   constructor(private glb:Global) {
     console.log("user reggad = " +this.glb.isUserRegistred());
-    console.log("lang = " +this.glb.getUserLanguage());
+    console.log("lang = " +this.glb.getUserShortLanguage());
  }
  ngOnInit() {
   
