@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: '',  redirectTo: 'start', pathMatch: 'full' },  
   { path: 'start',  component: StartComponent},   
   { path: 'register',  component: RegisterComponent},   
-  { path: 'lektion', 
+  { path: 'lectures', 
     loadChildren: './lections/lection-router/lection-router.module#LectionRouterModule',
     canActivate: [AuthGuard]},     
   { path: '**',  component: Err404pageComponent},   

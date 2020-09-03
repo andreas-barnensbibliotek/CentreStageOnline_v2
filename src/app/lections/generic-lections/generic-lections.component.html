@@ -1,16 +1,15 @@
+<span [innerHTML]="mainPageData[0].content.rendered"></span>
+
+
 <div class="container-grid container-video">
-    <div class="responsive-video video-platform-1 youtube" data-original-url="https://www.youtube.com/watch?v=eylV1dQvFCA&amp;feature=youtu.be"><iframe src="https://www.youtube.com/embed/gvKf6lDiuuM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="responsive-video video-platform-1 youtube" 
+    data-original-url="">
+    
+    <iframe [src]="videoUrl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
   </div>
   <nav class="container-grid container-nav"><a class="link-button btn btn-image-1" href="#">Why watch these videos?</a><a class="link-button btn btn-image-2" href="#">Getting what you want</a><a class="link-button btn btn-image-3" href="#">Who do you want to be</a><a class="link-button btn btn-image-4" href="#">Creating change</a><a class="link-button btn btn-image-5" href="#">Taking to the&nbsp;right people about the right things</a><a class="link-button btn btn-image-6" href="#">Obstacles</a><a class="link-button btn btn-image-7" href="#">Getting jobs</a><a class="link-button btn btn-image-8" href="#">Getting your message across</a><a class="link-button btn btn-image-9" href="#">Overcoming obstacles</a><a class="link-button btn btn-image-10" href="#">Choosing the right image</a><a class="link-button btn btn-image-11" href="#">Getting media coverage</a><a class="link-button btn btn-image-12" href="#">Dealing with difficult situations</a><a class="link-button btn btn-image-13" href="#">Getting your message across online</a><a class="link-button btn btn-image-14" href="#">Being visible online</a><a class="link-button btn btn-image-15" href="#">What next?</a><a class="link-button btn btn-image-fill" href="#"></a></nav>
   <div class="rule rule-1">
     <hr>
   </div>
   
-  <article class="container-grid wrap-main-text">
-    <blockquote class="quote-text"><span class="blockquote-text-1">”Gereric!!!!! Lorem ipsum dolor sit amet, consectetur adipiscing <span class="blockquote-text-1">elit</span>. Integer posuere erat a ante.”</span></blockquote>
-    <main class="container-grid container-main-text">
-      <h2 class="Heading-main-text">This is what it´s all about</h2>
-      <p class="paragraph main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh risus, sagittis nec suscipit nec, mollis laoreet eros. Donec faucibus, libero id faucibus scelerisque, justo justo nullam sodales.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh risus, sagittis nec suscipit nec, mollis laoreet eros. Donec faucibus, libero id faucibus scelerisque, justo justo nullam sodales.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh risus, sagittis nec suscipit nec, mollis laoreet eros. Donec faucibus, libero id faucibus scelerisque, justo justo nullam sodales.</p>
-    </main>
-  </article>
-  
+  <iframe width="560" height="315" [src]="testurl | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

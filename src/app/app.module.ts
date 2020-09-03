@@ -23,6 +23,7 @@ import { StartComponent } from './start/start.component';
 import { Err404pageComponent } from './shared/err404page/err404page.component';
 import { LectionMainComponent } from './lections/lection-main/lection-main.component';
 import { RegisterComponent } from './register/register.component';
+import { SafePipe } from './shared/pipes/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { RegisterComponent } from './register/register.component';
     StartComponent,
     Err404pageComponent,
     LectionMainComponent,
-    RegisterComponent
+    RegisterComponent,  
+    SafePipe
   ],
   imports: [
     BrowserModule,

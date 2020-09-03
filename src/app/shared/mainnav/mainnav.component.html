@@ -2,20 +2,14 @@
     <picture><img alt="Placeholder Picture" src="./O.png"></picture>
   </a>
   <h3 class="navbar-brand nav-col">Centre Stage Online</h3><button type="button" class="btn navbar-toggler navbar-toggler-icon button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"></button>
-  <div class="container-grid collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="list-container navbar-nav">
+  <div class="container-grid collapse navbar-collapse" id="navbarNavDropdown">    
+    <ul class="list-container navbar-nav" *ngFor="let itm of mainNavData" >
       <li class="list-item-container nav-item">
-        <a class="link-text nav-link nav-col"  routerLink="/register" routerLinkActive="active" href="#">register</a>
-      </li>
-      <li class="list-item-container nav-item">
-        <a class="link-text nav-link nav-col"  routerLink="/start" routerLinkActive="active">Overview</a>
-      </li>
-      <li class="list-item-container nav-item">
-        <a class="link-text nav-link nav-col"  routerLink="/lektion" routerLinkActive="active">Lektioner</a>
-      </li>
-      <li class="list-item-container nav-item">
-        <a class="link-text nav-link nav-col" href="#">Credits</a>
+        
+        <a class="link-text nav-link nav-col"  routerLink="{{itm.acf.link}}" routerLinkActive="active" >{{itm.acf.linkname}}</a>
       </li>
     </ul>
+    
+
   </div>
 </div>

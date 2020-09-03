@@ -16,12 +16,14 @@ export class StartComponent implements OnInit {
 
   constructor(private wpApi:WpApiService, private glb:Global) { 
     this.langdrp = glb.getUserGuidLanguage();  
-    
+    this.wpApi.currentPageDataHandler.subscribe(()=>{
+        this.getpagedata();
+      })
+    this.getpagedata();
   }
 
   ngOnInit() {     
       
-    this.getpagedata();
     
   }
 

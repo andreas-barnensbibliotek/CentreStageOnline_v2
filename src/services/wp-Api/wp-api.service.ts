@@ -1,3 +1,4 @@
+import { Subject } from 'rxjs';
 import { Global } from './../../app/models/global';
 import { HttpClient } from '@angular/common/http';
 
@@ -16,6 +17,11 @@ export class WpApiService extends ApiServiceService {
 
   constructor(Http:HttpClient, private _global:Global) { 
     super("",Http);
+  }
+
+  private _currentPageDataHandler: Subject<void> = new Subject<void>();
+  get currentPageDataHandler(){
+    return this._currentPageDataHandler
   }
 
   getMeny(meny:any){

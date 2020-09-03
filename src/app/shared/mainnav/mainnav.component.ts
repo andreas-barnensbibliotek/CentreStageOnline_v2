@@ -1,3 +1,5 @@
+import { Global } from './../../models/global';
+import { WpApiService } from './../../../services/wp-Api/wp-api.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mainnav.component.scss']
 })
 export class MainnavComponent implements OnInit {
+  mainNavData:any=[];
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private wpApi:WpApiService, private glb:Global) { 
+    this.wpApi.currentPageDataHandler.subscribe(()=>{
+      this.getNavdata();
+    })
+  this.getNavdata();
   }
 
+  ngOnInit() {
+    
+  }
+
+  getNavdata(){
+    this.wpApi.getMeny("Mainmenu").subscribe(Response => {
+      this.mainNavData = Response     
+      console.log(this.mainNavData)  
+    });
+  }
 }

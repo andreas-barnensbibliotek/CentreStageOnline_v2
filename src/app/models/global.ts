@@ -36,8 +36,7 @@ export class Global {
     if(!this.currentlanguage){
       this.setUserLanguage("EN")      
     }    
-    return this.currentlanguage;  
-        
+    return this.currentlanguage;          
   }
 
   public setUserLanguage(langtyp:string){      
@@ -71,7 +70,6 @@ export class Global {
       .replace(/ö/g, String.fromCharCode(246))
       .replace(/Ö/g, String.fromCharCode(214));
   }
-
       
   public isUserRegistred(){   
     
@@ -91,8 +89,7 @@ export class Global {
       return true;
     }catch{
       return false;
-    };
-    
+    };    
   }
   // RedirectNotRegisterd(){
   //   this.router.navigate(['/register']);
@@ -102,12 +99,12 @@ export class Global {
     return obj === null || undefined
         ? true
         : (() => {
-                for (const prop in obj) {
-                    if (Object.prototype.hasOwnProperty.call(obj, prop)) {
-                        return false;
-                    }
-                }
-                return true;
-            })();
+            for (const prop in obj) {
+              if (Object.prototype.hasOwnProperty.call(obj, prop)) {
+                return false;
+              }
+            }
+            return true;
+          })();
     };
 }

@@ -13,10 +13,9 @@ export class AppComponent implements OnInit {
   constructor(private glb:Global) {
     console.log("user reggad = " +this.glb.isUserRegistred());
     console.log("lang = " +this.glb.getUserShortLanguage());
- }
- ngOnInit() {
-  
-  //  localStorage.setItem('userlang',"SV" );
- }
+  }
+  ngOnInit() {  
+    //  localStorage.setItem('userlang',"SV" );
+  }
 
 }
