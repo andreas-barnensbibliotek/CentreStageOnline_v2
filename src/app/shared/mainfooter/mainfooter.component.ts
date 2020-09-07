@@ -22,6 +22,7 @@ export class MainfooterComponent implements OnInit {
     //update the ui
     let lang = event.target.value;
     this.glb.setUserLanguage(lang);
-    this.wpApi.currentPageDataHandler.next();
+    this.wpApi.currentPageDataHandler.next();    
+    this.glb.currentLanguageHandler.next();
   }
 }

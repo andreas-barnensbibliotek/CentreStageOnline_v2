@@ -1,18 +1,10 @@
-<footer class="container-grid footer-container-wrap">
-    <div class="container-grid footer-container row">
-      <div class="container-grid container-1 col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-        <p class="paragraph paragraph-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et metus.</p>
-      </div>
-      <div class="container-grid col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 container-2">
-        <p class="paragraph paragraph-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et metus.</p>
-      </div>
-      <div class="container-grid col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 container-3">
-        <p class="paragraph paragraph-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et metus.</p>
-      </div>
-      <div class="container-grid col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 container-4">
-        <select [(ngModel)]='selectedval' id="drplang" (change)="selectLanguageChangeHandler($event)" >            
+  <footer class="container-grid footer-container-wrap">
+    <div class="dropdown container-grid" data-outofview="true"></div>
+    <p class="paragraph text-footer"><span class="paragraph-text-1"><span class="paragraph-text-1" id="paragraph-text-1"><span class="paragraph-text-2">Information and contact | Centre Stage</span><br>Katarina Hultin,&nbsp;Project manager<br>katarina.hultin@vgregion.se <br><br><span class="paragraph-text-3"><a title="" href="http://www.kulturivast.se/centre-stage" class="paragraph-text-5">kulturivast.se/centre-stage </a></span><br></span></span></p>
+      <select [(ngModel)]='selectedval' id="drplang" (change)="selectLanguageChangeHandler($event)" >            
           <option *ngFor="let langitm of langdrp" [value]="langitm.type" >{{langitm.name}}</option>
       </select>
-      </div>
+      <div class="responsive-picture picture-1">
+      <picture><img alt="Placeholder Picture" src="./assets/EU-logga_600.png"></picture>
     </div>
   </footer>

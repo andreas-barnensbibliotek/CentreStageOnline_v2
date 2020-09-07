@@ -17,11 +17,19 @@ export class RegisterComponent implements OnInit {
   get formlanguage() { return this.regFormgoup.get('txtformlanguage')}
 
   constructor(private _regusrformdata: registerUserFormData, private _global:Global, private fb: FormBuilder) {     
-    this.tmpAllLanguages = _global.getUserGuidLanguage()
+   
+    this.tmpAllLanguages = _global.getUserGuidLanguage();
     
   }
 
   ngOnInit(): void {    
+    this._global.currentLanguageHandler.subscribe(()=>{
+      this.loadFormSettings();
+    })  
+    this.loadFormSettings();    
+  } 
+  
+  loadFormSettings(){
     let CurrentShortLanguage = this._global.getUserShortLanguage();
     this.formlangdata = this._regusrformdata.getRegFormLanguageText(CurrentShortLanguage);
 
@@ -33,8 +41,8 @@ export class RegisterComponent implements OnInit {
     
     let defaultDrpFullLanguageValue= this._global.getUserfullLanguage(CurrentShortLanguage);
     this.regFormgoup.patchValue({ drpChooselang: defaultDrpFullLanguageValue });
-  } 
-    
+  }
+
   onSubmit(){
     let test1= this.regFormgoup.get('txtformlanguage');
         
