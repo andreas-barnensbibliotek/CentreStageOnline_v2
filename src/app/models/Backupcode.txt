@@ -1,0 +1,12 @@
+Visa film från youtube:
+html:
+  <iframe width="560" height="315" [src]="testurl | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+
+
+Exempel film vimeo: 
+<iframe src="https://player.vimeo.com/video/396211790" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/396211790">Depeche Mode - Walking In My Shoes (Erotic Shock Remix)</a> from <a href="https://vimeo.com/user98777843">DM Film</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<iframe src="https://player.vimeo.com/video/438990982" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/438990982">Depeche Mode - Dangerous (Sensual Mix)</a> from <a href="https://vimeo.com/user98777843">DM Film</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

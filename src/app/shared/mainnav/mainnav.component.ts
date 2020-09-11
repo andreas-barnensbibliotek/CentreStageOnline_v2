@@ -11,14 +11,14 @@ export class MainnavComponent implements OnInit {
   mainNavData:any=[];
 
   constructor(private wpApi:WpApiService, private glb:Global) { 
-    this.wpApi.currentPageDataHandler.subscribe(()=>{
-      this.getNavdata();
-    })
-  this.getNavdata();
+   
   }
 
   ngOnInit() {
-    
+     this.wpApi.currentPageDataHandler.subscribe(()=>{
+      this.getNavdata();
+    })
+  this.getNavdata();
   }
 
   getNavdata(){

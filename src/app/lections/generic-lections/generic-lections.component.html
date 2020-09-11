@@ -1,56 +1,21 @@
   <header class="container-grid wrap-title-episode">
     <header class="container-grid title-size"><div class="container-grid title-number"></div>
-      <h1 class="title-episode"><span class="heading-text-3">Why watch these videos?&nbsp;</span></h1>
+      <h1 class="title-episode" [innerHTML]="mainPageData[0].acf.mainheader"></h1>
     </header>
   </header>
   <div class="container-grid con-video-bgr">
     <div class="container-grid con-video-size">
-      <div class="responsive-video vimeo con-video-inner" data-original-url="https://vimeo.com/185475993"><iframe src='https://player.vimeo.com/video/185475993' data-original-url='https://vimeo.com/185475993' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+      <div class="responsive-video vimeo con-video-inner" *ngIf="showVideobox" >
+              <iframe  [src]="videoUrl" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
   <section class="container-grid wrap-nav-video">
-    <main class="container-grid nav-video"><button type="button" class="btn"><span class="button-text-1">&lt;</span></button><a class="link-button btn" href="#all-episodes">
+    <main class="container-grid nav-video"><a routerLink="{{mainPageData[0].acf.smallnavbefore}}" routerLinkActive="active" class="btn">
+      <span class="button-text-1">&lt;</span></a><a class="link-button btn" href="#all-episodes">
         <font color="#ffffff">All episodes</font>
-      </a><button type="button" class="btn"><span class="button-text-2">&gt;</span></button></main>
+      </a><a routerLink="{{mainPageData[0].acf.smallnavnext}}" routerLinkActive="active"  class="btn"><span class="button-text-2">&gt;</span></a></main>
   </section>
-  <article class="container-grid wrap-main-text">
-    <blockquote class="quote-text"><span class="blockquote-text-1">”Lorem ipsum dolor sit <span class="blockquote-text-3">amet</span>, <span class="blockquote-text-2">consectetur</span> adipiscing <span class="blockquote-text-1">elit</span>. Integer posuere erat a ante.”</span></blockquote>
-    <main class="container-grid container-main-text">
-      <span class="paragraph main-text paragraph-1" [innerHTML]="mainPageData[0].content.rendered">
-         Lorem ipsum test
-      </span>
-      <div class="rule rule-2">
-        <hr>
-      </div>
-      <div class="container-grid wrap-worksheet"><a href="#" class="responsive-picture picture-link-2">
-          <picture><img alt="Placeholder Picture" src="./Download-NY.png"></picture>
-        </a>
-        <a class="link-text text-link-1" href="#">Worksheet Episode 1</a>
-      </div>
-      <div class="rule rule-1">
-        <hr>
-      </div>
-      <div class="container-grid wrap-ext-links">
-        <h2 class="h2">Read more:</h2>
-        <div class="container-grid inner-wrap-link-description">
-          <div class="container-grid external-link">
-            <a class="link-text text-link-2" href="#"><span class="text-link-text-1">Linked Text</span></a>
-          </div>
-          <dl class="description-list description-ext-link">
-            <dd class="list-description-1">Suspendisse pulvinar mi at hendrerit gravida libero</dd>
-          </dl>
-        </div>
-        <div class="container-grid inner-wrap-link-description">
-          <div class="container-grid external-link">
-            <a class="link-text text-link-2" href="#"><span class="text-link-text-1">Linked Text</span></a>
-          </div>
-          <dl class="description-list description-ext-link">
-            <dd class="list-description-1">Suspendisse pulvinar mi at hendrerit gravida libero</dd>
-          </dl>
-        </div>
-      </div>
-    </main>
+  <article class="container-grid wrap-main-text" [innerHTML]="mainPageData[0].content.rendered">    
   </article>
-
-
-  <iframe width="560" height="315" [src]="testurl | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<app-coursenav></app-coursenav>

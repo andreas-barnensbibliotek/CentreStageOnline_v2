@@ -10,8 +10,8 @@ const appRoutes: Routes = [
       component: LectionMainComponent,
       children:[
         {path:'',component: GenericLectionsComponent },
-        {path:':slug',component: GenericLectionsComponent },
-        {path:'test',component: CoursenavComponent }        
+        {path:'test',component: CoursenavComponent },
+        {path:':slug',component: GenericLectionsComponent }              
       ]
     }
 ];

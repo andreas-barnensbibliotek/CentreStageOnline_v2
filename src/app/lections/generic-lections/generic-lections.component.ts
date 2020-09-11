@@ -14,39 +14,48 @@ export class GenericLectionsComponent implements OnInit {
   dangerousVideoUrl:any;
   currpageSlug:string;
   mainPageData:any=[];
+  showVideobox:boolean = false;
 testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
 
   constructor(private wpApi:WpApiService, private glb:Global ,private route:ActivatedRoute, private _sanitizer: DomSanitizer) { 
     //this.videoUrl= this._sanitizer.bypassSecurityTrustUrl( "https://www.youtube-nocookie.com/embed/o2fcA3X3IvE");
+   
+  }
+
+  ngOnInit() {    
     this.route.paramMap.subscribe(prams =>{
       this.currpageSlug = prams.get('slug');
       
       this.wpApi.currentPageDataHandler.subscribe(()=>{
         this.getpagedata(this.currpageSlug);
-      })
-    this.getpagedata(this.currpageSlug);
+      });
+      this.getpagedata(this.currpageSlug);
       
-    })}
-
-  ngOnInit() {
-    this.updateVideoUrl("o2fcA3X3IvE")
+    });
   }
 
   getpagedata(slug:string){
     this.wpApi.getPageSlug(slug).subscribe(Response => {
-      this.mainPageData = Response     
+      this.mainPageData = Response 
+      if(this.mainPageData[0].acf.movieurl!=""){
+        console.log("detta: " +this.mainPageData[0].acf.movieurl)
+        this.showVideobox= true;
+        this.updateVimeoVideoUrl(this.mainPageData[0].acf.movieurl);
+      }else{
+        this.showVideobox= false;
+      }
+      
       console.log(this.mainPageData)  
     });
   }
 
-  updateVideoUrl(id: string) {
-    // Appending an ID to a YouTube URL is safe.
+  updateVimeoVideoUrl(id: string) {
+    // Appending an ID to a vimeo/YouTube URL is safe.
     // Always make sure to construct SafeValue objects as
     // close as possible to the input data so
     // that it's easier to check if the value is safe.
-    this.dangerousVideoUrl = 'https://www.youtube.com/embed/' + id;
+    this.dangerousVideoUrl = 'https://player.vimeo.com/video/' + id;
     this.videoUrl =
         this._sanitizer.bypassSecurityTrustResourceUrl(this.dangerousVideoUrl);
   }
-
 }
