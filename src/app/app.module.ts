@@ -24,6 +24,10 @@ import { Err404pageComponent } from './shared/err404page/err404page.component';
 import { LectionMainComponent } from './lections/lection-main/lection-main.component';
 import { RegisterComponent } from './register/register.component';
 import { SafePipe } from './shared/pipes/safe.pipe';
+import { OverviewComponent } from './overview/overview.component';
+import { GenericMainpageComponent } from './generic-mainpage/generic-mainpage.component';
+import { AboutComponent } from './about/about.component';
+import { CreditsComponent } from './credits/credits.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,7 @@ import { SafePipe } from './shared/pipes/safe.pipe';
     Err404pageComponent,
     LectionMainComponent,
     RegisterComponent,  
-    SafePipe
+    SafePipe, OverviewComponent, GenericMainpageComponent, AboutComponent, CreditsComponent
   ],
   imports: [
     BrowserModule,

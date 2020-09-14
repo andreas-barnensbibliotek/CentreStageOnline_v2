@@ -10,3 +10,25 @@ Exempel film vimeo:
 
 <iframe src="https://player.vimeo.com/video/438990982" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <p><a href="https://vimeo.com/438990982">Depeche Mode - Dangerous (Sensual Mix)</a> from <a href="https://vimeo.com/user98777843">DM Film</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
+kod för scroll top på en komponent:  
+använder nu denna: i app-routing.component
+imports: [RouterModule.forRoot(routes, {enableTracing: true, scrollPositionRestoration: 'enabled'})],
+  exports: [RouterModule]
+
+kan använda denna för varje komponent:
+  import { Router } from '@angular/router';
+  import {  ViewportScroller } from '@angular/common'; //import
+  export class Komponenten {
+
+  private applicationInitialRoutes: Routes;
+  constructor(
+    private router: Router;
+    private viewPortScroller: ViewportScroller//inject
+  ){
+   this.router.events.pipe(
+            filter(event => event instanceof NavigationEnd))
+            .subscribe(() => this.viewPortScroller.scrollToPosition([0, 0]));
+  }
+

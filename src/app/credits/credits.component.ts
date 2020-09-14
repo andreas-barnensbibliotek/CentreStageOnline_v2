@@ -1,34 +1,27 @@
 import { DomSanitizer } from '@angular/platform-browser';
-import { WpApiService } from './../../services/wp-Api/wp-api.service';
 import { Global } from './../models/global';
+import { WpApiService } from './../../services/wp-Api/wp-api.service';
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
-
 
 @Component({
-  selector: 'app-start',
-  templateUrl: './start.component.html',
-  styleUrls: ['./start.component.scss']
+  selector: 'app-credits',
+  templateUrl: './credits.component.html',
+  styleUrls: ['./credits.component.scss']
 })
-export class StartComponent implements OnInit {
-  langdrp:any=[];  
-  selectedval:any =this.glb.getUserShortLanguage();
+export class CreditsComponent implements OnInit {
+
   mainPageData:any=[];
   videoUrl:any;
   showVideobox:boolean = false;
   dangerousVideoUrl:any;
-  constructor(private wpApi:WpApiService, private glb:Global,private _sanitizer: DomSanitizer) { 
-    
+  constructor(private wpApi:WpApiService, private glb:Global, private _sanitizer: DomSanitizer) { 
   }
 
-  ngOnInit() {     
-      this.langdrp = this.glb.getUserGuidLanguage();  
+  ngOnInit() {         
     this.wpApi.currentPageDataHandler.subscribe(()=>{
-        this.getpagedata();
-        
+        this.getpagedata();        
       })
-    this.getpagedata();
-    
+    this.getpagedata();    
   }
 
   selectLanguageChangeHandler (event: any) {
@@ -39,7 +32,7 @@ export class StartComponent implements OnInit {
   }
 
   getpagedata(){
-    this.wpApi.getPageSlug("start").subscribe(Response => {
+    this.wpApi.getPageSlug("credits").subscribe(Response => {
       this.mainPageData = Response  
       
       if(this.mainPageData[0].acf.movieurl!=""){
@@ -53,7 +46,8 @@ export class StartComponent implements OnInit {
       console.log(this.mainPageData)  
     });
   }
-updateVimeoVideoUrl(id: string) {
+  updateVimeoVideoUrl(id: string) {
+    // TODO EXPORT TO FUNCTION!!!!!!!!!!!!!!!---------------------
     // Appending an ID to a vimeo/YouTube URL is safe.
     // Always make sure to construct SafeValue objects as
     // close as possible to the input data so
@@ -62,5 +56,4 @@ updateVimeoVideoUrl(id: string) {
     this.videoUrl =
         this._sanitizer.bypassSecurityTrustResourceUrl(this.dangerousVideoUrl);
   }
-
 }

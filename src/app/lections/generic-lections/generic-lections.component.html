@@ -1,21 +1,40 @@
   <header class="container-grid wrap-title-episode">
-    <header class="container-grid title-size"><div class="container-grid title-number"></div>
-      <h1 class="title-episode" [innerHTML]="mainPageData[0].acf.mainheader"></h1>
+    <header class="container-grid title-size" [innerHTML]="mainPageData[0].acf.mainheader">
     </header>
   </header>
-  <div class="container-grid con-video-bgr">
+  <div class="container-grid con-video-bgr" *ngIf="showVideobox">
     <div class="container-grid con-video-size">
-      <div class="responsive-video vimeo con-video-inner" *ngIf="showVideobox" >
+      <div class="responsive-video vimeo con-video-inner"  >
               <iframe  [src]="videoUrl" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       </div>
     </div>
   </div>
-  <section class="container-grid wrap-nav-video">
+  <section class="container-grid wrap-nav-video" *ngIf="showVideobox">
     <main class="container-grid nav-video"><a routerLink="{{mainPageData[0].acf.smallnavbefore}}" routerLinkActive="active" class="btn">
       <span class="button-text-1">&lt;</span></a><a class="link-button btn" href="#all-episodes">
         <font color="#ffffff">All episodes</font>
       </a><a routerLink="{{mainPageData[0].acf.smallnavnext}}" routerLinkActive="active"  class="btn"><span class="button-text-2">&gt;</span></a></main>
   </section>
-  <article class="container-grid wrap-main-text" [innerHTML]="mainPageData[0].content.rendered">    
+  <article class="container-grid wrap-main-text">
+    <blockquote class="quote-text" [innerHTML]="mainPageData[0].acf.quoteblock"> 
+      <div class="lds-dual-ring"></div>     
+    </blockquote>
+    <main class="container-grid container-main-text">
+      <div class="paragraph main-text paragraph-1 blockquote-text-1" [innerHTML]="mainPageData[0].acf.maincontent">
+        <div class="lds-dual-ring"></div>
+      </div>      
+      <div class="rule rule-2" *ngIf="showWorksheetHR">
+        <hr>
+      </div>
+      <div class="container-grid wrap-worksheet" [innerHTML]="mainPageData[0].acf.worksheetblock">
+        <div class="lds-dual-ring"></div>        
+      </div>
+      <div class="rule rule-1" *ngIf="showExtraMaterialHR">
+        <hr>
+      </div>
+      <div class="container-grid wrap-ext-links" [innerHTML]="mainPageData[0].acf.extramaterialblock">
+        <div class="lds-dual-ring"></div>
+      </div>
+    </main>
   </article>
 <app-coursenav></app-coursenav>

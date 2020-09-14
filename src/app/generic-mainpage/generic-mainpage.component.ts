@@ -1,16 +1,16 @@
+import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
-import { WpApiService } from './../../../services/wp-Api/wp-api.service';
-import { Global } from './../../models/global';
-import { Component, OnInit, SecurityContext } from '@angular/core';
-import { ActivatedRoute} from '@angular/router';
 import { ViewportScroller } from '@angular/common';
+import { Global } from './../models/global';
+import { WpApiService } from './../../services/wp-Api/wp-api.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-generic-lections',
-  templateUrl: './generic-lections.component.html',
-  styleUrls: ['./generic-lections.component.scss']
+  selector: 'app-generic-mainpage',
+  templateUrl: './generic-mainpage.component.html',
+  styleUrls: ['./generic-mainpage.component.scss']
 })
-export class GenericLectionsComponent implements OnInit {
+export class GenericMainpageComponent implements OnInit {
   videoUrl:any;
   dangerousVideoUrl:any;
   currpageSlug:string;
@@ -19,19 +19,15 @@ export class GenericLectionsComponent implements OnInit {
   showWorksheetHR:boolean= false;  
   showExtraMaterialHR:boolean= false;
 
-testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
-
-  constructor(private wpApi:WpApiService, private glb:Global ,private route:ActivatedRoute, private _sanitizer: DomSanitizer,private viewPortScroller: ViewportScroller) { 
-    //this.videoUrl= this._sanitizer.bypassSecurityTrustUrl( "https://www.youtube-nocookie.com/embed/o2fcA3X3IvE");
-   
+  constructor(private wpApi:WpApiService, private glb:Global ,private route:ActivatedRoute, private _sanitizer: DomSanitizer, private viewPortScroller: ViewportScroller) {    
   }
 
   ngOnInit() {    
     this.route.paramMap.subscribe(prams =>{
       this.currpageSlug = prams.get('slug');
-      if (!this.currpageSlug){
-        this.currpageSlug ="episodes";
-      }
+      // if (!this.currpageSlug){
+      //   this.currpageSlug ="episodes";
+      // }
       this.wpApi.currentPageDataHandler.subscribe(()=>{
         this.getpagedata(this.currpageSlug);
       });
