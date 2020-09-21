@@ -1,6 +1,6 @@
 <div class="container-grid wrap-main-text row">
     <div class="container p-3 my-3 text-center">
-        <h1>Registrera dig!</h1>
+        <h1>{{formlangdata.header.text}}</h1>
        
     </div>    
 </div>
@@ -8,25 +8,58 @@
     <div class="container p-3 my-3 text-left">
         <form [formGroup]="regFormgoup" (ngSubmit)="onSubmit()">
             <div class="form-group">
-                <label for="txtformlanguage">{{formlangdata.lang.labeltxt}}</label>
-                <select formControlName="drpChooselang">                    
+                <label for="txtformlanguage">{{formlangdata.lang.labeltxt}} </label>
+                <select formControlName="drpChooselang" id="drpChooselang"> 
                     <option *ngFor="let lang of tmpAllLanguages" [ngValue]="lang.name" >{{lang.name}}
                     </option>
-                 </select>
-                <small id="hlpformlanguage" class="form-text text-muted">{{formlangdata.lang.hlptxt}}</small>
-            </div>           
+                </select>
+               
+            </div>             
+            <div class="form-group">
+                <label for="txtfirstname">{{formlangdata.firstname.labeltxt}}</label>
+                <input type="text" class="form-control" [class.is-invalid]="txtfirstname.invalid && txtfirstname.touched" formControlName="txtfirstname" id="txtfirstname"  placeholder="{{formlangdata.firstname.placeholdertxt}}">
+                <small id="hlpfirstname"  class="text-danger" [class.d-none]="txtfirstname.valid || txtfirstname.untouched" >{{formlangdata.firstname.hlptxt}}</small>
+            </div>          
+            <div class="form-group">
+                <label for="txtlastname">{{formlangdata.lastname.labeltxt}}</label>
+                <input type="text" class="form-control" [class.is-invalid]="txtlastname.invalid && txtlastname.touched" formControlName="txtlastname" id="txtlastname"  placeholder="{{formlangdata.lastname.placeholdertxt}}">
+                <small id="hlplastname" class="text-danger" [class.d-none]="txtlastname.valid || txtlastname.untouched">{{formlangdata.lastname.hlptxt}}</small>               
+            </div>
             <div class="form-group">
                 <label for="txtformGender">{{formlangdata.gender.labeltxt}}</label>
-                <input type="text" class="form-control" formControlName="txtformGender" id="txtformGender"  placeholder="{{formlangdata.gender.placeholdertxt}}">
-                <small id="hlpformGender" class="form-text text-muted">{{formlangdata.gender.hlptxt}}</small>                  
+                <select formControlName="txtformGender" id="txtformGender"> 
+                    <option disabled selected>default text here</option>
+                    <option value="man">Man</option>                    
+                    <option value="woman">Woman</option>
+                    <option value="other">Other</option>
+                    <option value="notsay">Prefere not to say</option>
+                </select>
+               
+            </div>           
+
+            <div class="form-group">
+                <label for="txtgender">{{formlangdata.gender.labeltxt}}</label>
+                <input type="text" class="form-control" [class.is-invalid]="txtgender.invalid && txtgender.touched" formControlName="txtgender" id="txtgender"  placeholder="{{formlangdata.gender.placeholdertxt}}">
+                <small id="hlpgender" class="text-danger" [class.d-none]="txtgender.valid || txtgender.untouched">{{formlangdata.gender.hlptxt}}</small>                  
             </div>
+            <div class="form-group">
+                <label for="txtorganisation">{{formlangdata.organisation.labeltxt}}</label>
+                <input type="text" class="form-control"  formControlName="txtorganisation" id="txtorganisation"  placeholder="{{formlangdata.organisation.placeholdertxt}}">
+                <small id="hlporganisation" class="form-text text-muted d-none">{{formlangdata.organisation.hlptxt}}</small>                  
+            </div>   
             <div class="form-group ">
-                <label for="txtformbefattning">{{formlangdata.befatting.labeltxt}}</label>
-                <input type="text" class="form-control" formControlName="txtformbefattning" id="txtformbefattning" placeholder="{{formlangdata.befatting.placeholdertxt}}">
-                <small id="hlpformbefattning" class="form-text text-muted">{{formlangdata.befatting.hlptxt}}</small>
+                <label for="txtprofession">{{formlangdata.profession.labeltxt}}</label>
+                <input type="text" class="form-control" [class.is-invalid]="txtprofession.invalid && txtprofession.touched" formControlName="txtprofession" id="txtprofession" placeholder="{{formlangdata.profession.placeholdertxt}}">
+                <small id="hlpprofession" class="text-danger" [class.d-none]="txtprofession.valid || txtprofession.untouched">{{formlangdata.profession.hlptxt}}</small>                
             </div>
-            <button type="submit" class="btn btn-primary">{{formlangdata.submit.btntext}}</button>
+           <div class="form-group">
+                <label for="txtemail">{{formlangdata.email.labeltxt}}</label>
+                <input type="text" class="form-control" [class.is-invalid]="txtemail.invalid && txtemail.touched"  formControlName="txtemail" id="txtemail"  placeholder="{{formlangdata.email.placeholdertxt}}">
+                <small id="hlpemail" class="text-danger" [class.d-none]="txtemail.valid || txtemail.untouched">{{formlangdata.email.hlptxt}}</small>
+            </div>    
+            <button type="submit" [disabled]="!regFormgoup.valid" class="btn btn-primary">{{formlangdata.submit.btntext}}</button>
         </form>
+        
      {{regFormgoup.value | json}}
     </div>    
 </div>

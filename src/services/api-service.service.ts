@@ -23,7 +23,7 @@ export class ApiServiceService {
       return this.http.get(this.url,this._httpOptions)
     .pipe(      
       retry(1),// använd retry för att göra om reqesten x gånger
-      catchError(this.HandleThisClassErrors)
+      // catchError(this.HandleThisClassErrors)
     );
   } 
 
@@ -44,10 +44,12 @@ export class ApiServiceService {
   private HandleThisClassErrors(error: Response){
     
     if(error.status === 400){
+      console.log("detta är 400");
       return Observable.throw(new AllreadyExistError(error.json()));
     }
 
     if(error.status === 404){
+      console.log("detta är 404");      
       return Observable.throw(new NotFoundError());
     }
     

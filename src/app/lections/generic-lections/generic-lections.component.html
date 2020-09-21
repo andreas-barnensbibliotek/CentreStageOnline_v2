@@ -10,19 +10,22 @@
     </div>
   </div>
   <section class="container-grid wrap-nav-video" *ngIf="showVideobox">
-    <main class="container-grid nav-video"><a routerLink="{{mainPageData[0].acf.smallnavbefore}}" routerLinkActive="active" class="btn">
-      <span class="button-text-1">&lt;</span></a><a class="link-button btn" href="#all-episodes">
+    <main class="container-grid nav-video">
+      <button type="button" class="btn btn-left" (click)="gotoLectureBefore(mainPageData[0].acf.smallnavbefore)"><br></button>
+      <a class="link-button btn btn-episodes" href="#all-episodes">
         <font color="#ffffff">All episodes</font>
-      </a><a routerLink="{{mainPageData[0].acf.smallnavnext}}" routerLinkActive="active"  class="btn"><span class="button-text-2">&gt;</span></a></main>
+      </a>
+      <button type="button" class="btn btn-right" (click)="gotoLectureNext(mainPageData[0].acf.smallnavnext)"></button>
+    </main>
   </section>
   <article class="container-grid wrap-main-text">
     <blockquote class="quote-text" [innerHTML]="mainPageData[0].acf.quoteblock"> 
       <div class="lds-dual-ring"></div>     
     </blockquote>
     <main class="container-grid container-main-text">
-      <div class="paragraph main-text paragraph-1 blockquote-text-1" [innerHTML]="mainPageData[0].acf.maincontent">
+      <main class="container-grid main-text" [innerHTML]="mainPageData[0].acf.maincontent">
         <div class="lds-dual-ring"></div>
-      </div>      
+      </main>      
       <div class="rule rule-2" *ngIf="showWorksheetHR">
         <hr>
       </div>
@@ -32,7 +35,7 @@
       <div class="rule rule-1" *ngIf="showExtraMaterialHR">
         <hr>
       </div>
-      <div class="container-grid wrap-ext-links" [innerHTML]="mainPageData[0].acf.extramaterialblock">
+      <div class="container-grid external-links" [innerHTML]="mainPageData[0].acf.extramaterialblock">
         <div class="lds-dual-ring"></div>
       </div>
     </main>

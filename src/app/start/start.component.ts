@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { DomSanitizer } from '@angular/platform-browser';
 import { WpApiService } from './../../services/wp-Api/wp-api.service';
 import { Global } from './../models/global';
@@ -17,7 +18,7 @@ export class StartComponent implements OnInit {
   videoUrl:any;
   showVideobox:boolean = false;
   dangerousVideoUrl:any;
-  constructor(private wpApi:WpApiService, private glb:Global,private _sanitizer: DomSanitizer) { 
+  constructor(private wpApi:WpApiService, private glb:Global, private _sanitizer: DomSanitizer,private viewPortScroller: ViewportScroller) { 
     
   }
 

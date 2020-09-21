@@ -92,7 +92,7 @@ export class Global {
   public registerUser(){   
     try{
       localStorage.setItem("userreg", "true");
-      this.router.navigate(['/lektion']);
+      this.router.navigate(['/episodes']);
       return true;
     }catch{
       return false;

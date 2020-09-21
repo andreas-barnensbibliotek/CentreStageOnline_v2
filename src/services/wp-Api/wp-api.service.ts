@@ -36,8 +36,9 @@ export class WpApiService extends ApiServiceService {
   }
 
   postRegisterUser(formdata:any){   
-    let url:string = this._global.postserver +"?post_typ=RegisterUser";
-    console.log("getPageSlug URL: " + url);    
+    let url:string = this._global.postserver +"?post_type=RegisterUser";
+    console.log("getPageSlug URL: " + url);  
+    console.log(formdata);
     return this.doPost(url,formdata);       
   }
 

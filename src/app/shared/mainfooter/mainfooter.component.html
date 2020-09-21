@@ -1,10 +1,51 @@
   <footer class="container-grid footer-container-wrap">
-    <div class="dropdown container-grid" data-outofview="true"></div>
-    <p class="paragraph text-footer"><span class="paragraph-text-1"><span class="paragraph-text-1" id="paragraph-text-1"><span class="paragraph-text-2">Information and contact | Centre Stage</span><br>Katarina Hultin,&nbsp;Project manager<br>katarina.hultin@vgregion.se <br><br><span class="paragraph-text-3"><a title="" href="http://www.kulturivast.se/centre-stage" class="paragraph-text-5">kulturivast.se/centre-stage </a></span><br></span></span></p>
-      <select [(ngModel)]='selectedval' id="drplang" (change)="selectLanguageChangeHandler($event)" >            
-          <option *ngFor="let langitm of langdrp" [value]="langitm.type" >{{langitm.name}}</option>
-      </select>
-      <div class="responsive-picture picture-1">
+    <div class="container-grid dropup"><a class="link-button btn btn-secondary dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="dropdownMenuButton-1-copy-1" data-outofview="true"></a>
+      <div class="dropdown-menu container-grid" aria-labelledby="dropdownMenuButton-1">
+        <nav class="container-grid wrap-one-language">
+          <div class="responsive-picture picture-2">
+            <picture><img alt="Placeholder Picture" src="./assets/6_languages_GER.png"></picture>
+          </div>
+          <a class="link-text dropdown-item" (click)="selectLanguagehandler('DE')">Deutsche</a>
+        </nav>
+        <nav class="container-grid wrap-one-language">
+          <div class="responsive-picture picture-2">
+            <picture><img alt="Placeholder Picture" src="./assets/6_languages_ENG.png"></picture>
+          </div>
+          <a class="link-text dropdown-item" (click)="selectLanguagehandler('EN')">English</a>
+        </nav>
+        <nav class="container-grid wrap-one-language">
+          <div class="responsive-picture picture-2">
+            <picture><img alt="Placeholder Picture" src="./assets/6_languages_SPN.png"></picture>
+          </div>
+          <a class="link-text dropdown-item" (click)="selectLanguagehandler('SP')">Español</a>
+        </nav>
+        <nav class="container-grid wrap-one-language">
+          <div class="responsive-picture picture-2">
+            <picture><img alt="Placeholder Picture" src="./assets/6_languages_FRA.png"></picture>
+          </div>
+          <a class="link-text dropdown-item" (click)="selectLanguagehandler('FR')">Français</a>
+        </nav>
+        <nav class="container-grid wrap-one-language">
+          <div class="responsive-picture picture-2">
+            <picture><img alt="Placeholder Picture" src="./assets/6_languages_POL.png"></picture>
+          </div>
+          <a class="link-text dropdown-item" (click)="selectLanguagehandler('PL')">Polskie</a>
+        </nav>
+        <nav class="container-grid wrap-one-language">
+          <div class="responsive-picture picture-2">
+            <picture><img alt="Placeholder Picture" src="./assets/6_languages_SWE.png"></picture>
+          </div>
+          <a class="link-text dropdown-item" (click)="selectLanguagehandler('SV')">Svenska</a>
+        </nav>
+      </div>
+    </div>
+    <p class="paragraph text-footer"><span class="paragraph-text-1"><span class="paragraph-text-1" id="paragraph-text-1">
+      <span class="paragraph-text-2">Information and contact | Centre Stage</span><br>Katarina Hultin,&nbsp;Project manager<br>katarina.hultin@vgregion.se <br><br><span class="paragraph-text-3"><a title="" href="http://www.kulturivast.se/centre-stage" class="paragraph-text-5">kulturivast.se/centre-stage </a></span><br></span></span></p>
+    <div class="responsive-picture picture-1">
       <picture><img alt="Placeholder Picture" src="./assets/EU-logga_600.png"></picture>
     </div>
+    <select [(ngModel)]='selectedval' id="drplang" (change)="selectLanguageChangeHandler($event)" style="display:none;" >            
+      <option *ngFor="let langitm of langdrp" [value]="langitm.type" >{{langitm.name}}</option>
+  </select>
   </footer>
+

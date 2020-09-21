@@ -13,8 +13,11 @@ export class registerUserFormData {
         
         return [{
               type: "EN",
+              header:{
+                  text:"Register!"
+              },
               lang:{
-                labeltxt:"Language",
+                labeltxt:"Country",
                 hlptxt:"Insert language here",
                 placeholdertxt:"Insert language",
               },
@@ -23,17 +26,45 @@ export class registerUserFormData {
                 hlptxt:"Insert gender",
                 placeholdertxt:"Insert gender",
               },
+              firstname:{
+                labeltxt:"Firstname",
+                hlptxt:"Insert your firstname",
+                placeholdertxt:"Insert your firstname",
+              },
+              lastname:{
+                labeltxt:"Lastname",
+                hlptxt:"Insert your lastname",
+                placeholdertxt:"Insert your lastname",
+              },
               befatting:{
                 labeltxt:"Job title",
                 hlptxt:"Insert job title",
                 placeholdertxt:"Insert job title",
               },
+              profession:{
+                labeltxt:"Profession",
+                hlptxt:"Insert your profession",
+                placeholdertxt:"Insert your profession",
+              },
+              organisation:{
+                labeltxt:"Organisation",
+                hlptxt:"Insert your organisation",
+                placeholdertxt:"Insert your organisation",
+              },
+              email:{
+                labeltxt:"Email",
+                hlptxt:"Insert an emailadress",
+                placeholdertxt:"Insert an emailadress",
+              },
               submit:{
                   btntext:"Register"
               }
-            },
-            {
+        },
+        {
             type: "SV",
+            header:{
+                text:"Registrera dig!"
+            },
             lang:{
                 labeltxt:"Språk",
                 hlptxt:"Ange språk",
@@ -55,6 +86,9 @@ export class registerUserFormData {
         },
         {
             type: "PL",
+            header:{
+                text:"Zarejestrować!"
+            },
             lang:{
                 labeltxt:"Język",
                 hlptxt:"wprowadź język",
@@ -73,7 +107,80 @@ export class registerUserFormData {
             submit:{
                 btntext:"Zarejestrować"
             }   
-        }]   
+        },
+        {
+            type: "DE",
+            header:{
+                text:"Registrieren!"
+            },
+            lang:{
+                labeltxt:"Sprache",
+                hlptxt:"Sprache eingeben",
+                placeholdertxt:"Sprache eingeben",
+            },
+            gender:{
+                labeltxt:"Sex",
+                hlptxt:"Geben Sie das Geschlecht ein",
+                placeholdertxt:"Geben Sie das Geschlecht ein",
+            },
+            befatting:{
+                labeltxt:"Position",
+                hlptxt:"Position eingeben",
+                placeholdertxt:"Position eingeben",
+            },
+            submit:{
+                btntext:"Registrera"
+            }
+        },
+        {
+            type: "FR",
+            header:{
+                text:"S'inscrire!"
+            },
+            lang:{
+                labeltxt:"Langue",
+                hlptxt:"Entrez la langue",
+                placeholdertxt:"Entrez la langue",
+            },
+            gender:{
+                labeltxt:"Sexe",
+                hlptxt:"Entrez le sexe",
+                placeholdertxt:"Entrez le sexe",
+            },
+            befatting:{
+                labeltxt:"Position",
+                hlptxt:"Entrer la position",
+                placeholdertxt:"Entrer la position",
+            },
+            submit:{
+                btntext:"S'inscrire"
+            }
+        },
+        {
+            type: "SP",
+            header:{
+                text:"¡Registrarse!"
+            },
+            lang:{
+                labeltxt:"Idioma",
+                hlptxt:"Ingrese idioma",
+                placeholdertxt:"Ingrese idioma",
+            },
+            gender:{
+                labeltxt:"sexo",
+                hlptxt:"ingrese género",
+                placeholdertxt:"ingrese género",
+            },
+            befatting:{
+                labeltxt:"Posición",
+                hlptxt:"Ingrese la posición",
+                placeholdertxt:"Ingrese la posición",
+            },
+            submit:{
+                btntext:"Registrarse"
+            }
+        }
+    ]   
         
     }      
    

@@ -23,6 +23,7 @@ export class MainnavComponent implements OnInit {
 
   getNavdata(){
     this.wpApi.getMeny("Mainmenu").subscribe(Response => {
+      
       this.mainNavData = Response     
       console.log(this.mainNavData)  
     });

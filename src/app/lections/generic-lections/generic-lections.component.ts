@@ -2,7 +2,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { WpApiService } from './../../../services/wp-Api/wp-api.service';
 import { Global } from './../../models/global';
 import { Component, OnInit, SecurityContext } from '@angular/core';
-import { ActivatedRoute} from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 
 @Component({
@@ -21,7 +21,7 @@ export class GenericLectionsComponent implements OnInit {
 
 testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
 
-  constructor(private wpApi:WpApiService, private glb:Global ,private route:ActivatedRoute, private _sanitizer: DomSanitizer,private viewPortScroller: ViewportScroller) { 
+  constructor(private wpApi:WpApiService, private glb:Global ,private route:ActivatedRoute, private router:Router, private _sanitizer: DomSanitizer,private viewPortScroller: ViewportScroller) { 
     //this.videoUrl= this._sanitizer.bypassSecurityTrustUrl( "https://www.youtube-nocookie.com/embed/o2fcA3X3IvE");
    
   }
@@ -33,6 +33,7 @@ testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
         this.currpageSlug ="episodes";
       }
       this.wpApi.currentPageDataHandler.subscribe(()=>{
+        console.log("visa denna slugg: " +this.currpageSlug);
         this.getpagedata(this.currpageSlug);
       });
       this.getpagedata(this.currpageSlug);
@@ -42,7 +43,12 @@ testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
 
   getpagedata(slug:string){
     this.wpApi.getPageSlug(slug).subscribe(Response => {
-      this.mainPageData = Response 
+      this.mainPageData = Response;
+
+    if((Object.keys(Response).length === 0)){ 
+      this.router.navigateByUrl("/404");
+    }
+
       if(this.mainPageData[0].acf.movieurl!=""){
         console.log("detta: " +this.mainPageData[0].acf.movieurl)
         this.showVideobox= true;
@@ -67,4 +73,13 @@ testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
     this.videoUrl =
         this._sanitizer.bypassSecurityTrustResourceUrl(this.dangerousVideoUrl);
   }
+  gotoLectureBefore(url){   
+    if(url=="#") return false;    
+    this.router.navigateByUrl(url);
+  }
+  gotoLectureNext(url){    
+    if(url=="#") return false;    
+    this.router.navigateByUrl(url);
+  }
+
 }

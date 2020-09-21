@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Global } from './../models/global';
 import { WpApiService } from './../../services/wp-Api/wp-api.service';
@@ -14,7 +15,7 @@ export class AboutComponent implements OnInit {
   videoUrl:any;
   showVideobox:boolean = false;
   dangerousVideoUrl:any;
-  constructor(private wpApi:WpApiService, private glb:Global,private _sanitizer: DomSanitizer) { 
+  constructor(private wpApi:WpApiService, private glb:Global,private _sanitizer: DomSanitizer, private _router:Router) { 
   }
 
   ngOnInit() {         
@@ -36,6 +37,11 @@ export class AboutComponent implements OnInit {
     this.wpApi.getPageSlug("about").subscribe(Response => {
       this.mainPageData = Response  
       
+      if((Object.keys(Response).length === 0)){ 
+        this._router.navigateByUrl("/404");
+      }
+  
+
       if(this.mainPageData[0].acf.movieurl!=""){
         console.log("detta: " +this.mainPageData[0].acf.movieurl)
         this.showVideobox= true;
