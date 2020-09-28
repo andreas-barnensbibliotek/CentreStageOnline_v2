@@ -1,3 +1,4 @@
+import { cookieLanguageHandler } from './cookieLanguageHandler';
 import { Subject } from 'rxjs';
 import { Router } from '@angular/router';
 
@@ -7,7 +8,7 @@ import {Injectable } from "@angular/core";
 @Injectable() // Decorator that marks a class as available to be provided and injected as a dependency.
 export class Global {
   private _liveserver:string = "https://centrestageonline.org";
-  private _devserver:string = "http://dev.centrestageonline.org";
+  private _devserver:string = "https://dev.centrestageonline.org";
   private _localdevserver:string = "http://localhost:81/centrestageonline.org";
   private _wpApi:string = "/wpAdmin/wp-json/wp/v2/";
   private _wpApiPost:string = "/wpAdmin/wp-json/addreg/v2/";      
@@ -20,7 +21,7 @@ export class Global {
   postserver:string = this._localdevserver + this._wpApiPost;        
   devkey:string = "/devkey/alf/?type=json";     
    
-  constructor(private router: Router ) {  
+  constructor(private router: Router, private _cookiehandler:cookieLanguageHandler ) {  
     this.currentlanguage = localStorage.getItem("userlang");    
   }
   
@@ -40,24 +41,24 @@ export class Global {
     ];
   }
   public getUserShortLanguage(){
-    if(!this.currentlanguage){
-      this.setUserLanguage("EN")      
-    }    
+    // if(!this.currentlanguage){
+    //   this.setUserLanguage("EN")      
+    // }    
     return this.currentlanguage;          
   }
 
   public setUserLanguage(langtyp:string){      
-    if(!langtyp){
-      langtyp="EN";
-    };
+    // if(!langtyp){     
+    //   langtyp="EN";
+    // };
     let usrlang = this.getUserGuidLanguage().find(i => i.type === langtyp);             
     return this.setLanguage(usrlang.type)
   }
   
   public getUserfullLanguage(langtyp:string){      
-    if(!langtyp){
-      langtyp="EN";
-    };
+    // if(!langtyp){
+    //   langtyp="EN";
+    // };
     let usrlang = this.getUserGuidLanguage().find(i => i.type === langtyp);             
     return usrlang.name
   }
@@ -67,6 +68,14 @@ export class Global {
     this.currentlanguage = localStorage.getItem("userlang")
     return this.currentlanguage
  }
+
+  public isUserLanguageSet(){      
+    if(!localStorage.getItem("userlang")){     
+      return false;
+    }else{ 
+      return true;
+    };  
+  }
 
   public changeSwedish(inputValue:string){
     return inputValue
@@ -114,4 +123,8 @@ export class Global {
             return true;
           })();
     };
+
+    public getCookieText(){      
+      return this._cookiehandler.getCookieText(this.getUserShortLanguage());             
+    }
 }

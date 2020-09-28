@@ -17,28 +17,29 @@ export class RegisterComponent implements OnInit {
   tmpAllLanguages:{};
   get formlanguage() { return this.regFormgoup.get('txtformlanguage')}
 
-  constructor(private _wpApi:WpApiService, private _regusrformdata: registerUserFormData, private _global:Global, private fb: FormBuilder) {     
-   
-    this.tmpAllLanguages = _global.getUserGuidLanguage();
-    
+  constructor(private _wpApi:WpApiService, private _regusrformdata: registerUserFormData, private _global:Global, private fb: FormBuilder) {        
+    this.tmpAllLanguages = _global.getUserGuidLanguage();    
   }
 
-  get txtfirstname(): any {
-    return this.regFormgoup.get('txtfirstname');
-  }
-  get txtlastname(): any {
-    return this.regFormgoup.get('txtlastname');
-  }
-  get txtgender(): any {
-    return this.regFormgoup.get('txtgender');
-  }
-  get txtprofession(): any {
-    return this.regFormgoup.get('txtprofession');
-  }
-  get txtemail(): any {
-    return this.regFormgoup.get('txtemail');
-  }
-
+    get txtfirstname(): any {
+      return this.regFormgoup.get('txtfirstname');
+    }
+    get txtlastname(): any {
+      return this.regFormgoup.get('txtlastname');
+    }
+    get txtgender(): any {
+      return this.regFormgoup.get('txtgender');
+    }
+    get txtprofession(): any {
+      return this.regFormgoup.get('txtprofession');
+    }
+    get txtemail(): any {
+      return this.regFormgoup.get('txtemail');
+    }
+    get drpChooselang(): any {
+      return this.regFormgoup.get('drpChooselang');
+    }
+  
 
   ngOnInit(): void {    
     this._global.currentLanguageHandler.subscribe(()=>{
@@ -70,9 +71,15 @@ export class RegisterComponent implements OnInit {
 
       let registerobj= {
         post_title : "Register user - " + this.regFormgoup.get('drpChooselang').value,
+        country: this.regFormgoup.get('drpChooselang').value,
         language: this.regFormgoup.get('drpChooselang').value,
-        gender: this.regFormgoup.get('txtformGender').value,
-        befattning: this.regFormgoup.get('txtformbefattning').value,
+        gender: this.regFormgoup.get('txtgender').value,
+        befattning: this.regFormgoup.get('txtprofession').value,
+        profession: this.regFormgoup.get('txtprofession').value,
+        firstname: this.regFormgoup.get('txtfirstname').value,
+        lastname: this.regFormgoup.get('txtlastname').value,
+        organisation: this.regFormgoup.get('txtorganisation').value,
+        email: this.regFormgoup.get('txtemail').value,
       };
 
       this.registerUserDB(registerobj);      
@@ -82,9 +89,8 @@ export class RegisterComponent implements OnInit {
   registerUserDB(regData:any){
         
     this._wpApi.postRegisterUser(JSON.parse(JSON.stringify(regData))).subscribe((response)=>{      
-      console.log("detta är efter post"+ response)
-      alert("detta är efter post"+ response)
-      //this._global.registerUser();      
+      console.log("detta är efter post"+ response);      
+      this._global.registerUser();      
     });
 
   }

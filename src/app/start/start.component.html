@@ -1,24 +1,44 @@
-<header class="container-grid wrap-title-episode">
-    <header class="container-grid title-size">
-      <h1 class="title-episode" [innerHTML]="mainPageData[0].acf.mainheader"></h1>
-    </header>
-  </header>
-  
-  
-  <article class="container-grid wrap-main-text">
-    <blockquote class="quote-text" [innerHTML]="mainPageData[0].acf.quoteblock"> 
-      <div class="lds-dual-ring"></div>     
-    </blockquote>
-    <main class="container-grid container-main-text">
-        <div class="paragraph main-text paragraph-1 blockquote-text-1" [innerHTML]="mainPageData[0].acf.maincontent">
-            <div class="lds-dual-ring"></div>
-        </div>  
-        
-        <div  *ngIf="showVideobox" >
-            <iframe [src]="videoUrl" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        </div>    
-        <div class="container-grid wrap-worksheet" [innerHTML]="mainPageData[0].acf.worksheetblock">
-            <div class="lds-dual-ring"></div>        
-        </div>
-    </main>
-  </article>
+  <div class="container-grid placeholder-hero">
+    <h1 class="hero-header size" [innerHTML]="mainPageData[0].acf.mainheader"></h1>
+    <p class="paragraph hero-tagline size">Choose language</p>
+    <div class="container-grid drop-bg-color dropdown" id="Choose-language"><a class="link-button dripdown-toggle-start btn-secondary-start btn-start" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="dropdownMenuButton-1-copy-2" data-outofview="true"></a>
+      <div class="container-grid dropdown-menu dropdown-index-mod" aria-labelledby="dropdownMenuButton-1">
+        <nav class="container-grid wrap-one-language">
+          <div class="responsive-picture picture-2">
+            <picture><img alt="Placeholder Picture" src="./assets/6_languages_GER.png"></picture>
+          </div>
+          <a class="link-text dropdown-item" (click)="selectLanguagehandler('DE')">Deutsche</a>
+        </nav>
+        <nav class="container-grid wrap-one-language">
+          <div class="responsive-picture picture-2">
+            <picture><img alt="Placeholder Picture" src="./assets/6_languages_ENG.png"></picture>
+          </div>
+          <a class="link-text dropdown-item" (click)="selectLanguagehandler('EN')">English</a>
+        </nav>
+        <nav class="container-grid wrap-one-language">
+          <div class="responsive-picture picture-2">
+            <picture><img alt="Placeholder Picture" src="./assets/6_languages_SPN.png"></picture>
+          </div>
+          <a class="link-text dropdown-item" (click)="selectLanguagehandler('SP')">Español</a>
+        </nav>
+        <nav class="container-grid wrap-one-language">
+          <div class="responsive-picture picture-2">
+            <picture><img alt="Placeholder Picture" src="./assets/6_languages_FRA.png"></picture>
+          </div>
+          <a class="link-text dropdown-item" (click)="selectLanguagehandler('FR')">Français</a>
+        </nav>
+        <nav class="container-grid wrap-one-language">
+          <div class="responsive-picture picture-2">
+            <picture><img alt="Placeholder Picture" src="./assets/6_languages_POL.png"></picture>
+          </div>
+          <a class="link-text dropdown-item" (click)="selectLanguagehandler('PL')">Polskie</a>
+        </nav>
+        <nav class="container-grid wrap-one-language">
+          <div class="responsive-picture picture-2">
+            <picture><img alt="Placeholder Picture" src="./assets/6_languages_SWE.png"></picture>
+          </div>
+          <a class="link-text dropdown-item" (click)="selectLanguagehandler('SV')">Svenska</a>
+        </nav>
+      </div>
+    </div>
+  </div>

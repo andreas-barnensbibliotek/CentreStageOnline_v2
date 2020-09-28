@@ -1,4 +1,3 @@
-import { ViewportScroller } from '@angular/common';
 import { Global } from './../../models/global';
 import { WpApiService } from './../../../services/wp-Api/wp-api.service';
 import { Component, OnInit } from '@angular/core';
@@ -12,7 +11,7 @@ export class MainfooterComponent implements OnInit {
   langdrp:any=[];  
   selectedval:any =this.glb.getUserShortLanguage();
 
-  constructor(private wpApi:WpApiService, private glb:Global,private viewPortScroller: ViewportScroller) { 
+  constructor(private wpApi:WpApiService, private glb:Global) { 
     this.langdrp = glb.getUserGuidLanguage();      
   }  
 
@@ -24,17 +23,16 @@ export class MainfooterComponent implements OnInit {
     let lang = event.target.value;
     console.log("språk: " + lang);
     this.glb.setUserLanguage(lang);
+    this.glb.getCookieText();
     this.wpApi.currentPageDataHandler.next();    
     this.glb.currentLanguageHandler.next();
   }
-
-
-
 
   selectLanguagehandler(lang: any) {
     //update the ui    
     console.log("språk: " + lang);
     this.glb.setUserLanguage(lang);
+    this.glb.getCookieText();
     this.wpApi.currentPageDataHandler.next();    
     this.glb.currentLanguageHandler.next();
   }

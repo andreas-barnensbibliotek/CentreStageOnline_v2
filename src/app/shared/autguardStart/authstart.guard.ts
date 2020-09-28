@@ -6,28 +6,19 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthGuard implements CanActivate {
+export class AuthGuardStart implements CanActivate {
   constructor(private _global:Global, private _router:Router){
   }
   
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    if(this._global.isUserRegistred()){
-      return true;
-    }else{
-      this._router.navigate(['/register']);
-    }
-  }
-  
-  languageSet(
-    next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    if(this._global.isUserLanguageSet()){
-      return true;
-    }else{
-      this._router.navigate(['/start']);
-    }
-  }
-  
+        if(this._global.isUserLanguageSet()){             
+             return true;
+          }else{
+            this._router.navigate(['/start']);
+          }
+       
+  } 
+ 
 }

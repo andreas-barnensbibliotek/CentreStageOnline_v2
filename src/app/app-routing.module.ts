@@ -1,3 +1,5 @@
+import { authstartabout } from './shared/autguardStart/authstartabout.guard';
+import { AuthGuardStart } from './shared/autguardStart/authstart.guard';
 import { CreditsComponent } from './credits/credits.component';
 import { AboutComponent } from './about/about.component';
 import { OverviewComponent } from './overview/overview.component';
@@ -11,11 +13,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: '',  redirectTo: 'start', pathMatch: 'full' },  
-  { path: 'start',  component: StartComponent},   
-  { path: 'register',  component: RegisterComponent}, 
-  { path: 'overview',  component: OverviewComponent}, 
-  { path: 'about',  component: AboutComponent}, 
-  { path: 'credits',  component: CreditsComponent}, 
+  { path: 'start',  component: StartComponent, canActivate:[authstartabout]},   
+  { path: 'register',  component: RegisterComponent, canActivate: [AuthGuardStart]}, 
+  { path: 'overview',  component: OverviewComponent, canActivate: [AuthGuardStart]}, 
+  { path: 'about',  component: AboutComponent, canActivate: [AuthGuardStart]}, 
+  { path: 'credits',  component: CreditsComponent, canActivate: [AuthGuardStart]}, 
   { path: 'episodes', 
     loadChildren: './lections/lection-router/lection-router.module#LectionRouterModule',
     canActivate: [AuthGuard]},     

@@ -1,3 +1,5 @@
+import { AuthGuardStart } from './shared/autguardStart/authstart.guard';
+import { cookieLanguageHandler } from './models/cookieLanguageHandler';
 import { registerUserFormData } from './models/RegisteruserFormData';
 import { AuthGuard } from './shared/authguard/auth.guard';
 import { LectionRouterModule } from './lections/lection-router/lection-router.module';
@@ -54,7 +56,9 @@ import { CreditsComponent } from './credits/credits.component';
   providers: [
     Global,
     AuthGuard,
+    AuthGuardStart,
     registerUserFormData,
+    cookieLanguageHandler,
     LocalStorageHandler,
     redirectHandler,
     {provide: ErrorHandler, useClass: AppGlobalErrorHandler}
