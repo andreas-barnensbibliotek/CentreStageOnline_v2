@@ -1,3 +1,4 @@
+import { coursenavLanguage } from './models/coursenavLanguage';
 import { AuthGuardStart } from './shared/autguardStart/authstart.guard';
 import { cookieLanguageHandler } from './models/cookieLanguageHandler';
 import { registerUserFormData } from './models/RegisteruserFormData';
@@ -59,6 +60,7 @@ import { WelcomeComponent } from './welcome/welcome/welcome.component';
     AuthGuard,
     AuthGuardStart,
     registerUserFormData,
+    coursenavLanguage,
     cookieLanguageHandler,
     LocalStorageHandler,
     redirectHandler,

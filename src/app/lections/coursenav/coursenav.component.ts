@@ -1,3 +1,5 @@
+import { Global } from './../../models/global';
+import { coursenavLanguage } from './../../models/coursenavLanguage';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoursenavComponent implements OnInit {
 
-  constructor() { }
+  courselangdata:any;
 
-  ngOnInit() {
+  constructor( private _courselangObj: coursenavLanguage, private _global:Global, ) {        
+    
   }
-  
+
+    ngOnInit(): void {    
+      this._global.currentLanguageHandler.subscribe(()=>{
+        this.loadFormSettings();
+      })  
+      this.loadFormSettings();    
+    } 
+
+   loadFormSettings(){
+    let CurrentShortLanguage = this._global.getUserShortLanguage();
+    this.courselangdata = this._courselangObj.getCourseNavLanguageText(CurrentShortLanguage);
+   }
 }
