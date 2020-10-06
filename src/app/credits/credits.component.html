@@ -1,23 +1,11 @@
-<header class="container-grid wrap-title-episode">
-    <header class="container-grid title-size">
-      <h1 class="title-episode" [innerHTML]="mainPageData[0].acf.mainheader"></h1>
-    </header>
-  </header>  
-  
-  <article class="container-grid wrap-main-text">
-    <blockquote class="quote-text" [innerHTML]="mainPageData[0].acf.quoteblock"> 
-      <div class="lds-dual-ring"></div>     
-    </blockquote>
-    <main class="container-grid container-main-text">
-        <div class="paragraph main-text paragraph-1 blockquote-text-1" [innerHTML]="mainPageData[0].acf.maincontent">
-            <div class="lds-dual-ring"></div>
-        </div>  
-        
-        <div  *ngIf="showVideobox" >
-            <iframe [src]="videoUrl" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        </div>    
-        <div class="container-grid wrap-worksheet" [innerHTML]="mainPageData[0].acf.worksheetblock">
-            <div class="lds-dual-ring"></div>        
-        </div>
-    </main>
-  </article>
+<article class="container-grid wrap-participants">
+  <section class="container-grid outer-wrap-sources" [innerHTML]="mainPageData[0].acf.quoteblock"> 
+    <div class="lds-dual-ring"></div>   
+</section>
+</article>
+<article class="container-grid wrap-sources">
+  <section class="container-grid outer-wrap-sources" [innerHTML]="mainPageData[0].acf.maincontent">
+    <div class="lds-dual-ring"></div>
+  </section>
+</article>
+<app-coursenav></app-coursenav> 

@@ -1,3 +1,4 @@
+import { WelcomeComponent } from './welcome/welcome/welcome.component';
 import { authstartabout } from './shared/autguardStart/authstartabout.guard';
 import { AuthGuardStart } from './shared/autguardStart/authstart.guard';
 import { CreditsComponent } from './credits/credits.component';
@@ -8,12 +9,18 @@ import { AuthGuard } from './shared/authguard/auth.guard';
 import { Err404pageComponent } from './shared/err404page/err404page.component';
 import { StartComponent } from './start/start.component';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 
-
+const routerOptions: ExtraOptions = {
+  enableTracing: true,
+  scrollPositionRestoration: 'enabled',
+  anchorScrolling: 'enabled',
+  scrollOffset: [0, 64],
+};
 const routes: Routes = [
   { path: '',  redirectTo: 'start', pathMatch: 'full' },  
-  { path: 'start',  component: StartComponent, canActivate:[authstartabout]},   
+  { path: 'start',  component: StartComponent, canActivate:[authstartabout]}, 
+  { path: 'welcome',  component: WelcomeComponent, canActivate:[AuthGuardStart]},   
   { path: 'register',  component: RegisterComponent, canActivate: [AuthGuardStart]}, 
   { path: 'overview',  component: OverviewComponent, canActivate: [AuthGuardStart]}, 
   { path: 'about',  component: AboutComponent, canActivate: [AuthGuardStart]}, 
@@ -26,7 +33,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {enableTracing: true, scrollPositionRestoration: 'enabled'})],
+  imports: [RouterModule.forRoot(routes, routerOptions)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

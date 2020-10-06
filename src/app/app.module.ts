@@ -30,6 +30,7 @@ import { OverviewComponent } from './overview/overview.component';
 import { GenericMainpageComponent } from './generic-mainpage/generic-mainpage.component';
 import { AboutComponent } from './about/about.component';
 import { CreditsComponent } from './credits/credits.component';
+import { WelcomeComponent } from './welcome/welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { CreditsComponent } from './credits/credits.component';
     Err404pageComponent,
     LectionMainComponent,
     RegisterComponent,  
-    SafePipe, OverviewComponent, GenericMainpageComponent, AboutComponent, CreditsComponent
+    SafePipe, OverviewComponent, GenericMainpageComponent, AboutComponent, CreditsComponent, WelcomeComponent
   ],
   imports: [
     BrowserModule,

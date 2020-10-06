@@ -14,7 +14,7 @@ export class authstartabout implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
       if(this._global.isUserLanguageSet()){             
-            this._router.navigate(['/about']);
+            this._router.navigate(['/welcome']);
         }else{
           return true;
         }

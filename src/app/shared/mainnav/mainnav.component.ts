@@ -28,4 +28,5 @@ export class MainnavComponent implements OnInit {
       console.log(this.mainNavData)  
     });
   }
+ 
 }

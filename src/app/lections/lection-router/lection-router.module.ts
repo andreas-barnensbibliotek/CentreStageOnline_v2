@@ -1,7 +1,8 @@
+import { OverviewComponent } from './../../overview/overview.component';
 import { CoursenavComponent } from './../coursenav/coursenav.component';
 import { GenericLectionsComponent } from './../generic-lections/generic-lections.component';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 import { LectionMainComponent } from '../lection-main/lection-main.component';
 
 const appRoutes: Routes = [
@@ -9,7 +10,7 @@ const appRoutes: Routes = [
       path: '' ,
       component: LectionMainComponent,
       children:[
-        {path:'',component: GenericLectionsComponent },
+        {path:'',component: OverviewComponent },
         {path:'test',component: CoursenavComponent },
         {path:':slug',component: GenericLectionsComponent }              
       ]

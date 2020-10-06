@@ -1,45 +1,42 @@
-
-<article class="container-grid wrap-main-text background">
-<blockquote class="quote-text"[innerHTML]="mainPageData[0].acf.quoteblock"></blockquote>
-<main class="container-grid container-main-text">
-  <main class="container-grid main-text" [innerHTML]="mainPageData[0].acf.maincontent" >
-     </main>
-  <div class="rule rule-1">
-    <hr>
-  </div>
-</main>
-</article>
-<article class="container-grid wrap-main-text partners">
-<main class="container-grid container-main-text partners"[innerHTML]="mainPageData[0].acf.worksheetblock">
+  <article class="container-grid wrap-main-text background-about">
+    <main class="container-grid container-main-text-about ingress">
+      <main class="container-grid main-text-about" [innerHTML]="mainPageData[0].acf.quoteblock">
+        </main>
+    </main>
+    <main class="container-grid container-main-text-about main">
+      <main class="container-grid main-text-about" [innerHTML]="mainPageData[0].acf.maincontent">
+      </main>
+    </main>
+  </article>
+  <article class="container-grid wrap-main-text partners" >
+    <main class="container-grid container-main-text partners co-funder" [innerHTML]="mainPageData[0].acf.worksheetblock">      
+    </main>
+    <main class="container-grid container-main-text partners" [innerHTML]="mainPageData[0].acf.extramaterialblock">      
+    </main>
+  </article>
+  <article class="container-grid wrap-main-text background" >
+    <main class="container-grid container-main-text about">
+      <main class="container-grid main-text" [innerHTML]="mainPageData[0].acf.extrablock1">
+      </main>
+      <div class="rule rule-1">
+        <hr>
+      </div>
+    </main>
+  </article>
+  <article class="container-grid wrap-main-text background video">
+    <div class="container-grid wrap-video-about">
+     
+      <div class="responsive-video video-platform-1 vimeo" data-original-url="https://vimeo.com/252417024" *ngIf="showVideobox" >
+        <iframe [src]="videoUrl" frameborder="0" allow="autoplay; fullscreen" webkitAllowFullScreen mozallowfullscreen allowfullscreen ></iframe>
+        </div>
+    </div>
+    
+    <main class="container-grid container-main-text">
+      <main class="container-grid main-text" [innerHTML]="mainPageData[0].acf.extrablock2">
+      </main>
+      <div class="rule rule-1">
+        <hr>
+      </div>
+    </main>
+  </article>
   
-</main>
-</article>
-<article class="container-grid wrap-main-text background">
-<blockquote class="quote-text">Bild</blockquote>
-<main class="container-grid container-main-text">
-  <main class="container-grid main-text">
-    <div class="container-grid div-headings">
-      <h1 class="Heading1-same-size">Hälsningar från Katarina<br></h1>
-    </div>
-    <p class="paragraph main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh risus, sagittis nec suscipit nec, mollis laoreet eros. Donec faucibus, libero id faucibus scelerisque, justo justo nullam sodales.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh risus, sagittis nec suscipit nec, mollis laoreet eros. Donec faucibus, libero id faucibus scelerisque, justo justo nullam sodales.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh risus, sagittis nec suscipit nec, mollis laoreet eros. Donec faucibus, libero id faucibus scelerisque, justo justo nullam sodales.</p>
-  </main>
-  <div class="rule rule-1">
-    <hr>
-  </div>
-</main>
-</article>
-<article class="container-grid wrap-main-text-center">
-<main class="container-grid container-main-text-no-episode">
-  <main class="container-grid main-text-center">
-    <p class="paragraph main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh risus, sagittis nec suscipit nec, mollis laoreet eros. Donec faucibus, libero id faucibus scelerisque, justo justo nullam sodales.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh risus, sagittis nec suscipit nec, mollis laoreet eros. Donec faucibus, libero id faucibus scelerisque, justo justo nullam sodales.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh risus, sagittis nec suscipit nec, mollis laoreet eros. Donec faucibus, libero id faucibus scelerisque, justo justo nullam sodales.</p>
-  </main>
-  <div class="responsive-video vimeo video-platform-1" data-original-url="https://vimeo.com/252417024" *ngIf="showVideobox" >
-    <iframe [src]="videoUrl" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    </div>
-  <main class="container-grid main-text-center">
-    <p class="paragraph main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh risus, sagittis nec suscipit nec, mollis laoreet eros. Donec faucibus, libero id faucibus scelerisque, justo justo nullam sodales.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh risus, sagittis nec suscipit nec, mollis laoreet eros. Donec faucibus, libero id faucibus scelerisque, justo justo nullam sodales.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh risus, sagittis nec suscipit nec, mollis laoreet eros. Donec faucibus, libero id faucibus scelerisque, justo justo nullam sodales.</p><a href="#" class="btn link-button-image"><span class="link-button-text text-for-button-link-1"><span class="text-for-button-link-text-1">Gå till registrering</span><br></span></a>
-  </main>
-</main>
-</article>
-
-

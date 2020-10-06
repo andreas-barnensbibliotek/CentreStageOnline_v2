@@ -1,0 +1,40 @@
+  <article class="container-grid wrap-main-text welcome">
+    <main class="container-grid container-main-text-about ingress">
+      <main class="container-grid main-text-about"  [innerHTML]="mainPageData[0].acf.quoteblock">
+        
+      </main>
+    </main>
+    <main class="container-grid container-main-text-about main">
+      <main class="container-grid main-text-about"  >
+        <div [innerHTML]="mainPageData[0].acf.maincontent">
+            <div class="lds-dual-ring"></div>
+        </div>
+        <a class="link-button btn btn-1002 welcome" routerLink="/about"  title="Centre Stage Online - About">
+            <span class="button-link-text-4">
+                <span class="button-link-text-4" id="button-link-text-1">Tell me more!</span>
+            </span>
+        </a>
+        <a class="link-button btn btn-1002 welcome" routerLink="/overview" title="Centre Stage Online - Register">
+            <span class="button-link-text-5">
+                <span class="button-link-text-5" id="button-link-text-2">Can't wait.&nbsp;Let's go!</span>
+            </span>
+        </a>
+      </main>
+    </main>
+  </article>
+   <article class="container-grid wrap-two-quotes">
+    <div class="container-grid wrap-quote left"  [innerHTML]="mainPageData[0].acf.worksheetblock">
+        <div class="lds-dual-ring"></div>  
+    </div>
+    <div class="container-grid wrap-quote right"  [innerHTML]="mainPageData[0].acf.extramaterialblock">
+        <div class="lds-dual-ring"></div> 
+    </div>
+  </article>
+  <article class="container-grid wrap-two-quotes"  >
+    <div class="container-grid wrap-quote left" [innerHTML]="mainPageData[0].acf.extrablock1">
+        <div class="lds-dual-ring"></div>
+    </div>
+    <div class="container-grid wrap-quote right"  [innerHTML]="mainPageData[0].acf.extrablock2">
+        <div class="lds-dual-ring"></div>
+    </div>
+  </article>
