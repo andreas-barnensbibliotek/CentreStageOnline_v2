@@ -1,3 +1,4 @@
+import { registerUserFormData } from './RegisteruserFormData';
 import { cookieLanguageHandler } from './cookieLanguageHandler';
 import { Subject } from 'rxjs';
 import { Router } from '@angular/router';
@@ -21,7 +22,7 @@ export class Global {
   postserver:string = this._localdevserver + this._wpApiPost;        
   devkey:string = "/devkey/alf/?type=json";     
    
-  constructor(private router: Router, private _cookiehandler:cookieLanguageHandler ) {  
+  constructor(private router: Router, private _cookiehandler:cookieLanguageHandler, private _formButtonObj : registerUserFormData) {  
     this.currentlanguage = localStorage.getItem("userlang");    
   }
   
@@ -126,5 +127,9 @@ export class Global {
 
     public getCookieText(){      
       return this._cookiehandler.getCookieText(this.getUserShortLanguage());             
+    }
+
+    public getlangFormButtonText(){
+      return this._formButtonObj.getRegFormLanguageText(this.getUserShortLanguage());
     }
 }

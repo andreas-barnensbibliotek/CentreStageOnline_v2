@@ -8,8 +8,8 @@ export class coursenavLanguage {
         return [{
               type: "EN",
               one:{
-                title:"Introduction",
-                linktext:"Introduction",
+                title:"Why watch these videos",
+                linktext:"Why watch these videos",
               },
               two:{
                 title:"Getting what you want",
@@ -126,23 +126,23 @@ export class coursenavLanguage {
         {
             type: "PL",
             one:{
-                title:"Wprowadzenie",
-                linktext:"Wprowadzenie",
+                title:"Dlaczego obejrzeć te filmy?",
+                linktext:"Dlaczego obejrzeć te filmy?",
               },
               two:{
-                title:"Dostajesz to, czego chcesz",
-                linktext:"Dostajesz to, czego chcesz",
+                title:"Wiedz czego chcesz i osiągnij to",
+                linktext:"Wiedz czego chcesz i osiągnij to",
               },
               three:{
-                title:"Kim chcesz być",
-                linktext:"Kim chcesz być",
+                title:"Kim chcesz być?",
+                linktext:"Kim chcesz być?",
               },
               four:{
                 title:"Tworzenie zmiany - część 1 i 2",
                 linktext:"Tworzenie zmiany - część 1 i 2",               
               },
               five:{
-                title:"Rozmawianie z właściwymi ludźmi o właściwych rzeczach",
+                title:"RRozmawianie z właściwymi ludźmi o właściwych rzeczach ",
                 linktext:"Rozmawianie z właściwymi ludźmi o właściwych rzeczach",
               },
               six:{
@@ -150,32 +150,32 @@ export class coursenavLanguage {
                 linktext:"Zdobywanie pracy",
               },
               seven:{
-                title:"Przekazywanie wiadomości",
-                linktext:"Przekazywanie wiadomości",
+                title:"Docieranie z wiadomością / Rozsiewanie informacji",
+                linktext:"Docieranie z wiadomością / Rozsiewanie informacji",
               },
               eight:{
                 title:"Pokonywanie przeszkód",
                 linktext:"Pokonywanie przeszkód",
               },
               nine:{
-                title:"Wybór odpowiedniego obrazu",
-                linktext:"Wybór odpowiedniego obrazu",
+                title:"Wybór właściwego wizerunku",
+                linktext:"Wybór właściwego wizerunku",
               },
               ten:{
-                title:"Zdobywanie relacji w mediach",
-                linktext:"Zdobywanie relacji w mediach",
+                title:"Zaistnieć w mediach",
+                linktext:"Zaistnieć w mediach",
               },
               eleven:{
-                title:"Przekazywanie wiadomości online - część 1 i 2",
-                linktext:"Przekazywanie wiadomości online - część 1 i 2",
+                title:"Przebicie się z informacjami on-line - część 1 i 2",
+                linktext:"Przebicie się z informacjami on-line - część 1 i 2",
               },
               twelve:{
-                title:"Bycie widocznym online",
-                linktext:"Bycie widocznym online",
+                title:"Bycie widoczną on-line",
+                linktext:"Bycie widoczną on-line",
               },
               thirteen:{
-                title:"Co następne?",
-                linktext:"Co następne?",
+                title:"Co dalej?",
+                linktext:"Co dalej?",
               },
               fourteen:{
                 title:"Ocena",

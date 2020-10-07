@@ -15,15 +15,21 @@ export class WelcomeComponent implements OnInit {
   videoUrl:any;
   showVideobox:boolean = false;
   dangerousVideoUrl:any;
+  btnAbout:any;
+  btnOverview:any;
   constructor(private wpApi:WpApiService, private glb:Global,private _sanitizer: DomSanitizer, private _router:Router) { 
   }
 
   ngOnInit() {         
     this.wpApi.currentPageDataHandler.subscribe(()=>{
-        this.getpagedata();        
+        this.getpagedata();  
+        this.btnAbout = this.glb.getlangFormButtonText().btnwelcometoAbout.btntext
+        this.btnOverview = this.glb.getlangFormButtonText().btnoverviewtoStart.btntext      
       })
     this.getpagedata();
-    
+    this.btnAbout = this.glb.getlangFormButtonText().btnwelcometoAbout.btntext
+    this.btnOverview = this.glb.getlangFormButtonText().btnoverviewtoStart.btntext
+
   }
 
   selectLanguageChangeHandler (event: any) {

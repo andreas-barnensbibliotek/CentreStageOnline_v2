@@ -12,53 +12,62 @@ export class registerUserFormData {
     getFormPublicText(){
         
         return [{
-              type: "EN",
-              header:{
-                  text:"Register!"
-              },
-              lang:{
+            type: "EN",
+            header:{
+                text:"Register!"
+            },
+            lang:{
                 labeltxt:"Language",
                 hlptxt:"Insert language here",
                 placeholdertxt:"Insert language",
-              },
-              gender:{
+            },
+            gender:{
                 labeltxt:"Gender",
                 hlptxt:"Insert gender",
                 placeholdertxt:"Insert gender",
-              },
-              firstname:{
+            },
+            firstname:{
                 labeltxt:"Firstname",
                 hlptxt:"Insert your firstname",
                 placeholdertxt:"Insert your firstname",
-              },
-              lastname:{
+            },
+            lastname:{
                 labeltxt:"Lastname",
                 hlptxt:"Insert your lastname",
                 placeholdertxt:"Insert your lastname",
-              },
-              befatting:{
+            },
+            befatting:{
                 labeltxt:"Job title",
                 hlptxt:"Insert job title",
                 placeholdertxt:"Insert job title",
-              },
-              profession:{
+            },
+            profession:{
                 labeltxt:"Profession",
                 hlptxt:"Insert your profession",
                 placeholdertxt:"Insert your profession",
-              },
-              organisation:{
+            },
+            organisation:{
                 labeltxt:"Organisation",
                 hlptxt:"Insert your organisation",
                 placeholdertxt:"Insert your organisation",
-              },
-              email:{
+            },
+            email:{
                 labeltxt:"Email",
                 hlptxt:"Insert an emailadress",
                 placeholdertxt:"Insert an emailadress",
-              },
-              submit:{
-                  btntext:"Register"
-              }
+            },
+            submit:{
+                btntext:"Register"
+            },
+            btnwelcometoAbout:{
+                btntext:"Tell me more!"
+            },
+            btnwelcometoOverview:{
+                btntext:"Can't wait. Let's go!"
+            },
+            btnoverviewtoStart:{
+                btntext:"Enough. Let's start!"
+            }
         },
         {
             type: "SV",
@@ -107,6 +116,15 @@ export class registerUserFormData {
             },
             submit:{
                 btntext:"Registrera"
+            },
+            btnwelcometoAbout:{
+                btntext:"Berätta mer!"
+            },
+            btnwelcometoOverview:{
+                btntext:"Kan inte vänta. Nu kör vi!"
+            },
+            btnoverviewtoStart:{
+                btntext:"Tillräckligt. Låt oss börja!"
             }
         },
         {
@@ -156,7 +174,16 @@ export class registerUserFormData {
             },
             submit:{
                 btntext:"Zarejestrować"
-            }   
+            }  ,
+            btnwelcometoAbout:{
+                btntext:"Powiedz mi więcej!"
+            },
+            btnwelcometoOverview:{
+                btntext:"Nie mogę się doczekać. Chodźmy!"
+            },
+            btnoverviewtoStart:{
+                btntext:"Dość. Zaczynajmy!"
+            } 
         },
         {
             type: "DE",
@@ -205,6 +232,15 @@ export class registerUserFormData {
             },
             submit:{
                 btntext:"Registrieren"
+            },
+            btnwelcometoAbout:{
+                btntext:"Erzähl mir mehr!"
+            },
+            btnwelcometoOverview:{
+                btntext:"Ich kann es kaum erwarten. Lass uns gehen!"
+            },
+            btnoverviewtoStart:{
+                btntext:"Genug. Lasst uns beginnen!"
             }
         },
         {
@@ -254,6 +290,15 @@ export class registerUserFormData {
             },
             submit:{
                 btntext:"S'inscrire"
+            },
+            btnwelcometoAbout:{
+                btntext:"Dis m'en plus!"
+            },
+            btnwelcometoOverview:{
+                btntext:"Je ne peux pas attendre. Allons-y!"
+            },
+            btnoverviewtoStart:{
+                btntext:"Assez. Commençons!"
             }
         },
         {
@@ -303,6 +348,15 @@ export class registerUserFormData {
             },
             submit:{
                 btntext:"Registrarse"
+            },
+            btnwelcometoAbout:{
+                btntext:"¡Dime más!"
+            },
+            btnwelcometoOverview:{
+                btntext:"No puedo esperar. ¡Vamonos!"
+            },
+            btnoverviewtoStart:{
+                btntext:"Suficiente. ¡Empecemos!"
             }
         }
     ]   

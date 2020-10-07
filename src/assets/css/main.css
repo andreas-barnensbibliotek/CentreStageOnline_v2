@@ -951,7 +951,7 @@ a.link-button.btn-secondary-start.btn-start.dripdown-toggle-start:hover {
 a.link-button.btn.btn-1002:hover {
   border-color: #000;
   border-radius: 4px;
-  background-color: #fff;
+  /* background-color: #fff; */
   color: #000;
   font-size: 22px;
   line-height: 39px;
@@ -4109,7 +4109,8 @@ dd a.list-description-text-6:hover {
   }
 
   a.link-button.btn.btn-1002:hover {
-    background-color: #fff;
+    /* background-color: #fff; */
+    opacity: .7;
   }
 
   a.link-button.btn.btn-episodes:hover {

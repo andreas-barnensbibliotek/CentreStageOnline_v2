@@ -32,6 +32,7 @@ import { GenericMainpageComponent } from './generic-mainpage/generic-mainpage.co
 import { AboutComponent } from './about/about.component';
 import { CreditsComponent } from './credits/credits.component';
 import { WelcomeComponent } from './welcome/welcome/welcome.component';
+import { EvaluationComponent } from './lections/evaluation/evaluation.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import { WelcomeComponent } from './welcome/welcome/welcome.component';
     Err404pageComponent,
     LectionMainComponent,
     RegisterComponent,  
-    SafePipe, OverviewComponent, GenericMainpageComponent, AboutComponent, CreditsComponent, WelcomeComponent
+    SafePipe, OverviewComponent, GenericMainpageComponent, AboutComponent, CreditsComponent, WelcomeComponent, EvaluationComponent
   ],
   imports: [
     BrowserModule,
