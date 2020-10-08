@@ -14,14 +14,17 @@ export class OverviewComponent implements OnInit {
   videoUrl:any;
   showVideobox:boolean = false;
   dangerousVideoUrl:any;
+  btnstart:any;
   constructor(private wpApi:WpApiService, private glb:Global,private _sanitizer: DomSanitizer) { 
   }
 
   ngOnInit() {         
     this.wpApi.currentPageDataHandler.subscribe(()=>{
-        this.getpagedata();        
+        this.getpagedata();   
+        this.btnstart = this.glb.getlangFormButtonText().btnoverviewtoStart.btntext;
       })
     this.getpagedata();
+    this.btnstart = this.glb.getlangFormButtonText().btnoverviewtoStart.btntext;
     
   }
 

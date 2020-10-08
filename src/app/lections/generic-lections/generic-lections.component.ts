@@ -21,6 +21,8 @@ export class GenericLectionsComponent implements OnInit {
   showExtraVideobox:boolean = false;
   showWorksheetHR:boolean= false;  
   showExtraMaterialHR:boolean= false;
+  btnallEpisodes:any;
+  btnParticipants:any;
 
 testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
 
@@ -38,8 +40,12 @@ testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
       this.wpApi.currentPageDataHandler.subscribe(()=>{
         console.log("visa denna slugg: " +this.currpageSlug);
         this.getpagedata(this.currpageSlug);
+        this.btnallEpisodes = this.glb.getlangFormButtonText().btnallepisodes.btntext;
+        this.btnParticipants = this.glb.getlangFormButtonText().btnpartartists.btntext   
       });
       this.getpagedata(this.currpageSlug);
+      this.btnallEpisodes = this.glb.getlangFormButtonText().btnallepisodes.btntext;
+      this.btnParticipants = this.glb.getlangFormButtonText().btnpartartists.btntext   
       
     });
     this._anchor.listen();

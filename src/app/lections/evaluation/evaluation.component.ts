@@ -21,7 +21,8 @@ export class EvaluationComponent implements OnInit {
   showExtraVideobox:boolean = false;
   showWorksheetHR:boolean= false;  
   showExtraMaterialHR:boolean= false;
-
+  btnevaluation:any;
+  btnallEpisodes:any;
 testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
 
   constructor(private wpApi:WpApiService, private glb:Global ,private route:ActivatedRoute, private router:Router, private _sanitizer: DomSanitizer,private viewPortScroller: ViewportScroller, private _anchor: AncorScrollService) { 
@@ -31,9 +32,15 @@ testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
 
   ngOnInit() {         
     this.wpApi.currentPageDataHandler.subscribe(()=>{
-        this.getpagedata();        
+        this.getpagedata();    
+        this.btnevaluation = this.glb.getlangFormButtonText().btnepisode14Evaluation.btntext;   
+        this.btnallEpisodes = this.glb.getlangFormButtonText().btnallepisodes.btntext;
+       
       })
-    this.getpagedata();    
+    this.getpagedata(); 
+    this.btnevaluation = this.glb.getlangFormButtonText().btnepisode14Evaluation.btntext; 
+    this.btnallEpisodes = this.glb.getlangFormButtonText().btnallepisodes.btntext;
+      
     this._anchor.listen();
   }
 

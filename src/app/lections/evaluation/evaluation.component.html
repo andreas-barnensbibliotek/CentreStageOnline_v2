@@ -16,7 +16,7 @@
       <a class="link-button btn btn-episodes"  routerLink="." fragment="all-episodes" >
         <span class="button-link-text-2">
           <span class="button-link-text-2" id="button-link-text-1">          
-            <font color="#ffffff" class="button-link-text-1">All episodes</font>
+            <font color="#ffffff" class="button-link-text-1">{{btnallEpisodes}}</font>
           </span>
         </span>
       </a>
@@ -33,7 +33,7 @@
       <main class="container-grid main-text-episodes">
         <div [innerHTML]="mainPageData[0].acf.maincontent"></div>
         <a class="link-button btn btn-1002 evaluation" href="https://www.trippus.net/evaluationcentrestage">
-            <span class="button-link-text-3" id="button-link-text-2">Let me tell you what I think...</span></a>
+            <span class="button-link-text-3" id="button-link-text-2">{{btnevaluation}}</span></a>
       </main>      
       <div class="rule rule-2" *ngIf="showWorksheetHR">
         <hr>
@@ -46,10 +46,7 @@
       </div>
       <div class="container-grid external-links" [innerHTML]="mainPageData[0].acf.extramaterialblock">
         <div class="lds-dual-ring"></div>
-      </div>
-      <div class="container-grid div-headings ep1" *ngIf="showExtraVideobox">
-        <h1 class="title-episode">Participating artists<br></h1>
-      </div>
+      </div>      
       <section class="container-grid wrap-video-ep1" *ngIf="showExtraVideobox">
         <div class="responsive-video vimeo">         
           <iframe [src]="extravideoUrl" frameborder="0" allow="autoplay; fullscreen" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>

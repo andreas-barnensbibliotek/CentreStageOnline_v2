@@ -67,7 +67,16 @@ export class registerUserFormData {
             },
             btnoverviewtoStart:{
                 btntext:"Enough. Let's start!"
-            }
+            },
+            btnepisode14Evaluation:{
+                btntext:"Let me tell you what I think..."
+            },
+            btnallepisodes:{
+                btntext:"All episodes"
+            },
+            btnpartartists:{
+                btntext:"Participating artists"
+            }            
         },
         {
             type: "SV",
@@ -125,6 +134,15 @@ export class registerUserFormData {
             },
             btnoverviewtoStart:{
                 btntext:"Tillräckligt. Låt oss börja!"
+            },
+            btnepisode14Evaluation:{
+                btntext:"Låt mig berätta vad jag tycker..."
+            },
+            btnallepisodes:{
+                btntext:"Alla avsnitt"
+            },
+            btnpartartists:{
+                btntext:"Deltagande konstnärer"
             }
         },
         {
@@ -183,7 +201,16 @@ export class registerUserFormData {
             },
             btnoverviewtoStart:{
                 btntext:"Dość. Zaczynajmy!"
-            } 
+            },
+            btnepisode14Evaluation:{
+                btntext:"Powiem ci, co myślę..."
+            },
+            btnallepisodes:{
+                btntext:"Wszystkie odcinki"
+            },
+            btnpartartists:{
+                btntext:"Artyści biorący udział"
+            }
         },
         {
             type: "DE",
@@ -241,6 +268,15 @@ export class registerUserFormData {
             },
             btnoverviewtoStart:{
                 btntext:"Genug. Lasst uns beginnen!"
+            },
+            btnepisode14Evaluation:{
+                btntext:"Lass mich dir sagen, was ich denke..."
+            },
+            btnallepisodes:{
+                btntext:"Alle Folgen"
+            },
+            btnpartartists:{
+                btntext:"Teilnehmende Künstler"
             }
         },
         {
@@ -299,6 +335,15 @@ export class registerUserFormData {
             },
             btnoverviewtoStart:{
                 btntext:"Assez. Commençons!"
+            },
+            btnepisode14Evaluation:{
+                btntext:"Laissez-moi vous dire ce que je pense..."
+            },
+            btnallepisodes:{
+                btntext:"Tous les épisodes"
+            },
+            btnpartartists:{
+                btntext:"Artistes participants"
             }
         },
         {
@@ -357,6 +402,15 @@ export class registerUserFormData {
             },
             btnoverviewtoStart:{
                 btntext:"Suficiente. ¡Empecemos!"
+            },
+            btnepisode14Evaluation:{
+                btntext:"Déjame decirte lo que pienso..."
+            },
+            btnallepisodes:{
+                btntext:"Todos los episodios"
+            },
+            btnpartartists:{
+                btntext:"Artistas participantes"
             }
         }
     ]   

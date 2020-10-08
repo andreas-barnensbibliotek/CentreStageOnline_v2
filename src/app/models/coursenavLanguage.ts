@@ -185,119 +185,119 @@ export class coursenavLanguage {
         {
             type: "DE",
             one:{
-                title:"Einführung",
-                linktext:"Einführung",
+                title:"Warum sind diese Filme sehenswert?",
+                linktext:"Warum sind diese Filme sehenswert?",
               },
               two:{
-                title:"Dostajesz to, czego chcesz",
-                linktext:"Dostajesz to, czego chcesz",
+                title:"Ziele erreichen",
+                linktext:"Ziele erreichen",
               },
               three:{
-                title:"Kim chcesz być",
-                linktext:"Kim chcesz być",
+                title:"Wer möchten Sie sein?",
+                linktext:"Wer möchten Sie sein?",
               },
               four:{
-                title:"Tworzenie zmiany - część 1 i 2",
-                linktext:"Tworzenie zmiany - część 1 i 2",               
+                title:"Veränderung schaffen - Teil 1 und 2",
+                linktext:"Veränderung schaffen - Teil 1 und 2",               
               },
               five:{
-                title:"Rozmawianie z właściwymi ludźmi o właściwych rzeczach",
-                linktext:"Rozmawianie z właściwymi ludźmi o właściwych rzeczach",
+                title:"Mit den richtigen Leuten über die richtigen Dinge sprechen",
+                linktext:"Mit den richtigen Leuten über die richtigen Dinge sprechen",
               },
               six:{
-                title:"Zdobywanie pracy",
-                linktext:"Zdobywanie pracy",
+                title:"Aufträge bekommen",
+                linktext:"Aufträge bekommen",
               },
               seven:{
-                title:"Przekazywanie wiadomości",
-                linktext:"Przekazywanie wiadomości",
+                title:"Vermittlung Ihrer Botschaft",
+                linktext:"Vermittlung Ihrer Botschaft",
               },
               eight:{
-                title:"Pokonywanie przeszkód",
-                linktext:"Pokonywanie przeszkód",
+                title:"Hindernisse überwinden",
+                linktext:"Hindernisse überwinden",
               },
               nine:{
-                title:"Wybór odpowiedniego obrazu",
-                linktext:"Wybór odpowiedniego obrazu",
+                title:"Das richtige Bild auswählen",
+                linktext:"Das richtige Bild auswählen",
               },
               ten:{
-                title:"Zdobywanie relacji w mediach",
-                linktext:"Zdobywanie relacji w mediach",
+                title:"Medienaufmerksamkeit gewinnen",
+                linktext:"Medienaufmerksamkeit gewinnen",
               },
               eleven:{
-                title:"Przekazywanie wiadomości online - część 1 i 2",
-                linktext:"Przekazywanie wiadomości online - część 1 i 2",
+                title:"Vermittlung Ihrer Nachricht online - Teil 1 und 2",
+                linktext:"Vermittlung Ihrer Nachricht online - Teil 1 und 2",
               },
               twelve:{
-                title:"Bycie widocznym online",
-                linktext:"Bycie widocznym online",
+                title:"Online sichtbar sein",
+                linktext:"Online sichtbar sein",
               },
               thirteen:{
-                title:"Co następne?",
-                linktext:"Co następne?",
+                title:"Und was jetzt?",
+                linktext:"Und was jetzt?",
               },
               fourteen:{
-                title:"Ocena",
-                linktext:"Ocena",
+                title:"Auswertung",
+                linktext:"Auswertung",
               }
         },
         {
             type: "FR",
             one:{
-                title:"introduction",
-                linktext:"introduction",
+                title:"Introduction",
+                linktext:"Introduction",
               },
               two:{
-                title:"Dostajesz to, czego chcesz",
-                linktext:"Dostajesz to, czego chcesz",
+                title:"Obtenir ce que vous voulez",
+                linktext:"Obtenir ce que vous voulez",
               },
               three:{
-                title:"Kim chcesz być",
-                linktext:"Kim chcesz być",
+                title:"Qui voulez-vous être? ",
+                linktext:"Qui voulez-vous être? ",
               },
               four:{
-                title:"Tworzenie zmiany - część 1 i 2",
-                linktext:"Tworzenie zmiany - część 1 i 2",               
+                title:"Créer le changement - partie 1 et 2",
+                linktext:"Créer le changement - partie 1 et 2",               
               },
               five:{
-                title:"Rozmawianie z właściwymi ludźmi o właściwych rzeczach",
-                linktext:"Rozmawianie z właściwymi ludźmi o właściwych rzeczach",
+                title:"Parler aux bonnes personnes des bonnes choses",
+                linktext:"Parler aux bonnes personnes des bonnes choses",
               },
               six:{
-                title:"Zdobywanie pracy",
-                linktext:"Zdobywanie pracy",
+                title:"Travailler",
+                linktext:"Travailler",
               },
               seven:{
-                title:"Przekazywanie wiadomości",
-                linktext:"Przekazywanie wiadomości",
+                title:"Faire passer votre message",
+                linktext:"Faire passer votre message",
               },
               eight:{
-                title:"Pokonywanie przeszkód",
-                linktext:"Pokonywanie przeszkód",
+                title:"Surmonter les obstacles",
+                linktext:"Surmonter les obstacles",
               },
               nine:{
-                title:"Wybór odpowiedniego obrazu",
-                linktext:"Wybór odpowiedniego obrazu",
+                title:"Choisir la bonne image",
+                linktext:"Choisir la bonne image",
               },
               ten:{
-                title:"Zdobywanie relacji w mediach",
-                linktext:"Zdobywanie relacji w mediach",
+                title:"Obtenir une couverture médiatique",
+                linktext:"Obtenir une couverture médiatique",
               },
               eleven:{
-                title:"Przekazywanie wiadomości online - część 1 i 2",
-                linktext:"Przekazywanie wiadomości online - część 1 i 2",
+                title:"Faire passer votre message en ligne  - partie 1 et 2",
+                linktext:"Faire passer votre message en ligne  - partie 1 et 2",
               },
               twelve:{
-                title:"Bycie widocznym online",
-                linktext:"Bycie widocznym online",
+                title:"Être visible en ligne",
+                linktext:"Être visible en ligne",
               },
               thirteen:{
-                title:"Co następne?",
-                linktext:"Co następne?",
+                title:"Et ensuite?",
+                linktext:"Et ensuite?",
               },
               fourteen:{
-                title:"Ocena",
-                linktext:"Ocena",
+                title:"Évaluation",
+                linktext:"Évaluation",
               }
         },
         {
@@ -307,56 +307,56 @@ export class coursenavLanguage {
                 linktext:"Introducción",
               },
               two:{
-                title:"Dostajesz to, czego chcesz",
-                linktext:"Dostajesz to, czego chcesz",
+                title:"Conseguir lo que quieres",
+                linktext:"Conseguir lo que quieres",
               },
               three:{
-                title:"Kim chcesz być",
-                linktext:"Kim chcesz być",
+                title:"¿Quién quieres ser?",
+                linktext:"¿Quién quieres ser?",
               },
               four:{
-                title:"Tworzenie zmiany - część 1 i 2",
-                linktext:"Tworzenie zmiany - część 1 i 2",               
+                title:"Creando cambio - parte 1 y 2",
+                linktext:"Creando cambio - parte 1 y 2",               
               },
               five:{
-                title:"Rozmawianie z właściwymi ludźmi o właściwych rzeczach",
-                linktext:"Rozmawianie z właściwymi ludźmi o właściwych rzeczach",
+                title:"Hablar a las personas adecuadas sobre las cosas adecuadas.",
+                linktext:"Hablar a las personas adecuadas sobre las cosas adecuadas.",
               },
               six:{
-                title:"Zdobywanie pracy",
-                linktext:"Zdobywanie pracy",
+                title:"Conseguir trabajo",
+                linktext:"Conseguir trabajo",
               },
               seven:{
-                title:"Przekazywanie wiadomości",
-                linktext:"Przekazywanie wiadomości",
+                title:"Hacer llegar tu mensaje",
+                linktext:"Hacer llegar tu mensaje",
               },
               eight:{
-                title:"Pokonywanie przeszkód",
-                linktext:"Pokonywanie przeszkód",
+                title:"Superar obstáculos",
+                linktext:"Superar obstáculos",
               },
               nine:{
-                title:"Wybór odpowiedniego obrazu",
-                linktext:"Wybór odpowiedniego obrazu",
+                title:"Elegir la imagen adecuada",
+                linktext:"Elegir la imagen adecuada",
               },
               ten:{
-                title:"Zdobywanie relacji w mediach",
-                linktext:"Zdobywanie relacji w mediach",
+                title:"Conseguir cobertura mediática",
+                linktext:"Conseguir cobertura mediática",
               },
               eleven:{
-                title:"Przekazywanie wiadomości online - część 1 i 2",
-                linktext:"Przekazywanie wiadomości online - część 1 i 2",
+                title:"Hacer llegar tu mensaje online - parte 1 y 2",
+                linktext:"Hacer llegar tu mensaje online - parte 1 y 2",
               },
               twelve:{
-                title:"Bycie widocznym online",
-                linktext:"Bycie widocznym online",
+                title:"Ser visible online.",
+                linktext:"Ser visible online.",
               },
               thirteen:{
-                title:"Co następne?",
-                linktext:"Co następne?",
+                title:"¿Y ahora qué? ",
+                linktext:"¿Y ahora qué? ",
               },
               fourteen:{
-                title:"Ocena",
-                linktext:"Ocena",
+                title:"Evaluación",
+                linktext:"Evaluación",
               }
         }
     ]   

@@ -45,9 +45,7 @@ export class WelcomeComponent implements OnInit {
       
       if((Object.keys(Response).length === 0)){ 
         this._router.navigateByUrl("/404");
-      }
-  
-      
+      }     
       console.log(this.mainPageData)  
     });
   }

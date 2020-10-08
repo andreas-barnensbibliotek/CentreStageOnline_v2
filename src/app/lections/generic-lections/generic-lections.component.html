@@ -16,7 +16,7 @@
       <a class="link-button btn btn-episodes"  routerLink="." fragment="all-episodes" >
         <span class="button-link-text-2">
           <span class="button-link-text-2" id="button-link-text-1">          
-            <font color="#ffffff" class="button-link-text-1">All episodes</font>
+            <font color="#ffffff" class="button-link-text-1">{{btnallEpisodes}}</font>
           </span>
         </span>
       </a>
@@ -46,7 +46,7 @@
         <div class="lds-dual-ring"></div>
       </div>
       <div class="container-grid div-headings ep1" *ngIf="showExtraVideobox">
-        <h1 class="title-episode">Participating artists<br></h1>
+        <h1 class="title-episode">{{btnParticipants}}<br></h1>
       </div>
       <section class="container-grid wrap-video-ep1" *ngIf="showExtraVideobox">
         <div class="responsive-video vimeo">         

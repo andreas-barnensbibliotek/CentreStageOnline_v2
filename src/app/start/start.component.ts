@@ -60,6 +60,6 @@ export class StartComponent implements OnInit {
     this.glb.getCookieText();
     this.wpApi.currentPageDataHandler.next();    
     this.glb.currentLanguageHandler.next();
-    this._router.navigate(['/about']);
+    this._router.navigate(['/welcome']);
   }
 }
