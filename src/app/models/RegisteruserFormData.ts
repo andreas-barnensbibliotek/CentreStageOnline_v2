@@ -18,43 +18,58 @@ export class registerUserFormData {
             },
             lang:{
                 labeltxt:"Language",
-                hlptxt:"Insert language here",
-                placeholdertxt:"Insert language",
+                hlptxt:"", //"Insert language here",
+                placeholdertxt:"", //"Insert language",
+            },
+            comments:{
+                labeltxt:"Comments",
+                hlptxt:"", //"Gender comments",
+                placeholdertxt:"", //"Gender comments",
+            },
+            country:{
+                labeltxt:"Country",
+                hlptxt:"", //"Insert Country here",
+                placeholdertxt:"", //"Insert Country",
             },
             gender:{
                 labeltxt:"Gender",
-                hlptxt:"Insert gender",
-                placeholdertxt:"Insert gender",
+                alternativ:{
+                    alt1:"Female",
+                    alt2:"Male",
+                    alt3:"Other"
+                },
+                hlptxt:"", //"Insert gender",
+                placeholdertxt:"", //"Insert gender",
             },
             firstname:{
                 labeltxt:"Firstname",
-                hlptxt:"Insert your firstname",
-                placeholdertxt:"Insert your firstname",
+                hlptxt:"", //Insert your firstname
+                placeholdertxt:"", //"Insert your firstname",
             },
             lastname:{
-                labeltxt:"Lastname",
-                hlptxt:"Insert your lastname",
-                placeholdertxt:"Insert your lastname",
+                labeltxt:"Surname",
+                hlptxt:"", //"Insert your lastname",
+                placeholdertxt:"", //"Insert your lastname",
             },
             befatting:{
                 labeltxt:"Job title",
-                hlptxt:"Insert job title",
-                placeholdertxt:"Insert job title",
+                hlptxt:"", //"Insert job title",
+                placeholdertxt:"", //:"Insert job title",
             },
             profession:{
                 labeltxt:"Profession",
-                hlptxt:"Insert your profession",
-                placeholdertxt:"Insert your profession",
+                hlptxt:"", //"Insert your profession",
+                placeholdertxt:"", //"Insert your profession",
             },
             organisation:{
                 labeltxt:"Organisation",
-                hlptxt:"Insert your organisation",
-                placeholdertxt:"Insert your organisation",
+                hlptxt:"", //"Insert your organisation",
+                placeholdertxt:"", //"Insert your organisation",
             },
             email:{
                 labeltxt:"Email",
-                hlptxt:"Insert an emailadress",
-                placeholdertxt:"Insert an emailadress",
+                hlptxt:"", //"Insert an emailadress",
+                placeholdertxt:"", //"Insert an emailadress",
             },
             submit:{
                 btntext:"Register"
@@ -85,43 +100,58 @@ export class registerUserFormData {
             },
             lang:{
                 labeltxt:"Språk",
-                hlptxt:"Ange språk",
-                placeholdertxt:"Ange språk",
+                hlptxt:"", //"Ange språk",
+                placeholdertxt:"", //:"Ange språk",
+            },
+            comments:{
+                labeltxt:"Kommentar",
+                hlptxt:"", //"Gender comments",
+                placeholdertxt:"", //"Gender comments",
+            },
+            country:{
+                labeltxt:"Land",
+                hlptxt:"", //"Insert Country here",
+                placeholdertxt:"", //"Insert Country",
             },
             gender:{
                 labeltxt:"Kön",
-                hlptxt:"Ange Kön",
-                placeholdertxt:"Ange kön",
+                alternativ:{
+                    alt1:"Kvinna",
+                    alt2:"Man",
+                    alt3:"Annat"
+                },
+                hlptxt:"", //"Insert gender",
+                placeholdertxt:"", //"Insert gender",
             },
             firstname:{
                 labeltxt:"Förnamn",
-                hlptxt:"Ange förnamn",
-                placeholdertxt:"Ange förnamn",
+                hlptxt:"", //"Ange förnamn",
+                placeholdertxt:"", //"Ange förnamn",
             },
             lastname:{
                 labeltxt:"Efternamn",
-                hlptxt:"Ange efternamn",
-                placeholdertxt:"Ange efternamn",
+                hlptxt:"", //"Ange efternamn",
+                placeholdertxt:"", //:"Ange efternamn",
             },
             befatting:{
                 labeltxt:"Befattning",
-                hlptxt:"Ange befattning",
-                placeholdertxt:"Ange befattning",
+                hlptxt:"", //"Ange befattning",
+                placeholdertxt:"", //:"Ange befattning",
             },
             profession:{
                 labeltxt:"Befattning",
-                hlptxt:"Ange befattning",
-                placeholdertxt:"Ange befattning",
+                hlptxt:"", //"Ange befattning",
+                placeholdertxt:"", //:"Ange befattning",
             },
             organisation:{
                 labeltxt:"Organisation",
-                hlptxt:"Ange organisation",
-                placeholdertxt:"Ange organisation",
+                hlptxt:"", //"Ange organisation",
+                placeholdertxt:"", //:"Ange organisation",
             },
             email:{
                 labeltxt:"Epost",
-                hlptxt:"Ange epostadress",
-                placeholdertxt:"Ange epostadress",
+                hlptxt:"", //"Ange epostadress",
+                placeholdertxt:"", //:"Ange epostadress",
             },
             submit:{
                 btntext:"Registrera"
@@ -152,43 +182,58 @@ export class registerUserFormData {
             },
             lang:{
                 labeltxt:"Język",
-                hlptxt:"wprowadź język",
-                placeholdertxt:"wprowadź język",
+                hlptxt:"", //"wprowadź język",
+                placeholdertxt:"", //:"wprowadź język",
+            },
+            comments:{
+                labeltxt:"Komentarze",
+                hlptxt:"", //"Gender comments",
+                placeholdertxt:"", //:"Gender comments",
+            },
+            country:{
+                labeltxt:"Kraj",
+                hlptxt:"", //"Insert Country here",
+                placeholdertxt:"", //:"Insert Country",
             },
             gender:{
-                labeltxt:"Seks",
-                hlptxt:"wprowadź płeć",
-                placeholdertxt:"wprowadź płeć",
-            },
+                labeltxt:"płeć",
+                alternativ:{
+                    alt1:"Płeć żeńska",
+                    alt2:"Męski",
+                    alt3:"Inny"
+                },
+                hlptxt:"", //"wprowadź płeć",
+                placeholdertxt:"", //:"wprowadź płeć",
+            },           
             firstname:{
                 labeltxt:"Imię",
-                hlptxt:"Wpisz swoje imię",
-                placeholdertxt:"Wpisz swoje imię",
+                hlptxt:"", //"Wpisz swoje imię",
+                placeholdertxt:"", //:"Wpisz swoje imię",
             },
             lastname:{
                 labeltxt:"Nazwisko",
-                hlptxt:"Wpisz swoje nazwisko",
-                placeholdertxt:"Wpisz swoje nazwisko",
+                hlptxt:"", //"Wpisz swoje nazwisko",
+                placeholdertxt:"", //:"Wpisz swoje nazwisko",
             },
             befatting:{
                 labeltxt:"Pozycja",
-                hlptxt:"Podaj swoją pozycję",
-                placeholdertxt:"Podaj swoją pozycję",
+                hlptxt:"", //"Podaj swoją pozycję",
+                placeholdertxt:"", //:"Podaj swoją pozycję",
             },
             profession:{
                 labeltxt:"Pozycja",
-                hlptxt:"Podaj swoją pozycję",
-                placeholdertxt:"Podaj swoją pozycję",
+                hlptxt:"", //"Podaj swoją pozycję",
+                placeholdertxt:"", //:"Podaj swoją pozycję",
             },
             organisation:{
                 labeltxt:"Organizacja",
-                hlptxt:"Organizacja",
-                placeholdertxt:"Organizacja",
+                hlptxt:"", //"Organizacja",
+                placeholdertxt:"", //:"Organizacja",
             },
             email:{
                 labeltxt:"E-mail",
-                hlptxt:"Wpisz adres e-mail",
-                placeholdertxt:"Wpisz adres e-mail",
+                hlptxt:"", //"Wpisz adres e-mail",
+                placeholdertxt:"", //:"Wpisz adres e-mail",
             },
             submit:{
                 btntext:"Zarejestrować"
@@ -219,43 +264,58 @@ export class registerUserFormData {
             },
             lang:{
                 labeltxt:"Sprache",
-                hlptxt:"Sprache eingeben",
-                placeholdertxt:"Sprache eingeben",
+                hlptxt:"", //"Sprache eingeben",
+                placeholdertxt:"", //:"Sprache eingeben",
+            },
+            comments:{
+                labeltxt:"Bemerkungen",
+                hlptxt:"", //"Gender comments",
+                placeholdertxt:"", //:"Gender comments",
+            },
+            country:{
+                labeltxt:"Land",
+                hlptxt:"", //"Insert Country here",
+                placeholdertxt:"", //:"Insert Country",
             },
             gender:{
-                labeltxt:"Sex",
-                hlptxt:"Geben Sie das Geschlecht ein",
-                placeholdertxt:"Geben Sie das Geschlecht ein",
-            },           
+                labeltxt:"Geschlecht",
+                alternativ:{
+                    alt1:"Weiblich",
+                    alt2:"Männlich",
+                    alt3:"Andere"
+                },
+                hlptxt:"", //"Geben Sie das Geschlecht ein",
+                placeholdertxt:"", //:"Geben Sie das Geschlecht ein",
+            },                
             firstname:{
                 labeltxt:"Vorname",
-                hlptxt:"Vorname einfügen",
-                placeholdertxt:"Vorname einfügen",
+                hlptxt:"", //"Vorname einfügen",
+                placeholdertxt:"", //:"Vorname einfügen",
             },
             lastname:{
                 labeltxt:"Nachname",
-                hlptxt:"Nachname einfügen",
-                placeholdertxt:"Nachname einfügen",
+                hlptxt:"", //"Nachname einfügen",
+                placeholdertxt:"", //:"Nachname einfügen",
             },
             befatting:{
                 labeltxt:"Position",
-                hlptxt:"Position eingeben",
-                placeholdertxt:"Position eingeben",
+                hlptxt:"", //"Position eingeben",
+                placeholdertxt:"", //:"Position eingeben",
             },
              profession:{
                 labeltxt:"Position",
-                hlptxt:"Position eingeben",
-                placeholdertxt:"Position eingeben",
+                hlptxt:"", //"Position eingeben",
+                placeholdertxt:"", //:"Position eingeben",
             },
             organisation:{
                 labeltxt:"Organisation",
-                hlptxt:"Fügen Sie Ihre Organisation ein",
-                placeholdertxt:"Fügen Sie Ihre Organisation ein",
+                hlptxt:"", //"Fügen Sie Ihre Organisation ein",
+                placeholdertxt:"", //:"Fügen Sie Ihre Organisation ein",
             },
             email:{
                 labeltxt:"Email",
-                hlptxt:"Geben Sie eine E-Mail-Adresse ein",
-                placeholdertxt:"Geben Sie eine E-Mail-Adresse ein",
+                hlptxt:"", //"Geben Sie eine E-Mail-Adresse ein",
+                placeholdertxt:"", //:"Geben Sie eine E-Mail-Adresse ein",
             },
             submit:{
                 btntext:"Registrieren"
@@ -286,43 +346,58 @@ export class registerUserFormData {
             },
             lang:{
                 labeltxt:"Langue",
-                hlptxt:"Entrez la langue",
-                placeholdertxt:"Entrez la langue",
+                hlptxt:"", //"Entrez la langue",
+                placeholdertxt:"", //:"Entrez la langue",
+            },
+            comments:{
+                labeltxt:"Commentaires",
+                hlptxt:"", //"Gender comments",
+                placeholdertxt:"", //:"Gender comments",
+            },
+            country:{
+                labeltxt:"Pays",
+                hlptxt:"", //"Insert Country here",
+                placeholdertxt:"", //:"Insert Country",
             },
             gender:{
-                labeltxt:"Sexe",
-                hlptxt:"Entrez le sexe",
-                placeholdertxt:"Entrez le sexe",
-            },           
+                labeltxt:"le genre",
+                alternativ:{
+                    alt1:"femelle",
+                    alt2:"mâle",
+                    alt3:"Autre"
+                },
+                hlptxt:"", //"Entrez le sexe",
+                placeholdertxt:"", //:"Entrez le sexe",
+            },             
             firstname:{
                 labeltxt:"Prénom",
-                hlptxt:"Insérez votre prénom",
-                placeholdertxt:"Insérez votre prénom",
+                hlptxt:"", //"Insérez votre prénom",
+                placeholdertxt:"", //:"Insérez votre prénom",
             },
             lastname:{
                 labeltxt:"Nom de famille",
-                hlptxt:"Insérez votre nom",
-                placeholdertxt:"Insérez votre nom",
+                hlptxt:"", //"Insérez votre nom",
+                placeholdertxt:"", //:"Insérez votre nom",
             },
             befatting:{
                 labeltxt:"Position",
-                hlptxt:"Entrer la position",
-                placeholdertxt:"Entrer la position",
+                hlptxt:"", //"Entrer la position",
+                placeholdertxt:"", //:"Entrer la position",
             },
             profession:{
                 labeltxt:"Position",
-                hlptxt:"Entrer la position",
-                placeholdertxt:"Entrer la position",
+                hlptxt:"", //"Entrer la position",
+                placeholdertxt:"", //:"Entrer la position",
             },
             organisation:{
                 labeltxt:"Organisation",
-                hlptxt:"Insérez votre organisation",
-                placeholdertxt:"Insérez votre organisation",
+                hlptxt:"", //"Insérez votre organisation",
+                placeholdertxt:"", //:"Insérez votre organisation",
             },
             email:{
                 labeltxt:"E-mail",
-                hlptxt:"Insérer une adresse e-mail",
-                placeholdertxt:"Insérer une adresse e-mail",
+                hlptxt:"", //"Insérer une adresse e-mail",
+                placeholdertxt:"", //:"Insérer une adresse e-mail",
             },
             submit:{
                 btntext:"S'inscrire"
@@ -353,43 +428,58 @@ export class registerUserFormData {
             },
             lang:{
                 labeltxt:"Idioma",
-                hlptxt:"Ingrese idioma",
-                placeholdertxt:"Ingrese idioma",
+                hlptxt:"", //"Ingrese idioma",
+                placeholdertxt:"", //:"Ingrese idioma",
+            }, 
+            comments:{
+                labeltxt:"Comentarios",
+                hlptxt:"", //"Gender comments",
+                placeholdertxt:"", //:"Gender comments",
+            },
+            country:{
+                labeltxt:"País",
+                hlptxt:"", //"Insert Country here",
+                placeholdertxt:"", //:"Insert Country",
             },
             gender:{
-                labeltxt:"sexo",
-                hlptxt:"ingrese género",
-                placeholdertxt:"ingrese género",
-            },            
+                labeltxt:"Género",
+                alternativ:{
+                    alt1:"Hembra",
+                    alt2:"Hombre",
+                    alt3:"Otro"
+                },
+                hlptxt:"", //"Ingrese género",
+                placeholdertxt:"", //:"Ingrese género",
+            }, 
             firstname:{
                 labeltxt:"Primer nombre",
-                hlptxt:"Inserta tu nombre",
-                placeholdertxt:"Inserta tu nombre",
+                hlptxt:"", //"Inserta tu nombre",
+                placeholdertxt:"", //:"Inserta tu nombre",
             },
             lastname:{
                 labeltxt:"Apellido",
-                hlptxt:"Inserta tu apellido",
-                placeholdertxt:"Inserta tu apellido",
+                hlptxt:"", //"Inserta tu apellido",
+                placeholdertxt:"", //:"Inserta tu apellido",
             },
             befatting:{
                 labeltxt:"Posición",
-                hlptxt:"Ingrese la posición",
-                placeholdertxt:"Ingrese la posición",
+                hlptxt:"", //"Ingrese la posición",
+                placeholdertxt:"", //:"Ingrese la posición",
             },
             profession:{
                 labeltxt:"Posición",
-                hlptxt:"Ingrese la posición",
-                placeholdertxt:"Ingrese la posición",
+                hlptxt:"", //"Ingrese la posición",
+                placeholdertxt:"", //:"Ingrese la posición",
             },
             organisation:{
                 labeltxt:"Organización",
-                hlptxt:"Organización",
-                placeholdertxt:"Organización",
+                hlptxt:"", //"Organización",
+                placeholdertxt:"", //:"Organización",
             },
             email:{
                 labeltxt:"Email",
-                hlptxt:"Insertar una dirección de correo electrónico",
-                placeholdertxt:"Insertar una dirección de correo electrónico",
+                hlptxt:"", //"Insertar una dirección de correo electrónico",
+                placeholdertxt:"", //:"Insertar una dirección de correo electrónico",
             },
             submit:{
                 btntext:"Registrarse"

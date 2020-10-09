@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
 /* Text Elements */
 
 h1 {
@@ -152,10 +155,6 @@ h5.quote-name-episodes {
   text-align: center;
 }
 
-h5.heading-1 {
-  margin-bottom: 20px;
-}
-
 h6 {
   margin-bottom: 0;
   color: #000;
@@ -267,10 +266,6 @@ p.paragraph a.paragraph-text-14 {
   color: #000;
   text-decoration: none;
   font-weight: 600;
-}
-
-p.paragraph span.paragraph-text-13 {
-  font-weight: 700;
 }
 
 p.paragraph a.paragraph-text-5:hover {
@@ -401,9 +396,11 @@ blockquote.quote-text {
 blockquote {
   text-align: center;
   font-size: 40px;
-  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+  font-family: 'Libre Baskerville', 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif !important;
 }
-
+blockquote p {
+  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif !important;
+}
 a.link-text.nav-link {
   margin-right: 4px;
   margin-left: 4px;
@@ -789,7 +786,7 @@ a.link-button.btn.btn-1002 {
   padding-right: 40px;
   padding-left: 40px;
   height: 50px;
-  /* background-color: rgba(255, 255, 255, .6); */
+  background-color: rgba(255, 255, 255, .6);
   color: #000;
   text-align: center;
   font-size: 22px;
@@ -897,52 +894,6 @@ a.link-button span.button-link-text-6 {
   color: #fff;
 }
 
-a.link-button.btn.btn-1002.register {
-  margin-top: 40px;
-  margin-right: 20px;
-  margin-left: 0;
-  padding-right: 10px;
-  padding-left: 10px;
-  width: 100%;
-  background-color: #485a89;
-  text-align: center;
-
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-          align-self: auto;
-  justify-self: auto;
-}
-button.link-button.btn.btn-1002.register {
-  margin-top: 40px;
-  margin-right: 20px;
-  margin-left: 0;
-  padding-right: 10px;
-  padding-left: 10px;
-  width: 100%;
-  background-color: #485a89;
-  text-align: center;
-  background-image:none;
-  -webkit-align-self: auto;
-  -ms-flex-item-align: auto;
-          align-self: auto;
-  justify-self: auto;
-  border-radius: 0.25rem;
-}
-button.link-button.btn.btn-1002 {
-  margin: 30px 0 10px;
-  padding-right: 40px;
-  padding-left: 40px;
-  height: 50px;
-  /* background-color: rgba(255, 255, 255, .6); */
-  color: #fff;
-  text-align: center;
-  font-size: 22px;
-  line-height: 39px;
-}
-button.link-button.btn.btn-1002:hover {
-  /* background-color: #fff; */
-  opacity: .8;
-}
 a.link-button.btn.btn-secondary.dropdown-toggle.outofview {
   border-style: none;
   border-color: transparent;
@@ -1047,76 +998,6 @@ a.link-button.btn-secondary-start.btn-start.dripdown-toggle-start:active {
 
 a.link-button span.button-link-text-2:active {
   color: #fff;
-}
-
-form.form-container.form-container-1 {
-  padding: 20px 0;
-  max-width: 540px;
-  width: 100%;
-}
-
-input[type=text].input-2 {
-  margin-right: 4%;
-  width: 48%;
-}
-
-input[type=text].input-1 {
-  margin-right: 0;
-  width: 48%;
-}
-
-input[type=text].input-4 {
-  width: 100%;
-}
-
-input[type=text].input-3 {
-  width: 100%;
-}
-
-input[type=email].email-1 {
-  width: 100%;
-}
-
-label.radio.radio-button-1 {
-  width: 30%;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-label.radio.radio-button-2 {
-  width: 30%;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-label.radio.radio-button-3 {
-  width: 30%;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-textarea.textarea-1 {
-  width: 100%;
-  height: 70px;
-}
-
-label.label.label-1 {
-  margin-top: 20px;
-  margin-bottom: 4px;
-  width: 100%;
-  font-weight: 700;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-label.label.label-1.name {
-  margin-right: 4%;
-  width: 48%;
-}
-
-label.label.normal {
-  font-weight: 400;
-}
-
-label.label.label-1.surname {
-  margin-right: 0;
-  width: 48%;
 }
 
 /* Layout Elements */
@@ -1778,6 +1659,13 @@ div.responsive-picture.picture-2 {
   width: auto;
 }
 
+.container-grid.overview-narrow {
+  display: block;
+  margin-bottom: 50px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
 div.responsive-video.video-platform-1 {
   min-width: 40%;
   max-width: none;
@@ -2322,7 +2210,9 @@ dd.crew.negative-text {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
   padding: 0 15px 70px;
   background-color: transparent;
   background-image: url('../bgr08-E.jpg');
@@ -2580,14 +2470,6 @@ li.list-item.list-item-6 {
      -moz-box-direction: normal;
 }
 
-.rule.rule-3 {
-  margin-top: 20px;
-}
-
-.container-grid.footer-container-wrap.no-margin {
-  margin-top: 0;
-}
-
 .container-grid.dropdown-menu:hover {
   border-style: none;
   background-color: rgba(255, 255, 255, .95);
@@ -2736,6 +2618,11 @@ dd a.list-description-text-6:hover {
   .container-grid.main-text-episodes {
     margin-top: 10px;
     margin-bottom: 16px;
+  }
+
+  .container-grid.overview-narrow {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .container-grid.partners.wrap-main-text {
@@ -3007,6 +2894,10 @@ dd a.list-description-text-6:hover {
     -webkit-justify-content: flex-start;
        -moz-box-pack: start;
             justify-content: flex-start;
+  }
+
+  .container-grid.overview-narrow {
+    padding-left: 10px;
   }
 
   dt.negative-text {
@@ -3402,6 +3293,14 @@ dd a.list-description-text-6:hover {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+  }
+
+  .container-grid.overview-narrow {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 50px;
+    max-width: 800px;
+    width: 800px;
   }
 
   .container-grid.wrap-video-ep1 {
@@ -4211,7 +4110,7 @@ dd a.list-description-text-6:hover {
 
   a.link-button.btn.btn-1002:hover {
     /* background-color: #fff; */
-    opacity: .8;
+    opacity: .7;
   }
 
   a.link-button.btn.btn-episodes:hover {
@@ -4316,6 +4215,12 @@ dd a.list-description-text-6:hover {
     min-width: 10px;
     max-width: 100%;
     width: auto;
+  }
+
+  .container-grid.overview-narrow {
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
   }
 
   .container-grid.wrap-video-ep1 {
@@ -4564,13 +4469,4 @@ dd a.list-description-text-6:hover {
   .container-grid.dropdown-menu:hover {
     margin-bottom: 0;
   }
-}
-
-.is-invalid{
-  border:2px red solid;
-}
-button:disabled,
-button[disabled],button[disabled=disabled]{
-    background-color: #666666!important;
-  color: #000;
 }
