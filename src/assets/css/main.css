@@ -401,9 +401,10 @@ blockquote.quote-text {
 blockquote {
   text-align: center;
   font-size: 40px;
+ }
+blockquote p{
   font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
 }
-
 a.link-text.nav-link {
   margin-right: 4px;
   margin-left: 4px;

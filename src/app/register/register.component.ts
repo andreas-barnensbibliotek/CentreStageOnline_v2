@@ -119,7 +119,7 @@ export class RegisterComponent implements OnInit {
         
     this._wpApi.postRegisterUser(JSON.parse(JSON.stringify(regData))).subscribe((response)=>{      
       console.log("detta är efter post"+ response);      
-      // this._global.registerUser();      
+      this._global.registerUser();      
     });
 
   }
