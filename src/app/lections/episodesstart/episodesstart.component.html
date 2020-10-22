@@ -1,13 +1,10 @@
 
    <article class="container-grid wrap-main-text kat overview">
     <main class="container-grid container-main-text overview-intro">
-      <div class="container-grid wrap-pic-header">
-        <nav class="container-grid kat-wrap"></nav>
-        <h1 class="Heading-kat"><span class="heading-text-11">Welcome</span></h1>
+      <div class="container-grid wrap-pic-header" [innerHTML]="mainPageData[0].acf.mainheader">
+        
       </div>
-      <main class="container-grid main-text-co-funded overview">
-        <div class="container-grid div-headings co-funded"></div>
-        <p class="paragraph main-text_about ingress overview"><span class="ingress-about negativ">Welcome to Centre Stage Online, a part of the Centre Stage project, a European collaborative project for professional women artists in the performing arts and music. It’s a project that aims to contribute to positive change at both individual and structural levels for women performing artists in Europe. We hope that you will benefit from this course and please let us know what you think in the evaluation at the end.<br><span class="ingress-about negativ kat"><br>Katarina Hultin, <span class="ingress-about negativ kat">Project manager</span></span><br></span></p>
+      <main class="container-grid main-text-co-funded overview"  [innerHTML]="mainPageData[0].acf.worksheetblock" >
       </main>
     </main>
     <main class="container-grid container-main-text partners">

@@ -33,6 +33,7 @@ import { AboutComponent } from './about/about.component';
 import { CreditsComponent } from './credits/credits.component';
 import { WelcomeComponent } from './welcome/welcome/welcome.component';
 import { EvaluationComponent } from './lections/evaluation/evaluation.component';
+import { EpisodesstartComponent } from './lections/episodesstart/episodesstart.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,7 @@ import { EvaluationComponent } from './lections/evaluation/evaluation.component'
     Err404pageComponent,
     LectionMainComponent,
     RegisterComponent,  
-    SafePipe, OverviewComponent, GenericMainpageComponent, AboutComponent, CreditsComponent, WelcomeComponent, EvaluationComponent
+    SafePipe, OverviewComponent, GenericMainpageComponent, AboutComponent, CreditsComponent, WelcomeComponent, EvaluationComponent, EpisodesstartComponent
   ],
   imports: [
     BrowserModule,

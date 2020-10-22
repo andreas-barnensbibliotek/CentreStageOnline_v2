@@ -1,13 +1,14 @@
   <div class="container-grid placeholder-hero">
-    <h1 class="hero-header size" [innerHTML]="mainPageData[0].acf.mainheader"></h1>
+    <h1 class="hero-header size"><span class="heading-text-10">Welcome</span></h1>
     <p class="paragraph hero-tagline size">Choose language</p>
-    <div class="container-grid drop-bg-color dropdown" id="Choose-language"><a class="link-button dripdown-toggle-start btn-secondary-start btn-start" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="dropdownMenuButton-1-copy-2" data-outofview="true"></a>
+    <div class="container-grid drop-bg-color dropdown" id="Choose-language">
+      <a class="link-button dripdown-toggle-start btn-secondary-start btn-start" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="dropdownMenuButton-1-copy-2" data-outofview="true"></a>
       <div class="container-grid dropdown-menu dropdown-index-mod" aria-labelledby="dropdownMenuButton-1">
         <nav class="container-grid wrap-one-language">
           <div class="responsive-picture picture-2">
             <picture><img alt="Placeholder Picture" src="./assets/6_languages_GER.png"></picture>
           </div>
-          <a class="link-text dropdown-item" (click)="selectLanguagehandler('DE')">Deutsche</a>
+          <a class="link-text dropdown-item" (click)="selectLanguagehandler('DE')">Deutsch</a>
         </nav>
         <nav class="container-grid wrap-one-language">
           <div class="responsive-picture picture-2">
@@ -39,6 +40,11 @@
           </div>
           <a class="link-text dropdown-item" (click)="selectLanguagehandler('SV')">Svenska</a>
         </nav>
+      </div>
+    </div>
+    <div class="container-grid container-1">
+      <div class="responsive-picture picture-1 logo-upper">
+        <picture><img alt="Creative Europe logo" src="./assets/EU-logga_600.png"></picture>
       </div>
     </div>
   </div>

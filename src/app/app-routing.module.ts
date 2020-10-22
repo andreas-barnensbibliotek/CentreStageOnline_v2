@@ -1,9 +1,9 @@
+import { EpisodesstartComponent } from './lections/episodesstart/episodesstart.component';
 import { WelcomeComponent } from './welcome/welcome/welcome.component';
 import { authstartabout } from './shared/autguardStart/authstartabout.guard';
 import { AuthGuardStart } from './shared/autguardStart/authstart.guard';
 import { CreditsComponent } from './credits/credits.component';
 import { AboutComponent } from './about/about.component';
-import { OverviewComponent } from './overview/overview.component';
 import { RegisterComponent } from './register/register.component';
 import { AuthGuard } from './shared/authguard/auth.guard';
 import { Err404pageComponent } from './shared/err404page/err404page.component';
@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'start',  component: StartComponent, canActivate:[authstartabout]}, 
   { path: 'welcome',  component: WelcomeComponent, canActivate:[AuthGuardStart]},   
   { path: 'register',  component: RegisterComponent, canActivate: [AuthGuardStart]}, 
-  { path: 'overview',  component: OverviewComponent, canActivate: [AuthGuardStart]}, 
+  { path: 'episodesstart',  component: EpisodesstartComponent, canActivate: [AuthGuardStart]}, 
   { path: 'about',  component: AboutComponent, canActivate: [AuthGuardStart]}, 
   { path: 'credits',  component: CreditsComponent, canActivate: [AuthGuardStart]}, 
   { path: 'episodes', 

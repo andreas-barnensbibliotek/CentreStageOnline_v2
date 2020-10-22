@@ -23,6 +23,9 @@ export class GenericLectionsComponent implements OnInit {
   showExtraMaterialHR:boolean= false;
   btnallEpisodes:any;
   btnParticipants:any;
+  allWorksheets:any;
+  btnEpisodeBefore:any;
+  btnEpisodeNext:any;
 
 testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
 
@@ -41,12 +44,17 @@ testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
         console.log("visa denna slugg: " +this.currpageSlug);
         this.getpagedata(this.currpageSlug);
         this.btnallEpisodes = this.glb.getlangFormButtonText().btnallepisodes.btntext;
-        this.btnParticipants = this.glb.getlangFormButtonText().btnpartartists.btntext   
+        this.btnEpisodeBefore = this.glb.getlangFormButtonText().btnallepisodes.btnBefore;
+        this.btnEpisodeNext = this.glb.getlangFormButtonText().btnallepisodes.btnNext;        
+        this.btnParticipants = this.glb.getlangFormButtonText().btnpartartists.btntext;
+        this.allWorksheets = this.glb.getlangFormButtonText().allWorksheets.btntext;
       });
       this.getpagedata(this.currpageSlug);
       this.btnallEpisodes = this.glb.getlangFormButtonText().btnallepisodes.btntext;
+      this.btnEpisodeBefore = this.glb.getlangFormButtonText().btnallepisodes.btnBefore;
+      this.btnEpisodeNext = this.glb.getlangFormButtonText().btnallepisodes.btnNext;
       this.btnParticipants = this.glb.getlangFormButtonText().btnpartartists.btntext   
-      
+      this.allWorksheets = this.glb.getlangFormButtonText().allWorksheets.btntext;
     });
     this._anchor.listen();
   }
@@ -112,5 +120,9 @@ testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
   getClass(slug){
     return "ep"+ slug.split('-')[1];
   }
- 
+  getlection1Class(slug){
+    if(slug=="episode-1"){
+      return "ep1";
+    }
+  }
 }

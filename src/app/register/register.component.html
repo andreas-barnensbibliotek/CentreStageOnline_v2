@@ -20,7 +20,7 @@
       </div>
       
       <form [formGroup]="regFormgoup" (ngSubmit)="onSubmit()" class="form-container form-container-1">
-        <h5 class="heading-1">Yes, I would like to take part...</h5>
+        <h5 class="heading-1">{{formlangdata.header.text}}</h5>
         <label class="label label-1 name" for="First name">{{formlangdata.firstname.labeltxt}}*</label>
         <label class="label label-1 surname" for="Surname">{{formlangdata.lastname.labeltxt}}*</label>
         <input 

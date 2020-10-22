@@ -1,0 +1,27 @@
+Hej!
+Uppdatering av CS.
+
+Logga i foten större.
+
+Katarina flyttad till Overview.
+
+"About the course”-delen fixad.
+
+Logga tillagd på index. Placering så den hamnar i nederkant på mobil typ iphone 6. Samt justering av språkvalsmenyn - i mobil lägger den sig kant i kant med orange bakgrund i ovankant - upp till 48 rem.
+
+Språkvalsmenyn felstavning av Deutch fixad.
+
+Nedladdning av worksheets  - lagt till knappbakgrund.
+Kompletterat med nedladdning av alla worksheets direkt under. Måste vara det naturligaste stället att lägga det på…
+
+Bakgrundsfärg på alla containrar med bakgrundsbilder tillagd - färg matchar bildbakgrund så det ser snyggt ut även på stora skärmar.
+
+Citat justerat på episod 1 - ligger högre fr o m 48 rem.
+
+Fixat färg på rubriker på About.
+
+Knapp tillagd längst ned på About.
+
+Bakgrundsbild till ep 14 ändrad.
+
+Det var nog allt. Tror att efter detta bör den vara OK att skicka iväg.

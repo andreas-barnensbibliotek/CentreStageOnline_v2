@@ -12,7 +12,7 @@
   <section class="container-grid wrap-nav-video" *ngIf="showVideobox">
     
     <main class="container-grid nav-video">
-      <a class="link-button btn btn-left-1004" (click)="gotoLectureBefore(mainPageData[0].acf.smallnavbefore)" title="Centre Stage Online - Episode 10"></a>
+      <a class="link-button btn btn-left-1004" (click)="gotoLectureBefore(mainPageData[0].acf.smallnavbefore)" title="{{btnEpisodeBefore}}"></a>
       <a class="link-button btn btn-episodes"  routerLink="." fragment="all-episodes" >
         <span class="button-link-text-2">
           <span class="button-link-text-2" id="button-link-text-1">          
@@ -20,12 +20,12 @@
           </span>
         </span>
       </a>
-      <a class="link-button btn btn-right-1004"  (click)="gotoLectureNext(mainPageData[0].acf.smallnavnext)" title="Centre Stage Online - Episode 11 – part 2"></a>
+      <a class="link-button btn btn-right-1004"  (click)="gotoLectureNext(mainPageData[0].acf.smallnavnext)" title="{{btnEpisodeNext}}"></a>
     </main>
   </section>
 
   <article class="container-grid wrap-main-text-episodes">
-    <div class="container-grid wrap-quote" [innerHTML]="mainPageData[0].acf.quoteblock"> 
+    <div class="container-grid wrap-quote" [ngClass]="getlection1Class(mainPageData[0].slug)" [innerHTML]="mainPageData[0].acf.quoteblock"> 
       <div class="lds-dual-ring"></div>
     </div>
     
@@ -36,8 +36,18 @@
       <div class="rule rule-2" *ngIf="showWorksheetHR">
         <hr>
       </div>
-      <div class="container-grid wrap-worksheet" [innerHTML]="mainPageData[0].acf.worksheetblock">
-        <div class="lds-dual-ring"></div>        
+      <div class="container-grid wrap-worksheet one" [innerHTML]="mainPageData[0].acf.worksheetblock" >
+      
+          <div class="lds-dual-ring"></div>
+        
+      </div>
+      <div class="container-grid wrap-worksheet all">
+        <a href="" class="link-container link-container-worksheet all">
+          <div class="responsive-picture picture-worksheet">
+            <picture><img alt="Placeholder Picture" src="./assets/Download-NY.png"></picture>
+          </div>
+          <p class="paragraph text-worksheet">{{allWorksheets}}<br></p>
+        </a>
       </div>
       <div class="rule rule-1" *ngIf="showExtraMaterialHR">
         <hr>

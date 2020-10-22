@@ -9,10 +9,10 @@
       </div>
     </div>
   </div>
-  <section class="container-grid wrap-nav-video" *ngIf="showVideobox">
+  <section class="container-grid wrap-nav-video" >
     
     <main class="container-grid nav-video">
-      <a class="link-button btn btn-left-1004" (click)="gotoLectureBefore(mainPageData[0].acf.smallnavbefore)" title="Centre Stage Online - Episode 10"></a>
+      <a class="link-button btn btn-left-1004" (click)="gotoLectureBefore(mainPageData[0].acf.smallnavbefore)" title="Centre Stage Online - Back"></a>
       <a class="link-button btn btn-episodes"  routerLink="." fragment="all-episodes" >
         <span class="button-link-text-2">
           <span class="button-link-text-2" id="button-link-text-1">          
@@ -20,7 +20,7 @@
           </span>
         </span>
       </a>
-      <a class="link-button btn btn-right-1004"  (click)="gotoLectureNext(mainPageData[0].acf.smallnavnext)" title="Centre Stage Online - Episode 11 – part 2"></a>
+      <a class="link-button btn btn-right-1004"  (click)="gotoLectureNext(mainPageData[0].acf.smallnavnext)" title="Centre Stage Online - Next"></a>
     </main>
   </section>
 
@@ -32,7 +32,7 @@
     <main class="container-grid container-main-text-episodes">
       <main class="container-grid main-text-episodes">
         <div [innerHTML]="mainPageData[0].acf.maincontent"></div>
-        <a class="link-button btn btn-1002 evaluation" href="https://www.trippus.net/evaluationcentrestage">
+        <a class="link-button btn btn-1002 evaluation" href="{{trippuslink}}">
             <span class="button-link-text-3" id="button-link-text-2">{{btnevaluation}}</span></a>
       </main>      
       <div class="rule rule-2" *ngIf="showWorksheetHR">

@@ -1,31 +1,30 @@
-import { Router } from '@angular/router';
+import { Global } from './../../models/global';
+import { WpApiService } from './../../../services/wp-Api/wp-api.service';
 import { DomSanitizer } from '@angular/platform-browser';
-import { Global } from './../models/global';
-import { WpApiService } from './../../services/wp-Api/wp-api.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  selector: 'app-episodesstart',
+  templateUrl: './episodesstart.component.html',
+  styleUrls: ['./episodesstart.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class EpisodesstartComponent implements OnInit {
  
   mainPageData:any=[];
   videoUrl:any;
   showVideobox:boolean = false;
   dangerousVideoUrl:any;
   btnstart:any;
-  constructor(private wpApi:WpApiService, private glb:Global, private _sanitizer: DomSanitizer, private _router:Router) { 
+  constructor(private wpApi:WpApiService, private glb:Global, private _sanitizer: DomSanitizer) { 
   }
 
   ngOnInit() {         
     this.wpApi.currentPageDataHandler.subscribe(()=>{
-        this.getpagedata();    
-        this.btnstart = this.glb.getlangFormButtonText().btnabouttoStart.btntext;    
+        this.getpagedata();   
+        this.btnstart = this.glb.getlangFormButtonText().btnoverviewtoStart.btntext;
       })
     this.getpagedata();
-    this.btnstart = this.glb.getlangFormButtonText().btnabouttoStart.btntext;
+    this.btnstart = this.glb.getlangFormButtonText().btnoverviewtoStart.btntext;
     
   }
 
@@ -37,14 +36,9 @@ export class AboutComponent implements OnInit {
   }
 
   getpagedata(){
-    this.wpApi.getPageSlug("about").subscribe(Response => {
+    this.wpApi.getPageSlug("episodesstart").subscribe(Response => {
       this.mainPageData = Response  
       
-      if((Object.keys(Response).length === 0)){ 
-        this._router.navigateByUrl("/404");
-      }
-  
-
       if(this.mainPageData[0].acf.movieurl!=""){
         console.log("detta: " +this.mainPageData[0].acf.movieurl)
         this.showVideobox= true;

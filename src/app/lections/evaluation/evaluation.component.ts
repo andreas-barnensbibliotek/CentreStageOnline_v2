@@ -23,6 +23,7 @@ export class EvaluationComponent implements OnInit {
   showExtraMaterialHR:boolean= false;
   btnevaluation:any;
   btnallEpisodes:any;
+  trippuslink:any;
 testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
 
   constructor(private wpApi:WpApiService, private glb:Global ,private route:ActivatedRoute, private router:Router, private _sanitizer: DomSanitizer,private viewPortScroller: ViewportScroller, private _anchor: AncorScrollService) { 
@@ -35,11 +36,13 @@ testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
         this.getpagedata();    
         this.btnevaluation = this.glb.getlangFormButtonText().btnepisode14Evaluation.btntext;   
         this.btnallEpisodes = this.glb.getlangFormButtonText().btnallepisodes.btntext;
+        this.trippuslink = this.glb.getlangFormButtonText().trippuslink.btntext;
        
       })
     this.getpagedata(); 
     this.btnevaluation = this.glb.getlangFormButtonText().btnepisode14Evaluation.btntext; 
     this.btnallEpisodes = this.glb.getlangFormButtonText().btnallepisodes.btntext;
+    this.trippuslink = this.glb.getlangFormButtonText().trippuslink.btntext;
       
     this._anchor.listen();
   }

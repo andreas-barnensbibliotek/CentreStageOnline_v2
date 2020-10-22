@@ -14,7 +14,7 @@ export class registerUserFormData {
         return [{
             type: "EN",
             header:{
-                text:"Register!"
+                text:"Yes, I would like to take part..."
             },
             lang:{
                 labeltxt:"Language",
@@ -83,20 +83,31 @@ export class registerUserFormData {
             btnoverviewtoStart:{
                 btntext:"Enough. Let's start!"
             },
+            btnabouttoStart:{
+                btntext:"Let's start!"
+            },
             btnepisode14Evaluation:{
                 btntext:"Let me tell you what I think..."
             },
             btnallepisodes:{
-                btntext:"All episodes"
+                btntext:"All episodes",
+                btnBefore:"Previous",
+                btnNext:"Next"
             },
             btnpartartists:{
                 btntext:"Participating artists"
-            }            
+            },
+            allWorksheets:{
+                btntext:"Download all Worksheets (zip)"
+            },
+            trippuslink:{
+                btntext:"https://www.trippus.net/evaluationcentrestage"
+            }                         
         },
         {
             type: "SV",
             header:{
-                text:"Registrera dig!"
+                text:"Ja, jag skulle vilja delta..."
             },
             lang:{
                 labeltxt:"Språk",
@@ -165,20 +176,31 @@ export class registerUserFormData {
             btnoverviewtoStart:{
                 btntext:"Tillräckligt. Låt oss börja!"
             },
+            btnabouttoStart:{
+                btntext:"Låt oss börja!"
+            },
             btnepisode14Evaluation:{
                 btntext:"Låt mig berätta vad jag tycker..."
             },
             btnallepisodes:{
-                btntext:"Alla avsnitt"
-            },
+                btntext:"Alla avsnitt",
+                btnBefore:"Föregående",
+                btnNext:"Nästa"
+            },           
             btnpartartists:{
                 btntext:"Deltagande konstnärer"
-            }
+            },
+            allWorksheets:{
+                btntext:"Ladda ner alla arbetsblad (zip)"
+            },
+            trippuslink:{
+                btntext:"https://www.trippus.net/evaluationcentrestage"
+            }     
         },
         {
             type: "PL",
             header:{
-                text:"Zarejestrować!"
+                text:"Tak, chciałbym wziąć udział..."
             },
             lang:{
                 labeltxt:"Język",
@@ -198,7 +220,7 @@ export class registerUserFormData {
             gender:{
                 labeltxt:"płeć",
                 alternativ:{
-                    alt1:"Płeć żeńska",
+                    alt1:"Żeńska",
                     alt2:"Męski",
                     alt3:"Inny"
                 },
@@ -216,12 +238,12 @@ export class registerUserFormData {
                 placeholdertxt:"", //:"Wpisz swoje nazwisko",
             },
             befatting:{
-                labeltxt:"Pozycja",
+                labeltxt:"Zawód",
                 hlptxt:"", //"Podaj swoją pozycję",
                 placeholdertxt:"", //:"Podaj swoją pozycję",
             },
             profession:{
-                labeltxt:"Pozycja",
+                labeltxt:"Zawód",
                 hlptxt:"", //"Podaj swoją pozycję",
                 placeholdertxt:"", //:"Podaj swoją pozycję",
             },
@@ -247,15 +269,26 @@ export class registerUserFormData {
             btnoverviewtoStart:{
                 btntext:"Dość. Zaczynajmy!"
             },
+            btnabouttoStart:{
+                btntext:"Zaczynajmy!"
+            },
             btnepisode14Evaluation:{
                 btntext:"Powiem ci, co myślę..."
             },
             btnallepisodes:{
-                btntext:"Wszystkie odcinki"
+                btntext:"Wszystkie odcinki",
+                btnBefore:"Poprzedni",
+                btnNext:"Kolejny"
             },
             btnpartartists:{
                 btntext:"Artyści biorący udział"
-            }
+            },
+            allWorksheets:{
+                btntext:"Pobierz wszystkie arkusze (zip)"
+            },
+            trippuslink:{
+                btntext:"https://www.trippus.net/CSOnlinepolen"
+            }     
         },
         {
             type: "DE",
@@ -318,7 +351,7 @@ export class registerUserFormData {
                 placeholdertxt:"", //:"Geben Sie eine E-Mail-Adresse ein",
             },
             submit:{
-                btntext:"Registrieren"
+                btntext:"Ja, ich würde gerne teilnehmen..."
             },
             btnwelcometoAbout:{
                 btntext:"Erzähl mir mehr!"
@@ -329,20 +362,31 @@ export class registerUserFormData {
             btnoverviewtoStart:{
                 btntext:"Genug. Lasst uns beginnen!"
             },
+            btnabouttoStart:{
+                btntext:"Lasst uns beginnen!"
+            },
             btnepisode14Evaluation:{
                 btntext:"Lass mich dir sagen, was ich denke..."
             },
             btnallepisodes:{
-                btntext:"Alle Folgen"
+                btntext:"Alle Folgen",
+                btnBefore:"Bisherige",
+                btnNext:"Nächster"
             },
             btnpartartists:{
                 btntext:"Teilnehmende Künstler"
-            }
+            },
+            allWorksheets:{
+                btntext:"Laden Sie alle Arbeitsblätter herunter (zip)"
+            },
+            trippuslink:{
+                btntext:"https://www.trippus.net/evaluationcentrestage"
+            }     
         },
         {
             type: "FR",
             header:{
-                text:"S'inscrire!"
+                text:"Oui, j'aimerais participer..."
             },
             lang:{
                 labeltxt:"Langue",
@@ -411,20 +455,31 @@ export class registerUserFormData {
             btnoverviewtoStart:{
                 btntext:"Assez. Commençons!"
             },
+            btnabouttoStart:{
+                btntext:"Commençons!"
+            },
             btnepisode14Evaluation:{
                 btntext:"Laissez-moi vous dire ce que je pense..."
             },
             btnallepisodes:{
-                btntext:"Tous les épisodes"
+                btntext:"Tous les épisodes",
+                btnBefore:"précédent",
+                btnNext:"prochain"
             },
             btnpartartists:{
                 btntext:"Artistes participants"
-            }
+            },
+            allWorksheets:{
+                btntext:"Télécharger toutes les feuilles de travail (zip)"
+            },
+            trippuslink:{
+                btntext:"https://www.trippus.net/evaluationcentrestage"
+            }     
         },
         {
             type: "SP",
             header:{
-                text:"¡Registrarse!"
+                text:"Sí, me gustaría participar..."
             },
             lang:{
                 labeltxt:"Idioma",
@@ -493,15 +548,26 @@ export class registerUserFormData {
             btnoverviewtoStart:{
                 btntext:"Suficiente. ¡Empecemos!"
             },
+            btnabouttoStart:{
+                btntext:"¡Empecemos!"
+            },
             btnepisode14Evaluation:{
                 btntext:"Déjame decirte lo que pienso..."
             },
             btnallepisodes:{
-                btntext:"Todos los episodios"
+                btntext:"Todos los episodios",
+                btnBefore:"Anterior",
+                btnNext:"próximo"
             },
             btnpartartists:{
                 btntext:"Artistas participantes"
-            }
+            },
+            allWorksheets:{
+                btntext:"Descargar todas las hojas de trabajo (zip)"
+            },
+            trippuslink:{
+                btntext:"https://www.trippus.net/evaluationcentrestage"
+            }     
         }
     ]   
         
