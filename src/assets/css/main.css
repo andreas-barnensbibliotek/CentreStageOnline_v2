@@ -5009,7 +5009,26 @@ dd a.list-description-text-6:hover {
     background-attachment: fixed;
   }
 
+  .container-grid.main-text-associate {
+    margin-top: 50px;
+    margin-right: 40px;
+  }
+
+  .container-grid.vgr-region.wrap-logo {
+    background-image: url('../VGR_logo_sq.png');
+  }
+
   .container-grid.dropdown-menu:hover {
     margin-bottom: 0;
   }
+}
+
+.container-grid.fabryka.wrap-logo {
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 20px;
+}
+
+.container-grid.fabryka.wrap-logo {
+  background-image: url('../ART_IN_FS_eng_black.png');
+  background-size: contain;
 }

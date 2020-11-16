@@ -2,49 +2,49 @@
     <h1 class="hero-header size"><span class="heading-text-10">Welcome</span></h1>
     <p class="paragraph hero-tagline size">Choose language</p>
     <div class="container-grid drop-bg-color dropdown" id="Choose-language">
-      <a class="link-button dripdown-toggle-start btn-secondary-start btn-start" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="dropdownMenuButton-1-copy-2" data-outofview="true"></a>
+      <a class="link-button dripdown-toggle-start btn-secondary-start btn-start" href="#" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true" id="dropdownMenuButton-1-copy-2" data-outofview="true" title="Select your language"></a>
       <div class="container-grid dropdown-menu dropdown-index-mod" aria-labelledby="dropdownMenuButton-1">
         <nav class="container-grid wrap-one-language">
           <div class="responsive-picture picture-2">
-            <picture><img alt="Placeholder Picture" src="./assets/6_languages_GER.png"></picture>
+            <picture><img alt="German flag" src="./assets/6_languages_GER.png"></picture>
           </div>
-          <a class="link-text dropdown-item" (click)="selectLanguagehandler('DE')">Deutsch</a>
+          <a class="link-text dropdown-item" tabindex="1" title="Deutsch" (keyup.enter)="selectLanguagehandler('DE')" (click)="selectLanguagehandler('DE')">Deutsch</a>
         </nav>
         <nav class="container-grid wrap-one-language">
           <div class="responsive-picture picture-2">
-            <picture><img alt="Placeholder Picture" src="./assets/6_languages_ENG.png"></picture>
+            <picture><img alt="English flag" src="./assets/6_languages_ENG.png"></picture>
           </div>
-          <a class="link-text dropdown-item" (click)="selectLanguagehandler('EN')">English</a>
+          <a class="link-text dropdown-item" tabindex="2" title="English" (keyup.enter)="selectLanguagehandler('EN')" (click)="selectLanguagehandler('EN')">English</a>
         </nav>
         <nav class="container-grid wrap-one-language">
           <div class="responsive-picture picture-2">
-            <picture><img alt="Placeholder Picture" src="./assets/6_languages_SPN.png"></picture>
+            <picture><img alt="Spanish flag" src="./assets/6_languages_SPN.png"></picture>
           </div>
-          <a class="link-text dropdown-item" (click)="selectLanguagehandler('SP')">Español</a>
+          <a class="link-text dropdown-item" tabindex="3"  title="Español" (keyup.enter)="selectLanguagehandler('SP')" (click)="selectLanguagehandler('SP')">Español</a>
         </nav>
         <nav class="container-grid wrap-one-language">
           <div class="responsive-picture picture-2">
-            <picture><img alt="Placeholder Picture" src="./assets/6_languages_FRA.png"></picture>
+            <picture><img alt="French flag" src="./assets/6_languages_FRA.png"></picture>
           </div>
-          <a class="link-text dropdown-item" (click)="selectLanguagehandler('FR')">Français</a>
+          <a class="link-text dropdown-item" tabindex="4" title="Français" (keyup.enter)="selectLanguagehandler('FR')" (click)="selectLanguagehandler('FR')">Français</a>
         </nav>
         <nav class="container-grid wrap-one-language">
           <div class="responsive-picture picture-2">
-            <picture><img alt="Placeholder Picture" src="./assets/6_languages_POL.png"></picture>
+            <picture><img alt="Polish flag" src="./assets/6_languages_POL.png"></picture>
           </div>
-          <a class="link-text dropdown-item" (click)="selectLanguagehandler('PL')">Polskie</a>
+          <a class="link-text dropdown-item" tabindex="5" title="Polskie" (keyup.enter)="selectLanguagehandler('PL')" (click)="selectLanguagehandler('PL')">Polskie</a>
         </nav>
         <nav class="container-grid wrap-one-language">
           <div class="responsive-picture picture-2">
-            <picture><img alt="Placeholder Picture" src="./assets/6_languages_SWE.png"></picture>
+            <picture><img alt="Swedish flag" src="./assets/6_languages_SWE.png"></picture>
           </div>
-          <a class="link-text dropdown-item" (click)="selectLanguagehandler('SV')">Svenska</a>
+          <a class="link-text dropdown-item" tabindex="6" title="Svenska" (keyup.enter)="selectLanguagehandler('SV')" (click)="selectLanguagehandler('SV')">Svenska</a>
         </nav>
       </div>
     </div>
     <div class="container-grid container-1">
       <div class="responsive-picture picture-1 logo-upper">
-        <picture><img alt="Creative Europe logo" src="./assets/EU-logga_600.png"></picture>
+        <picture><img alt="Co-funded by the Createve Europe Programme of the European Union" title="Co-funded by the Createve Europe Programme of the European Union" src="./assets/EU-logga_600.png"></picture>
       </div>
     </div>
   </div>

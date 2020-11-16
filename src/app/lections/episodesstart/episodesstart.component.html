@@ -1,10 +1,10 @@
 
-   <article class="container-grid wrap-main-text kat overview">
-    <main class="container-grid container-main-text overview-intro">
+   <article class="container-grid wrap-main-text kat overview" *ngIf="welcomeBlock">
+    <main class="container-grid container-main-text overview-intro" >
       <div class="container-grid wrap-pic-header" [innerHTML]="mainPageData[0].acf.mainheader">
         
       </div>
-      <main class="container-grid main-text-co-funded overview"  [innerHTML]="mainPageData[0].acf.worksheetblock" >
+      <main class="container-grid main-text-co-funded overview"  [innerHTML]="mainPageData[0].acf.worksheetblock"  >
       </main>
     </main>
     <main class="container-grid container-main-text partners">
@@ -24,7 +24,7 @@
         <div [innerHTML]="mainPageData[0].acf.maincontent">
           <div class="lds-dual-ring"></div>
         </div>  
-        <a class="link-button btn btn-1002 overview" routerLink="/episodes/episode-1" title="Centre Stage Online - Episode 1">
+        <a class="link-button btn btn-1002 overview" routerLink="/episodes/episode-1" title="{{btnstart}}">
           <span class="button-link-text-6"><span class="button-link-text-6" id="button-link-text-1">{{btnstart}}</span></span>
         </a>
       </main>

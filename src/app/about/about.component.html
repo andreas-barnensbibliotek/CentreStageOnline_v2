@@ -13,6 +13,8 @@
     </main>
     <main class="container-grid container-main-text partners" [innerHTML]="mainPageData[0].acf.extramaterialblock">      
     </main>
+
+    
   </article>  
   <article class="container-grid wrap-main-text background video">
     <div class="container-grid wrap-video-about">
@@ -25,7 +27,7 @@
     <main class="container-grid container-main-text">
       <main class="container-grid main-text" [innerHTML]="mainPageData[0].acf.extrablock2">
       </main>
-      <a class="link-button btn btn-1002 about" routerLink="/episodesstart" title="Centre Stage Online"><span class="button-link-text-6" id="button-link-text-1">{{btnstart}}</span></a>
+      <a class="link-button btn btn-1002 about" routerLink="/episodesstart" title="{{btnstart}}"><span class="button-link-text-6" id="button-link-text-1">{{btnstart}}</span></a>
       <div class="rule rule-1">
         <hr>
       </div>

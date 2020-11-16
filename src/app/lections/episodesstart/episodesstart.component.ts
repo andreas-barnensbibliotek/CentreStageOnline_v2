@@ -15,6 +15,7 @@ export class EpisodesstartComponent implements OnInit {
   showVideobox:boolean = false;
   dangerousVideoUrl:any;
   btnstart:any;
+  welcomeBlock:any;
   constructor(private wpApi:WpApiService, private glb:Global, private _sanitizer: DomSanitizer) { 
   }
 
@@ -39,6 +40,11 @@ export class EpisodesstartComponent implements OnInit {
     this.wpApi.getPageSlug("episodesstart").subscribe(Response => {
       this.mainPageData = Response  
       
+      this.welcomeBlock=true;
+
+      if(this.mainPageData[0].acf.worksheetblock==""){
+        this.welcomeBlock=false;
+      }
       if(this.mainPageData[0].acf.movieurl!=""){
         console.log("detta: " +this.mainPageData[0].acf.movieurl)
         this.showVideobox= true;

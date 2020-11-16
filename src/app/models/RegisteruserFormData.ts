@@ -107,7 +107,7 @@ export class registerUserFormData {
         {
             type: "SV",
             header:{
-                text:"Ja, jag skulle vilja delta..."
+                text:"Ja, jag vill delta..."
             },
             lang:{
                 labeltxt:"Språk",
