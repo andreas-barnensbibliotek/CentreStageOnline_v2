@@ -46,7 +46,8 @@ import { EpisodesstartComponent } from './lections/episodesstart/episodesstart.c
     Err404pageComponent,
     LectionMainComponent,
     RegisterComponent,  
-    SafePipe, OverviewComponent, GenericMainpageComponent, AboutComponent, CreditsComponent, WelcomeComponent, EvaluationComponent, EpisodesstartComponent
+    SafePipe, OverviewComponent, GenericMainpageComponent, AboutComponent, CreditsComponent, 
+    WelcomeComponent, EvaluationComponent, EpisodesstartComponent
   ],
   imports: [
     BrowserModule,

@@ -5,12 +5,6 @@ h1 {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-h1.hero-header.size {
-  color: #fff;
-  font-weight: 400;
-  font-size: 50px;
-}
-
 h1.negative {
   color: #fff;
 }
@@ -56,10 +50,6 @@ h1 span.co-funded.heading-text-1 {
   font-size: 2.5rem;
 }
 
-h1 span.heading-text-10 {
-  font-size: 2.5rem;
-}
-
 h1.Heading-kat {
   font-size: 45px;
 }
@@ -98,6 +88,10 @@ h3.nav-col.navbar-brand {
 
 h3.h3 {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h3.h3.index {
+  text-align: left;
 }
 
 h5 span.heading-text-8 {
@@ -284,9 +278,7 @@ p.paragraph.text-worksheet {
   color: #000;
   font-weight: 700;
 }
-p.paragraph.text-worksheet a{
-  color: #000;
-}
+
 p.paragraph.ingress.main-text_about.overview {
   margin-top: 0;
   margin-bottom: 0;
@@ -299,6 +291,18 @@ p.paragraph span.ingress-about.kat.negativ {
 
 p.paragraph.paragraph-1 {
   margin-top: 20px;
+}
+
+p.paragraph.index.main-text_about {
+  text-align: left;
+}
+
+p.paragraph.hero-tagline.index.size {
+  margin-bottom: 0;
+}
+
+p.paragraph span.paragraph-text-15 {
+  font-weight: 700;
 }
 
 p.paragraph a.paragraph-text-5:hover {
@@ -441,6 +445,7 @@ blockquote {
 blockquote p{ /* Edit/added ANDREAS */
   font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
 }
+
 a.link-text.nav-link {
   margin-right: 4px;
   margin-left: 4px;
@@ -838,7 +843,7 @@ a.link-button.btn.btn-1002 {
 }
 
 a.link-button font.button-link-text-1 {
-  /* color: #fff;Edit ANDREAS */
+ /* color: #fff;Edit ANDREAS */
   font-size: 1.125rem;
 }
 
@@ -987,6 +992,7 @@ button.link-button.btn.btn-1002:hover {
   opacity: .8;
 }
 /* edit ANDREAS END */
+
 a.link-button.about.btn.btn-1002 {
   margin-top: 10px;
   margin-right: 0;
@@ -1060,7 +1066,7 @@ a.link-button.btn-secondary-start.btn-start.dripdown-toggle-start:hover {
 a.link-button.btn.btn-1002:hover {
   border-color: #000;
   border-radius: 4px;
-/* background-color: #fff; edit ANDREAS*/
+  /* background-color: #fff; edit ANDREAS*/
   color: #000;
   font-size: 22px;
   line-height: 39px;
@@ -1752,6 +1758,7 @@ div.responsive-picture.picture-2 {
           flex-direction: column;
   -ms-flex-pack: center;
   -ms-flex-align: center;
+  margin-right: 0;
   padding-top: 50px;
   padding-bottom: 480px;
   padding-left: 0;
@@ -2815,6 +2822,24 @@ div.responsive-picture.logo-upper.picture-1 {
   margin-top: 100px;
 }
 
+.container-grid.container-main-text-about.index.main {
+  margin-right: 10px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+
+.container-grid.drop-bg-color.dropdown {
+  padding-top: 0;
+}
+
+.container-grid.container-1.index {
+  margin-top: 50px;
+}
+
+.container-grid.index.placeholder-hero {
+  padding-bottom: 150px;
+}
+
 .container-grid.dropdown-menu:hover {
   border-style: none;
   background-color: rgba(255, 255, 255, .95);
@@ -3393,6 +3418,10 @@ dd a.list-description-text-6:hover {
 @media screen and (min-width: 48rem) {
   /* Text Elements */
 
+  h3.h3.index {
+    text-align: left;
+  }
+
   h5.h5 {
     min-width: 0;
     max-height: none;
@@ -3418,6 +3447,10 @@ dd a.list-description-text-6:hover {
 
   p.paragraph.main-text-ep {
     margin-right: 40px;
+  }
+
+  p.paragraph.index.main-text_about {
+    text-align: left;
   }
 
   dl.description-list.left.list-sources {
@@ -4198,6 +4231,15 @@ dd a.list-description-text-6:hover {
     margin-right: 0;
     margin-bottom: 20px;
   }
+
+  .container-grid.main-text-associate {
+    margin-right: 40px;
+  }
+
+  .container-grid.fabryka.wrap-logo {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+  }
 }
 
 @media screen and (min-width: 62rem) {
@@ -4423,6 +4465,14 @@ dd a.list-description-text-6:hover {
   .container-grid.container-main-text {
     max-width: 410px;
   }
+
+  .container-grid.main-text-associate {
+    margin-right: 0;
+  }
+
+  .container-grid.container-main-text-about.index.main {
+    padding-right: 50px;
+  }
 }
 
 @media screen and (min-width: 75rem) {
@@ -4478,6 +4528,14 @@ dd a.list-description-text-6:hover {
   p.paragraph span.ingress-about.kat.negativ {
     font-size: 1.25rem;
     line-height: 1.7;
+  }
+
+  p.paragraph.index.main-text_about {
+    text-align: left;
+  }
+
+  p.paragraph span.paragraph-text-6 {
+    line-height: 1.5;
   }
 
   dl.description-list.list-sources {
@@ -5018,17 +5076,16 @@ dd a.list-description-text-6:hover {
     background-image: url('../VGR_logo_sq.png');
   }
 
+  .container-grid.fabryka.wrap-logo {
+    background-image: url('../ART_IN_FS_eng_black.png');
+    background-size: contain;
+  }
+
+  .container-grid.container-main-text-about.index.main {
+    text-align: left;
+  }
+
   .container-grid.dropdown-menu:hover {
     margin-bottom: 0;
   }
-}
-
-.container-grid.fabryka.wrap-logo {
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 20px;
-}
-
-.container-grid.fabryka.wrap-logo {
-  background-image: url('../ART_IN_FS_eng_black.png');
-  background-size: contain;
 }

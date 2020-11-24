@@ -8,8 +8,8 @@ export class coursenavLanguage {
         return [{
               type: "EN",
               one:{
-                title:"Why watch these videos",
-                linktext:"Why watch these videos",
+                title:"Introduction",
+                linktext:"Introduction",
               },
               two:{
                 title:"Getting what you want",
@@ -126,8 +126,8 @@ export class coursenavLanguage {
         {
             type: "PL",
             one:{
-                title:"Dlaczego obejrzeć te filmy?",
-                linktext:"Dlaczego obejrzeć te filmy?",
+                title:"Wprowadzenie",
+                linktext:"Wprowadzenie",
               },
               two:{
                 title:"Wiedz czego chcesz i osiągnij to",
@@ -185,8 +185,8 @@ export class coursenavLanguage {
         {
             type: "DE",
             one:{
-                title:"Warum sind diese Filme sehenswert?",
-                linktext:"Warum sind diese Filme sehenswert?",
+                title:"Einführung",
+                linktext:"Einführung",
               },
               two:{
                 title:"Ziele erreichen",

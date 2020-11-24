@@ -354,16 +354,16 @@ export class registerUserFormData {
                 btntext:"Ja, ich würde gerne teilnehmen..."
             },
             btnwelcometoAbout:{
-                btntext:"Erzähl mir mehr!"
+                btntext:"Ich will mehr wissen!"
             },
             btnwelcometoOverview:{
                 btntext:"Ich kann es kaum erwarten. Lass uns gehen!"
             },
             btnoverviewtoStart:{
-                btntext:"Genug. Lasst uns beginnen!"
+                btntext:"Jetzt den Kurs beginnen!"
             },
             btnabouttoStart:{
-                btntext:"Lasst uns beginnen!"
+                btntext:"Jetzt geht es los!"
             },
             btnepisode14Evaluation:{
                 btntext:"Lass mich dir sagen, was ich denke..."
@@ -447,13 +447,13 @@ export class registerUserFormData {
                 btntext:"S'inscrire"
             },
             btnwelcometoAbout:{
-                btntext:"Dis m'en plus!"
+                btntext:"Je veux en savoir plus"
             },
             btnwelcometoOverview:{
                 btntext:"Je ne peux pas attendre. Allons-y!"
             },
             btnoverviewtoStart:{
-                btntext:"Assez. Commençons!"
+                btntext:"Je veux commencer !"
             },
             btnabouttoStart:{
                 btntext:"Commençons!"
