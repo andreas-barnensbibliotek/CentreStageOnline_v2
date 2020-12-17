@@ -101,7 +101,7 @@ export class registerUserFormData {
                 btntext:"Download all Worksheets (zip)"
             },
             trippuslink:{
-                btntext:"https://www.trippus.net/evaluationcentrestage"
+                btntext:"https://www.trippus.net/centrestageonlineenglish"
             }                         
         },
         {
@@ -194,7 +194,7 @@ export class registerUserFormData {
                 btntext:"Ladda ner alla arbetsblad (zip)"
             },
             trippuslink:{
-                btntext:"https://www.trippus.net/evaluationcentrestage"
+                btntext:"https://www.trippus.net/centrestageonline"
             }     
         },
         {
@@ -380,7 +380,7 @@ export class registerUserFormData {
                 btntext:"Laden Sie alle Arbeitsblätter herunter (zip)"
             },
             trippuslink:{
-                btntext:"https://www.trippus.net/evaluationcentrestage"
+                btntext:"https://www.trippus.net/onlinegermany"
             }     
         },
         {
@@ -473,7 +473,7 @@ export class registerUserFormData {
                 btntext:"Télécharger toutes les feuilles de travail (zip)"
             },
             trippuslink:{
-                btntext:"https://www.trippus.net/evaluationcentrestage"
+                btntext:"https://www.trippus.net/csoonlinefrance"
             }     
         },
         {
@@ -566,7 +566,7 @@ export class registerUserFormData {
                 btntext:"Descargar todas las hojas de trabajo (zip)"
             },
             trippuslink:{
-                btntext:"https://www.trippus.net/evaluationcentrestage"
+                btntext:"https://www.trippus.net/csoonlinespain"
             }     
         }
     ]   
