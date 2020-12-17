@@ -31,14 +31,14 @@ export class WpApiService extends ApiServiceService {
 
   getPageSlug(slug:any){   
     let url:string = this._global.server +"Content_"+ this._global.getUserShortLanguage() +"?slug="+slug;
-    console.log("getPageSlug URL: " + url);    
+    // console.log("getPageSlug URL: " + url);    
     return this.getPosts(url);       
   }
 
   postRegisterUser(formdata:any){   
     let url:string = this._global.postserver +"?post_type=RegisterUser";
-    console.log("getPageSlug URL: " + url);  
-    console.log(formdata);
+    // console.log("getPageSlug URL: " + url);  
+    // console.log(formdata);
     return this.doPost(url,formdata);       
   }
 

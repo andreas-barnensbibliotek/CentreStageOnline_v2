@@ -18,8 +18,8 @@ export class Global {
   currentlanguage:string 
   userregistered:string 
 
-  server:string = this._devserver + this._wpApi;
-  postserver:string = this._devserver + this._wpApiPost;        
+  server:string = this._liveserver + this._wpApi;
+  postserver:string = this._liveserver + this._wpApiPost;        
   devkey:string = "/devkey/alf/?type=json";     
    
   constructor(private router: Router, private _cookiehandler:cookieLanguageHandler, private _formButtonObj : registerUserFormData) {  
