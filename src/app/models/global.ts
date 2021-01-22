@@ -12,20 +12,20 @@ export class Global {
   private _devserver:string = "https://dev.centrestageonline.org";
   private _localdevserver:string = "http://localhost:81/centrestageonline.org";
   private _wpApi:string = "/wpAdmin/wp-json/wp/v2/";
-  private _wpApiPost:string = "/wpAdmin/wp-json/addreg/v2/";      
-  
-  // storageHandler:LocalStorageHandler
-  currentlanguage:string 
-  userregistered:string 
+  private _wpApiPost:string = "/wpAdmin/wp-json/addreg/v2/";
 
-  server:string = this._devserver + this._wpApi;
-  postserver:string = this._devserver + this._wpApiPost;        
-  devkey:string = "/devkey/alf/?type=json";     
-   
-  constructor(private router: Router, private _cookiehandler:cookieLanguageHandler, private _formButtonObj : registerUserFormData) {  
-    this.currentlanguage = localStorage.getItem("userlang");    
+  // storageHandler:LocalStorageHandler
+  currentlanguage:string
+  userregistered:string
+
+  server:string = this._liveserver + this._wpApi;
+  postserver:string = this._liveserver + this._wpApiPost;
+  devkey:string = "/devkey/alf/?type=json";
+
+  constructor(private router: Router, private _cookiehandler:cookieLanguageHandler, private _formButtonObj : registerUserFormData) {
+    this.currentlanguage = localStorage.getItem("userlang");
   }
-  
+
   private _currentLanguageHandler: Subject<void> = new Subject<void>();
   get currentLanguageHandler(){
     return this._currentLanguageHandler;
@@ -43,39 +43,39 @@ export class Global {
   }
   public getUserShortLanguage(){
     // if(!this.currentlanguage){
-    //   this.setUserLanguage("EN")      
-    // }    
-    return this.currentlanguage;          
+    //   this.setUserLanguage("EN")
+    // }
+    return this.currentlanguage;
   }
 
-  public setUserLanguage(langtyp:string){      
-    // if(!langtyp){     
-    //   langtyp="EN";
-    // };
-    let usrlang = this.getUserGuidLanguage().find(i => i.type === langtyp);             
-    return this.setLanguage(usrlang.type)
-  }
-  
-  public getUserfullLanguage(langtyp:string){      
+  public setUserLanguage(langtyp:string){
     // if(!langtyp){
     //   langtyp="EN";
     // };
-    let usrlang = this.getUserGuidLanguage().find(i => i.type === langtyp);             
+    let usrlang = this.getUserGuidLanguage().find(i => i.type === langtyp);
+    return this.setLanguage(usrlang.type)
+  }
+
+  public getUserfullLanguage(langtyp:string){
+    // if(!langtyp){
+    //   langtyp="EN";
+    // };
+    let usrlang = this.getUserGuidLanguage().find(i => i.type === langtyp);
     return usrlang.name
   }
 
-  private setLanguage(lang){                       
-    localStorage.setItem("userlang",lang);  
+  private setLanguage(lang){
+    localStorage.setItem("userlang",lang);
     this.currentlanguage = localStorage.getItem("userlang")
     return this.currentlanguage
  }
 
-  public isUserLanguageSet(){      
-    if(!localStorage.getItem("userlang")){     
+  public isUserLanguageSet(){
+    if(!localStorage.getItem("userlang")){
       return false;
-    }else{ 
+    }else{
       return true;
-    };  
+    };
   }
 
   public changeSwedish(inputValue:string){
@@ -87,26 +87,26 @@ export class Global {
       .replace(/ö/g, String.fromCharCode(246))
       .replace(/Ö/g, String.fromCharCode(214));
   }
-      
-  public isUserRegistred(){   
-    
+
+  public isUserRegistred(){
+
     console.log("registered: " +localStorage.getItem("userreg"));
     // if(this.userregistered){
-    //   return true;        
+    //   return true;
     // }else{
     //   //this.RedirectNotRegisterd();
     //   return false;
     // }
     return !!localStorage.getItem("userreg");
   }
-  public registerUser(){   
+  public registerUser(){
     try{
       localStorage.setItem("userreg", "true");
       this.router.navigate(['/episodes']);
       return true;
     }catch{
       return false;
-    };    
+    };
   }
   // RedirectNotRegisterd(){
   //   this.router.navigate(['/register']);
@@ -125,8 +125,8 @@ export class Global {
           })();
     };
 
-    public getCookieText(){      
-      return this._cookiehandler.getCookieText(this.getUserShortLanguage());             
+    public getCookieText(){
+      return this._cookiehandler.getCookieText(this.getUserShortLanguage());
     }
 
     public getlangFormButtonText(){

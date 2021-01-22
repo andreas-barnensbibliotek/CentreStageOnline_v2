@@ -7,10 +7,10 @@ export class registerUserFormData {
         language: "",
         gender : "",
         befattning : ""
-    } 
+    }
 
     getFormPublicText(){
-        
+
         return [{
             type: "EN",
             header:{
@@ -102,7 +102,7 @@ export class registerUserFormData {
             },
             trippuslink:{
                 btntext:"https://www.trippus.net/centrestageonlineenglish"
-            }                         
+            }
         },
         {
             type: "SV",
@@ -186,7 +186,7 @@ export class registerUserFormData {
                 btntext:"Alla avsnitt",
                 btnBefore:"Föregående",
                 btnNext:"Nästa"
-            },           
+            },
             btnpartartists:{
                 btntext:"Deltagande konstnärer"
             },
@@ -195,7 +195,7 @@ export class registerUserFormData {
             },
             trippuslink:{
                 btntext:"https://www.trippus.net/centrestageonline"
-            }     
+            }
         },
         {
             type: "PL",
@@ -226,7 +226,7 @@ export class registerUserFormData {
                 },
                 hlptxt:"", //"wprowadź płeć",
                 placeholdertxt:"", //:"wprowadź płeć",
-            },           
+            },
             firstname:{
                 labeltxt:"Imię",
                 hlptxt:"", //"Wpisz swoje imię",
@@ -288,7 +288,7 @@ export class registerUserFormData {
             },
             trippuslink:{
                 btntext:"https://www.trippus.net/CSOnlinepolen"
-            }     
+            }
         },
         {
             type: "DE",
@@ -319,7 +319,7 @@ export class registerUserFormData {
                 },
                 hlptxt:"", //"Geben Sie das Geschlecht ein",
                 placeholdertxt:"", //:"Geben Sie das Geschlecht ein",
-            },                
+            },
             firstname:{
                 labeltxt:"Vorname",
                 hlptxt:"", //"Vorname einfügen",
@@ -381,7 +381,7 @@ export class registerUserFormData {
             },
             trippuslink:{
                 btntext:"https://www.trippus.net/onlinegermany"
-            }     
+            }
         },
         {
             type: "FR",
@@ -412,7 +412,7 @@ export class registerUserFormData {
                 },
                 hlptxt:"", //"Entrez le sexe",
                 placeholdertxt:"", //:"Entrez le sexe",
-            },             
+            },
             firstname:{
                 labeltxt:"Prénom",
                 hlptxt:"", //"Insérez votre prénom",
@@ -474,7 +474,7 @@ export class registerUserFormData {
             },
             trippuslink:{
                 btntext:"https://www.trippus.net/csoonlinefrance"
-            }     
+            }
         },
         {
             type: "SP",
@@ -485,7 +485,7 @@ export class registerUserFormData {
                 labeltxt:"Idioma",
                 hlptxt:"", //"Ingrese idioma",
                 placeholdertxt:"", //:"Ingrese idioma",
-            }, 
+            },
             comments:{
                 labeltxt:"Comentarios",
                 hlptxt:"", //"Gender comments",
@@ -497,15 +497,15 @@ export class registerUserFormData {
                 placeholdertxt:"", //:"Insert Country",
             },
             gender:{
-                labeltxt:"Género",
+                labeltxt:"Sexo",
                 alternativ:{
-                    alt1:"Hembra",
+                    alt1:"Mujer",
                     alt2:"Hombre",
                     alt3:"Otro"
                 },
                 hlptxt:"", //"Ingrese género",
                 placeholdertxt:"", //:"Ingrese género",
-            }, 
+            },
             firstname:{
                 labeltxt:"Primer nombre",
                 hlptxt:"", //"Inserta tu nombre",
@@ -517,7 +517,7 @@ export class registerUserFormData {
                 placeholdertxt:"", //:"Inserta tu apellido",
             },
             befatting:{
-                labeltxt:"Posición",
+                labeltxt:"Profesión",
                 hlptxt:"", //"Ingrese la posición",
                 placeholdertxt:"", //:"Ingrese la posición",
             },
@@ -567,18 +567,18 @@ export class registerUserFormData {
             },
             trippuslink:{
                 btntext:"https://www.trippus.net/csoonlinespain"
-            }     
+            }
         }
-    ]   
-        
-    }      
-   
-    public getRegFormLanguageText(langtyp:string){      
+    ]
+
+    }
+
+    public getRegFormLanguageText(langtyp:string){
         if(!langtyp){
           langtyp="EN";
         };
-        let formlang = this.getFormPublicText().find(i => i.type === langtyp);  
+        let formlang = this.getFormPublicText().find(i => i.type === langtyp);
         return formlang;
-       
+
       }
 }
