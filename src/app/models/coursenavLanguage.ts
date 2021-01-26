@@ -2,9 +2,9 @@ import {Injectable } from "@angular/core";
 
 @Injectable() // Decorator that marks a class as available to be provided and injected as a dependency.
 export class coursenavLanguage {
-  
+
     CourseNavLanguages(){
-        
+
         return [{
               type: "EN",
               one:{
@@ -21,7 +21,7 @@ export class coursenavLanguage {
               },
               four:{
                 title:"Creating change – part 1 and 2",
-                linktext:"Creating change – part 1 and 2",               
+                linktext:"Creating change – part 1 and 2",
               },
               five:{
                 title:"Talking to the right people about the right things",
@@ -80,7 +80,7 @@ export class coursenavLanguage {
               },
               four:{
                 title:"Skapa förändring - del 1 och 2",
-                linktext:"Skapa förändring - del 1 och 2",               
+                linktext:"Skapa förändring - del 1 och 2",
               },
               five:{
                 title:"Prata med rätt personer om rätt saker",
@@ -91,8 +91,8 @@ export class coursenavLanguage {
                 linktext:"Att få arbete",
               },
               seven:{
-                title:"Förmedla ditt meddelande",
-                linktext:"Förmedla ditt meddelande",
+                title:"Förmedla ditt budskap",
+                linktext:"Förmedla ditt budskap",
               },
               eight:{
                 title:"Överkomma hinder",
@@ -139,7 +139,7 @@ export class coursenavLanguage {
               },
               four:{
                 title:"Tworzenie zmiany - część 1 i 2",
-                linktext:"Tworzenie zmiany - część 1 i 2",               
+                linktext:"Tworzenie zmiany - część 1 i 2",
               },
               five:{
                 title:"RRozmawianie z właściwymi ludźmi o właściwych rzeczach ",
@@ -198,7 +198,7 @@ export class coursenavLanguage {
               },
               four:{
                 title:"Veränderung schaffen - Teil 1 und 2",
-                linktext:"Veränderung schaffen - Teil 1 und 2",               
+                linktext:"Veränderung schaffen - Teil 1 und 2",
               },
               five:{
                 title:"Mit den richtigen Leuten über die richtigen Dinge sprechen",
@@ -257,7 +257,7 @@ export class coursenavLanguage {
               },
               four:{
                 title:"Créer le changement - partie 1 et 2",
-                linktext:"Créer le changement - partie 1 et 2",               
+                linktext:"Créer le changement - partie 1 et 2",
               },
               five:{
                 title:"Parler aux bonnes personnes des bonnes choses",
@@ -316,7 +316,7 @@ export class coursenavLanguage {
               },
               four:{
                 title:"Creando cambio - parte 1 y 2",
-                linktext:"Creando cambio - parte 1 y 2",               
+                linktext:"Creando cambio - parte 1 y 2",
               },
               five:{
                 title:"Hablar a las personas adecuadas sobre las cosas adecuadas.",
@@ -359,16 +359,16 @@ export class coursenavLanguage {
                 linktext:"Evaluación",
               }
         }
-    ]   
-        
-    }      
-   
-    public getCourseNavLanguageText(langtyp:string){      
+    ]
+
+    }
+
+    public getCourseNavLanguageText(langtyp:string){
         if(!langtyp){
           langtyp="EN";
         };
-        let formlang = this.CourseNavLanguages().find(i => i.type === langtyp);  
+        let formlang = this.CourseNavLanguages().find(i => i.type === langtyp);
         return formlang;
-       
+
       }
 }

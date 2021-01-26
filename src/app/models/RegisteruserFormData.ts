@@ -174,7 +174,7 @@ export class registerUserFormData {
                 btntext:"Kan inte vänta. Nu kör vi!"
             },
             btnoverviewtoStart:{
-                btntext:"Tillräckligt. Låt oss börja!"
+                btntext:"Låt oss börja!"
             },
             btnabouttoStart:{
                 btntext:"Låt oss börja!"
