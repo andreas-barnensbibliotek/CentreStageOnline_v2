@@ -21,6 +21,7 @@ export class Global {
   server:string = this._liveserver + this._wpApi;
   postserver:string = this._liveserver + this._wpApiPost;
   devkey:string = "/devkey/alf/?type=json";
+  filesrc:string = this._liveserver + "/wpAdmin/wp-content/uploads/";
 
   constructor(private router: Router, private _cookiehandler:cookieLanguageHandler, private _formButtonObj : registerUserFormData) {
     this.currentlanguage = localStorage.getItem("userlang");

@@ -10,12 +10,12 @@
     </div>
   </div>
   <section class="container-grid wrap-nav-video" *ngIf="showVideobox">
-    
+
     <main class="container-grid nav-video">
       <a class="link-button btn btn-left-1004" (click)="gotoLectureBefore(mainPageData[0].acf.smallnavbefore)" title="{{btnEpisodeBefore}}"></a>
       <a class="link-button btn btn-episodes"  routerLink="." fragment="all-episodes" >
         <span class="button-link-text-2">
-          <span class="button-link-text-2" id="button-link-text-1">          
+          <span class="button-link-text-2" id="button-link-text-1">
             <font color="#ffffff" class="button-link-text-1">{{btnallEpisodes}}</font>
           </span>
         </span>
@@ -25,24 +25,24 @@
   </section>
 
   <article class="container-grid wrap-main-text-episodes">
-    <div class="container-grid wrap-quote" [ngClass]="getlection1Class(mainPageData[0].slug)" [innerHTML]="mainPageData[0].acf.quoteblock"> 
+    <div class="container-grid wrap-quote" [ngClass]="getlection1Class(mainPageData[0].slug)" [innerHTML]="mainPageData[0].acf.quoteblock">
       <div class="lds-dual-ring"></div>
     </div>
-    
+
     <main class="container-grid container-main-text-episodes">
       <main class="container-grid main-text-episodes" [innerHTML]="mainPageData[0].acf.maincontent">
         <div class="lds-dual-ring"></div>
-      </main>      
+      </main>
       <div class="rule rule-2" *ngIf="showWorksheetHR">
         <hr>
       </div>
       <div class="container-grid wrap-worksheet one" [innerHTML]="mainPageData[0].acf.worksheetblock" >
-      
+
           <div class="lds-dual-ring"></div>
-        
+
       </div>
       <div class="container-grid wrap-worksheet all">
-        <a href="" class="link-container link-container-worksheet all">
+        <a href="{{allWorksheetsFile}}" class="link-container link-container-worksheet all">
           <div class="responsive-picture picture-worksheet">
             <picture><img alt="Placeholder Picture" src="./assets/Download-NY.png"></picture>
           </div>
@@ -59,7 +59,7 @@
         <h1 class="title-episode">{{btnParticipants}}<br></h1>
       </div>
       <section class="container-grid wrap-video-ep1" *ngIf="showExtraVideobox">
-        <div class="responsive-video vimeo">         
+        <div class="responsive-video vimeo">
           <iframe [src]="extravideoUrl" frameborder="0" allow="autoplay; fullscreen" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
       </section>
