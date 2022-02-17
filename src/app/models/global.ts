@@ -133,4 +133,12 @@ export class Global {
     public getlangFormButtonText(){
       return this._formButtonObj.getRegFormLanguageText(this.getUserShortLanguage());
     }
+
+    public HeadTitleMapper(url:string){
+      return this.capitalize(url.replace('/', '')) + " - Centre Stage Online"
+    }
+    private capitalize(str:string){
+      return str && str[0].toUpperCase() + str.slice(1);
+    }
 }
+

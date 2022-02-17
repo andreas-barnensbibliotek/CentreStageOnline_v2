@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, Title } from '@angular/platform-browser';
 import { Global } from './../models/global';
 import { WpApiService } from './../../services/wp-Api/wp-api.service';
 import { Component, OnInit } from '@angular/core';
@@ -10,23 +10,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
- 
+
   mainPageData:any=[];
   videoUrl:any;
   showVideobox:boolean = false;
   dangerousVideoUrl:any;
   btnstart:any;
-  constructor(private wpApi:WpApiService, private glb:Global, private _sanitizer: DomSanitizer, private _router:Router) { 
+  constructor(private wpApi:WpApiService, private glb:Global, private _sanitizer: DomSanitizer, private _router:Router, private titleService: Title ) {
   }
 
-  ngOnInit() {         
+  ngOnInit() {
+    this.titleService.setTitle( this.glb.HeadTitleMapper("About"));
     this.wpApi.currentPageDataHandler.subscribe(()=>{
-        this.getpagedata();    
-        this.btnstart = this.glb.getlangFormButtonText().btnabouttoStart.btntext;    
+        this.getpagedata();
+        this.btnstart = this.glb.getlangFormButtonText().btnabouttoStart.btntext;
       })
     this.getpagedata();
     this.btnstart = this.glb.getlangFormButtonText().btnabouttoStart.btntext;
-    
+
   }
 
   selectLanguageChangeHandler (event: any) {
@@ -38,12 +39,12 @@ export class AboutComponent implements OnInit {
 
   getpagedata(){
     this.wpApi.getPageSlug("about").subscribe(Response => {
-      this.mainPageData = Response  
-      
-      if((Object.keys(Response).length === 0)){ 
+      this.mainPageData = Response
+
+      if((Object.keys(Response).length === 0)){
         this._router.navigateByUrl("/404");
       }
-  
+
 
       if(this.mainPageData[0].acf.movieurl!=""){
         console.log("detta: " +this.mainPageData[0].acf.movieurl)
@@ -52,8 +53,8 @@ export class AboutComponent implements OnInit {
       }else{
         this.showVideobox= false;
       }
-      
-      console.log(this.mainPageData)  
+
+      console.log(this.mainPageData)
     });
   }
   updateVimeoVideoUrl(id: string) {

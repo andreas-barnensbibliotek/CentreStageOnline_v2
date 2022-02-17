@@ -1,4 +1,4 @@
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, Title } from '@angular/platform-browser';
 import { Global } from './../models/global';
 import { WpApiService } from './../../services/wp-Api/wp-api.service';
 import { Component, OnInit } from '@angular/core';
@@ -14,14 +14,15 @@ export class CreditsComponent implements OnInit {
   videoUrl:any;
   showVideobox:boolean = false;
   dangerousVideoUrl:any;
-  constructor(private wpApi:WpApiService, private glb:Global, private _sanitizer: DomSanitizer) { 
+  constructor(private wpApi:WpApiService, private glb:Global, private _sanitizer: DomSanitizer, private titleService: Title) {
   }
 
-  ngOnInit() {         
+  ngOnInit() {
+    this.titleService.setTitle( this.glb.HeadTitleMapper("Credits"));
     this.wpApi.currentPageDataHandler.subscribe(()=>{
-        this.getpagedata();        
+        this.getpagedata();
       })
-    this.getpagedata();    
+    this.getpagedata();
   }
 
   selectLanguageChangeHandler (event: any) {
@@ -33,8 +34,8 @@ export class CreditsComponent implements OnInit {
 
   getpagedata(){
     this.wpApi.getPageSlug("credits").subscribe(Response => {
-      this.mainPageData = Response  
-      
+      this.mainPageData = Response
+
       if(this.mainPageData[0].acf.movieurl!=""){
         console.log("detta: " +this.mainPageData[0].acf.movieurl)
         this.showVideobox= true;
@@ -42,8 +43,8 @@ export class CreditsComponent implements OnInit {
       }else{
         this.showVideobox= false;
       }
-      
-      console.log(this.mainPageData)  
+
+      console.log(this.mainPageData)
     });
   }
   updateVimeoVideoUrl(id: string) {

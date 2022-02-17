@@ -1,6 +1,6 @@
 import { Global } from './../../models/global';
 import { WpApiService } from './../../../services/wp-Api/wp-api.service';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, Title } from '@angular/platform-browser';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,24 +9,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./episodesstart.component.scss']
 })
 export class EpisodesstartComponent implements OnInit {
- 
+
   mainPageData:any=[];
   videoUrl:any;
   showVideobox:boolean = false;
   dangerousVideoUrl:any;
   btnstart:any;
   welcomeBlock:any;
-  constructor(private wpApi:WpApiService, private glb:Global, private _sanitizer: DomSanitizer) { 
+  constructor(private wpApi:WpApiService, private glb:Global, private _sanitizer: DomSanitizer, private titleService:Title) {
   }
 
-  ngOnInit() {         
+  ngOnInit() {
+    this.titleService.setTitle( this.glb.HeadTitleMapper("About"));
     this.wpApi.currentPageDataHandler.subscribe(()=>{
-        this.getpagedata();   
+        this.getpagedata();
         this.btnstart = this.glb.getlangFormButtonText().btnoverviewtoStart.btntext;
       })
     this.getpagedata();
     this.btnstart = this.glb.getlangFormButtonText().btnoverviewtoStart.btntext;
-    
+
   }
 
   selectLanguageChangeHandler (event: any) {
@@ -37,9 +38,10 @@ export class EpisodesstartComponent implements OnInit {
   }
 
   getpagedata(){
+    this.titleService.setTitle( this.glb.HeadTitleMapper("Let's start"));
     this.wpApi.getPageSlug("episodesstart").subscribe(Response => {
-      this.mainPageData = Response  
-      
+      this.mainPageData = Response
+
       this.welcomeBlock=true;
 
       if(this.mainPageData[0].acf.worksheetblock==""){
@@ -52,8 +54,8 @@ export class EpisodesstartComponent implements OnInit {
       }else{
         this.showVideobox= false;
       }
-      
-      console.log(this.mainPageData)  
+
+      console.log(this.mainPageData)
     });
   }
   updateVimeoVideoUrl(id: string) {

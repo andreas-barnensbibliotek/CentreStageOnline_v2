@@ -1,5 +1,5 @@
 import { AncorScrollService } from './../../../services/anchorScrollerService/ancor-scroll.service';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, Title } from '@angular/platform-browser';
 import { WpApiService } from './../../../services/wp-Api/wp-api.service';
 import { Global } from './../../models/global';
 import { Component, OnInit, SecurityContext } from '@angular/core';
@@ -30,7 +30,7 @@ export class GenericLectionsComponent implements OnInit {
 
 testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
 
-  constructor(private wpApi:WpApiService, private glb:Global ,private route:ActivatedRoute, private router:Router, private _sanitizer: DomSanitizer,private viewPortScroller: ViewportScroller, private _anchor: AncorScrollService) {
+  constructor(private wpApi:WpApiService, private glb:Global ,private route:ActivatedRoute, private router:Router, private _sanitizer: DomSanitizer,private viewPortScroller: ViewportScroller, private _anchor: AncorScrollService, private titleService:Title) {
     //this.videoUrl= this._sanitizer.bypassSecurityTrustUrl( "https://www.youtube-nocookie.com/embed/o2fcA3X3IvE");
 
   }
@@ -38,10 +38,12 @@ testurl:any = "https://www.youtube.com/embed/d0EQWneMedc"
   ngOnInit() {
     this.route.paramMap.subscribe(prams =>{
       this.currpageSlug = prams.get('slug');
+      this.titleService.setTitle( this.glb.HeadTitleMapper(this.currpageSlug));
       if (!this.currpageSlug){
         this.currpageSlug ="episodes";
       }
       this.wpApi.currentPageDataHandler.subscribe(()=>{
+
         console.log("visa denna slugg: " +this.currpageSlug);
         this.getpagedata(this.currpageSlug);
         this.btnallEpisodes = this.glb.getlangFormButtonText().btnallepisodes.btntext;

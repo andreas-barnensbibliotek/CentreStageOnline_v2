@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { WpApiService } from './../../services/wp-Api/wp-api.service';
 import { Global } from './../models/global';
 import { registerUserFormData } from './../models/RegisteruserFormData';
@@ -18,8 +19,8 @@ export class RegisterComponent implements OnInit {
   tmpAllLanguages:{};
   get formlanguage() { return this.regFormgoup.get('txtformlanguage')}
 
-  constructor(private _wpApi:WpApiService, private _regusrformdata: registerUserFormData, private _global:Global, private fb: FormBuilder) {        
-    this.tmpAllLanguages = _global.getUserGuidLanguage();    
+  constructor(private _wpApi:WpApiService, private _regusrformdata: registerUserFormData, private _global:Global, private fb: FormBuilder, private titleService: Title) {
+    this.tmpAllLanguages = _global.getUserGuidLanguage();
   }
 
     get txtfirstname(): any {
@@ -46,18 +47,19 @@ export class RegisterComponent implements OnInit {
     // get drpChooselang(): any {
     //   return this.regFormgoup.get('drpChooselang');
     // }
-  
 
-  ngOnInit(): void {    
+
+  ngOnInit(): void {
+    this.titleService.setTitle( this._global.HeadTitleMapper("Register"));
     this._global.currentLanguageHandler.subscribe(()=>{
       this.loadFormSettings();
     });
     this._wpApi.currentPageDataHandler.subscribe(()=>{
-      this.getpagedata();        
+      this.getpagedata();
     })
-    this.loadFormSettings();  
-    this.getpagedata();    
-  } 
+    this.loadFormSettings();
+    this.getpagedata();
+  }
 
   selectLanguageChangeHandler (event: any) {
     //update the ui
@@ -68,33 +70,33 @@ export class RegisterComponent implements OnInit {
 
   getpagedata(){
     this._wpApi.getPageSlug("register").subscribe(Response => {
-      this.mainPageData = Response        
-      console.log(this.mainPageData)  
+      this.mainPageData = Response
+      console.log(this.mainPageData)
     });
   }
 
-  
+
   loadFormSettings(){
     let CurrentShortLanguage = this._global.getUserShortLanguage();
     this.formlangdata = this._regusrformdata.getRegFormLanguageText(CurrentShortLanguage);
 
     this.regFormgoup = this.fb.group({
-      // drpChooselang:['', Validators.required],      
+      // drpChooselang:['', Validators.required],
       txtfirstname: ['', Validators.required],
       txtlastname:['', Validators.required],
-      radiogender:['', Validators.required],  
-      txtcomments:[''],  
-      txtcountry:['', Validators.required],  
+      radiogender:['', Validators.required],
+      txtcomments:[''],
+      txtcountry:['', Validators.required],
       txtorganisation:[''],
-      txtprofession:['', Validators.required],      
+      txtprofession:['', Validators.required],
       txtemail:['', Validators.required]
     })
-    
+
     let defaultDrpFullLanguageValue= this._global.getUserfullLanguage(CurrentShortLanguage);
-    this.regFormgoup.patchValue({ drpChooselang: defaultDrpFullLanguageValue });    
-  }    
-    
-  onSubmit(){     
+    this.regFormgoup.patchValue({ drpChooselang: defaultDrpFullLanguageValue });
+  }
+
+  onSubmit(){
     if (this.regFormgoup.valid){
 
       let registerobj= {
@@ -111,15 +113,15 @@ export class RegisterComponent implements OnInit {
         email: this.regFormgoup.get('txtemail').value,
       };
 
-      this.registerUserDB(registerobj);      
+      this.registerUserDB(registerobj);
     };
   }
 
   registerUserDB(regData:any){
-        
-    this._wpApi.postRegisterUser(JSON.parse(JSON.stringify(regData))).subscribe((response)=>{      
-      console.log("detta är efter post"+ response);      
-      this._global.registerUser();      
+
+    this._wpApi.postRegisterUser(JSON.parse(JSON.stringify(regData))).subscribe((response)=>{
+      console.log("detta är efter post"+ response);
+      this._global.registerUser();
     });
 
   }

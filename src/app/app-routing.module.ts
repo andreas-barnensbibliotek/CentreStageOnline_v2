@@ -12,24 +12,24 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 
 const routerOptions: ExtraOptions = {
-  enableTracing: true,
+  enableTracing: false,
   scrollPositionRestoration: 'enabled',
   anchorScrolling: 'enabled',
   scrollOffset: [0, 64],
 };
 const routes: Routes = [
-  { path: '',  redirectTo: 'start', pathMatch: 'full' },  
-  { path: 'start',  component: StartComponent, canActivate:[authstartabout]}, 
-  { path: 'welcome',  component: WelcomeComponent, canActivate:[AuthGuardStart]},   
-  { path: 'register',  component: RegisterComponent, canActivate: [AuthGuardStart]}, 
-  { path: 'episodesstart',  component: EpisodesstartComponent, canActivate: [AuthGuardStart]}, 
-  { path: 'about',  component: AboutComponent, canActivate: [AuthGuardStart]}, 
-  { path: 'credits',  component: CreditsComponent, canActivate: [AuthGuardStart]}, 
-  { path: 'episodes', 
+  { path: '',  redirectTo: 'start', pathMatch: 'full' },
+  { path: 'start',  component: StartComponent, canActivate:[authstartabout]},
+  { path: 'welcome',  component: WelcomeComponent, canActivate:[AuthGuardStart]},
+  { path: 'register',  component: RegisterComponent, canActivate: [AuthGuardStart]},
+  { path: 'episodesstart',  component: EpisodesstartComponent, canActivate: [AuthGuardStart]},
+  { path: 'about',  component: AboutComponent, canActivate: [AuthGuardStart]},
+  { path: 'credits',  component: CreditsComponent, canActivate: [AuthGuardStart]},
+  { path: 'episodes',
     loadChildren: './lections/lection-router/lection-router.module#LectionRouterModule',
-    canActivate: [AuthGuard]},     
+    canActivate: [AuthGuard]},
   // { path:':slug', component: GenericMainpageComponent},  // använd denna om du vill ha dynamiska länkar i root nav
-  { path: '**',  component: Err404pageComponent},   
+  { path: '**',  component: Err404pageComponent},
 ];
 
 @NgModule({

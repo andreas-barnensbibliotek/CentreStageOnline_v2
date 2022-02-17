@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 import { WpApiService } from './../../services/wp-Api/wp-api.service';
@@ -11,21 +12,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./start.component.scss']
 })
 export class StartComponent implements OnInit {
-  langdrp:any=[];  
+  langdrp:any=[];
   selectedval:any =this.glb.getUserShortLanguage();
   mainPageData:any=[];
- 
-  constructor(private wpApi:WpApiService, private glb:Global, private _router:Router) { 
+
+  constructor(private wpApi:WpApiService, private glb:Global, private _router:Router, private titleService: Title) {
   }
 
-  ngOnInit() {     
-    this.langdrp = this.glb.getUserGuidLanguage();  
+  ngOnInit() {
+    this.titleService.setTitle( this.glb.HeadTitleMapper("Welcome to Centre Stage Online!"));
+    this.langdrp = this.glb.getUserGuidLanguage();
     this.wpApi.currentPageDataHandler.subscribe(()=>{
         this.getpagedata();
-        
+
       })
     this.getpagedata();
-    
+
   }
 
   // selectLanguageChangeHandler (event: any) {
@@ -37,8 +39,8 @@ export class StartComponent implements OnInit {
 
   getpagedata(){
     this.wpApi.getPageSlug("start").subscribe(Response => {
-      this.mainPageData = Response        
-      
+      this.mainPageData = Response
+
     });
   }
   // selectLanguageChangeHandler (event: any) {
@@ -47,18 +49,18 @@ export class StartComponent implements OnInit {
   //   console.log("språk: " + lang);
   //   this.glb.setUserLanguage(lang);
   //   this.glb.getCookieText();
-  //   this.wpApi.currentPageDataHandler.next();    
+  //   this.wpApi.currentPageDataHandler.next();
   //   this.glb.currentLanguageHandler.next();
-    
+
   //   // this.getpagedata();
   // }
 
   selectLanguagehandler(lang: any) {
-    //update the ui    
+    //update the ui
     console.log("språk: " + lang);
     this.glb.setUserLanguage(lang);
     this.glb.getCookieText();
-    this.wpApi.currentPageDataHandler.next();    
+    this.wpApi.currentPageDataHandler.next();
     this.glb.currentLanguageHandler.next();
     this._router.navigate(['/welcome']);
   }
