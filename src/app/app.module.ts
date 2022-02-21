@@ -50,7 +50,7 @@ import { EpisodesstartComponent } from './lections/episodesstart/episodesstart.c
     WelcomeComponent, EvaluationComponent, EpisodesstartComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     CookieLawModule,
