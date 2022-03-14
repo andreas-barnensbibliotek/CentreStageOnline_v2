@@ -15,7 +15,7 @@ export class WpApiService extends ApiServiceService {
   //private server:string ="http://localhost:81/Angular_wp/wpAdmin/wp-json/wp/v2/";
   //private server:string ="http://dev.frontdata.se/lasfirman/wpAdmin/wp-json/wp/v2/";
 
-  constructor(Http:HttpClient, private _global:Global) { 
+  constructor(Http:HttpClient, private _global:Global) {
     super("",Http);
   }
 
@@ -29,17 +29,24 @@ export class WpApiService extends ApiServiceService {
     return this.getPosts(url);
   }
 
-  getPageSlug(slug:any){   
+  getPageSlug(slug:any){
     let url:string = this._global.server +"Content_"+ this._global.getUserShortLanguage() +"?slug="+slug;
-    // console.log("getPageSlug URL: " + url);    
-    return this.getPosts(url);       
+    // console.log("getPageSlug URL: " + url);
+    return this.getPosts(url);
   }
 
-  postRegisterUser(formdata:any){   
+  postRegisterUser(formdata:any){
     let url:string = this._global.postserver +"?post_type=RegisterUser";
-    // console.log("getPageSlug URL: " + url);  
+    // console.log("getPageSlug URL: " + url);
     // console.log(formdata);
-    return this.doPost(url,formdata);       
+    return this.doPost(url,formdata);
+  }
+
+  postFilmDownload(formdata:any){
+    let url:string = this._global.filmpostserver +"?post_type=FilmDownload";
+    // console.log("getPageSlug URL: " + url);
+    // console.log(formdata);
+    return this.doPost(url,formdata);
   }
 
 }

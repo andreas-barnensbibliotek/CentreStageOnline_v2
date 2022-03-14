@@ -1,3 +1,4 @@
+import { FilmSharedComponent } from './film-shared/film-shared.component';
 import { EpisodesstartComponent } from './lections/episodesstart/episodesstart.component';
 import { WelcomeComponent } from './welcome/welcome/welcome.component';
 import { authstartabout } from './shared/autguardStart/authstartabout.guard';
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'episodesstart',  component: EpisodesstartComponent, canActivate: [AuthGuardStart]},
   { path: 'about',  component: AboutComponent, canActivate: [AuthGuardStart]},
   { path: 'credits',  component: CreditsComponent, canActivate: [AuthGuardStart]},
+  { path: 'reflectivefilm',  component: FilmSharedComponent},
   { path: 'episodes',
     loadChildren: './lections/lection-router/lection-router.module#LectionRouterModule',
     canActivate: [AuthGuard]},

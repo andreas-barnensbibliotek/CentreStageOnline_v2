@@ -1,3 +1,4 @@
+import { Router, ActivatedRoute } from '@angular/router';
 import { Global } from './../../models/global';
 import { WpApiService } from './../../../services/wp-Api/wp-api.service';
 import { Component, OnInit } from '@angular/core';
@@ -10,12 +11,13 @@ import { Component, OnInit } from '@angular/core';
 export class MainnavComponent implements OnInit {
   mainNavData:any=[];
 
-  constructor(private wpApi:WpApiService, private glb:Global) { 
-   
+
+  constructor(private wpApi:WpApiService) {
+
   }
 
   ngOnInit() {
-     this.wpApi.currentPageDataHandler.subscribe(()=>{
+      this.wpApi.currentPageDataHandler.subscribe(()=>{
       this.getNavdata();
     })
   this.getNavdata();
@@ -23,10 +25,10 @@ export class MainnavComponent implements OnInit {
 
   getNavdata(){
     this.wpApi.getMeny("Mainmenu").subscribe(Response => {
-      
-      this.mainNavData = Response     
-      console.log(this.mainNavData)  
+
+      this.mainNavData = Response
+      console.log(this.mainNavData)
     });
   }
- 
+
 }

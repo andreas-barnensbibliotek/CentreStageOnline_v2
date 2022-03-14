@@ -1,9 +1,15 @@
-<app-mainnav></app-mainnav>
+<ng-container *ngIf="!showaltmeny">
+  <app-mainnav></app-mainnav>
+</ng-container>
+
 <router-outlet></router-outlet>
-<app-mainfooter></app-mainfooter>
+
+<ng-container *ngIf="!showaltmeny">
+  <app-mainfooter></app-mainfooter>
+</ng-container>
 
 <cookie-law position="bottom" name="ng4topCookieLaw" expiration="1">
-  {{cookieText}} 
+  {{cookieText}}
   <a href="https://github.com/andreasonny83/angular2-cookie-law">
   {{cookieLinktext}}
   </a>

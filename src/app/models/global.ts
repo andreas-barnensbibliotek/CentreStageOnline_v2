@@ -13,15 +13,17 @@ export class Global {
   private _localdevserver:string = "http://localhost:81/centrestageonline.org";
   private _wpApi:string = "/wpAdmin/wp-json/wp/v2/";
   private _wpApiPost:string = "/wpAdmin/wp-json/addreg/v2/";
+  private _wpApiFilmPost:string = "/wpAdmin/wp-json/addfilmform/v2/";
 
   // storageHandler:LocalStorageHandler
   currentlanguage:string
   userregistered:string
 
-  server:string = this._liveserver + this._wpApi;
-  postserver:string = this._liveserver + this._wpApiPost;
+  server:string = this._devserver + this._wpApi;
+  postserver:string = this._devserver + this._wpApiPost;
+  filmpostserver:string = this._devserver + this._wpApiFilmPost;
   devkey:string = "/devkey/alf/?type=json";
-  filesrc:string = this._liveserver + "/wpAdmin/wp-content/uploads/";
+  filesrc:string = this._devserver + "/wpAdmin/wp-content/uploads/";
 
   constructor(private router: Router, private _cookiehandler:cookieLanguageHandler, private _formButtonObj : registerUserFormData) {
     this.currentlanguage = localStorage.getItem("userlang");

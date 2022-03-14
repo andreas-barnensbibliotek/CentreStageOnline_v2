@@ -34,6 +34,8 @@ import { CreditsComponent } from './credits/credits.component';
 import { WelcomeComponent } from './welcome/welcome/welcome.component';
 import { EvaluationComponent } from './lections/evaluation/evaluation.component';
 import { EpisodesstartComponent } from './lections/episodesstart/episodesstart.component';
+import { FilmSharedComponent } from './film-shared/film-shared.component';
+import { FilmDownloadComponent } from './filmShared/film-download/film-download.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,7 @@ import { EpisodesstartComponent } from './lections/episodesstart/episodesstart.c
     LectionMainComponent,
     RegisterComponent,  
     SafePipe, OverviewComponent, GenericMainpageComponent, AboutComponent, CreditsComponent, 
-    WelcomeComponent, EvaluationComponent, EpisodesstartComponent
+    WelcomeComponent, EvaluationComponent, EpisodesstartComponent, FilmSharedComponent, FilmDownloadComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

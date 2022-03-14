@@ -101,7 +101,7 @@ export class registerUserFormData {
                 btntext:"Download all Worksheets (zip)"
             },
             trippuslink:{
-                btntext:"https://www.trippus.net/centrestageonlineenglish"
+                btntext:"https://forms.office.com/Pages/ResponsePage.aspx?id=VaJi_CBC5EebWkGO7jHaX54Y88cPA-9MuhufCsvXBbNUMzdBTk1aMFNDRzlOOVNVSjlQWDA5TEY0Ri4u"
             }
         },
         {
@@ -194,7 +194,7 @@ export class registerUserFormData {
                 btntext:"Ladda ner alla arbetsblad (zip)"
             },
             trippuslink:{
-                btntext:"https://www.trippus.net/centrestageonline"
+                btntext:"https://forms.office.com/Pages/ResponsePage.aspx?id=VaJi_CBC5EebWkGO7jHaX54Y88cPA-9MuhufCsvXBbNUMzdBTk1aMFNDRzlOOVNVSjlQWDA5TEY0Ri4u"
             }
         },
         {
@@ -287,7 +287,7 @@ export class registerUserFormData {
                 btntext:"Pobierz wszystkie arkusze (zip)"
             },
             trippuslink:{
-                btntext:"https://www.trippus.net/CSOnlinepolen"
+                btntext:"https://forms.office.com/Pages/ResponsePage.aspx?id=VaJi_CBC5EebWkGO7jHaX54Y88cPA-9MuhufCsvXBbNUMzdBTk1aMFNDRzlOOVNVSjlQWDA5TEY0Ri4u"
             }
         },
         {
@@ -380,7 +380,7 @@ export class registerUserFormData {
                 btntext:"Laden Sie alle Arbeitsblätter herunter (zip)"
             },
             trippuslink:{
-                btntext:"https://www.trippus.net/onlinegermany"
+                btntext:"https://forms.office.com/Pages/ResponsePage.aspx?id=VaJi_CBC5EebWkGO7jHaX54Y88cPA-9MuhufCsvXBbNUMzdBTk1aMFNDRzlOOVNVSjlQWDA5TEY0Ri4u"
             }
         },
         {
@@ -473,7 +473,7 @@ export class registerUserFormData {
                 btntext:"Télécharger toutes les feuilles de travail (zip)"
             },
             trippuslink:{
-                btntext:"https://www.trippus.net/csoonlinefrance"
+                btntext:"https://forms.office.com/Pages/ResponsePage.aspx?id=VaJi_CBC5EebWkGO7jHaX54Y88cPA-9MuhufCsvXBbNUMzdBTk1aMFNDRzlOOVNVSjlQWDA5TEY0Ri4u"
             }
         },
         {
@@ -566,7 +566,7 @@ export class registerUserFormData {
                 btntext:"Descargar todas las hojas de trabajo (zip)"
             },
             trippuslink:{
-                btntext:"https://www.trippus.net/csoonlinespain"
+                btntext:"https://forms.office.com/Pages/ResponsePage.aspx?id=VaJi_CBC5EebWkGO7jHaX54Y88cPA-9MuhufCsvXBbNUMzdBTk1aMFNDRzlOOVNVSjlQWDA5TEY0Ri4u"
             }
         }
     ]

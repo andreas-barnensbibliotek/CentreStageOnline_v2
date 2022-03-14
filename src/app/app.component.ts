@@ -1,4 +1,4 @@
-import { NavigationEnd, Router } from '@angular/router';
+import { Event, NavigationEnd, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import {Global} from "./models/global";
 
@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
   showlang:string =""
   cookieText:string;
   cookieLinktext:string;
+  showaltmeny:boolean=false;
 
   constructor(private glb:Global,public router: Router) {
     this.router.events.subscribe(event => {
@@ -23,18 +24,30 @@ export class AppComponent implements OnInit {
     })
   }
 
-  ngOnInit() {  
+  ngOnInit() {
+    this.router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationEnd) {
+        this.showaltmeny =false;
+        if ((<NavigationEnd>event).url =="/reflectivefilm"){
+          this.showaltmeny = true;
+        };
+      }
+    });
+
+
     this.glb.currentLanguageHandler.subscribe(()=>{
       this.addcookietext();
     });
     this.addcookietext();
     //  localStorage.setItem('userlang',"SV" );
   }
-  
+
   addcookietext(){
     let cookieobj = this.glb.getCookieText();
     this.cookieText= cookieobj.cookietext;
     this.cookieLinktext= cookieobj.linktext;
   }
+
+
 
 }
