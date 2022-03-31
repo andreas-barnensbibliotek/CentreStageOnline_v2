@@ -10,12 +10,12 @@
     </div>
   </div>
   <section class="container-grid wrap-nav-video" >
-    
+
     <main class="container-grid nav-video">
       <a class="link-button btn btn-left-1004" (click)="gotoLectureBefore(mainPageData[0].acf.smallnavbefore)" title="Centre Stage Online - Back"></a>
       <a class="link-button btn btn-episodes"  routerLink="." fragment="all-episodes" >
         <span class="button-link-text-2">
-          <span class="button-link-text-2" id="button-link-text-1">          
+          <span class="button-link-text-2" id="button-link-text-1">
             <font color="#ffffff" class="button-link-text-1">{{btnallEpisodes}}</font>
           </span>
         </span>
@@ -25,30 +25,30 @@
   </section>
 
   <article class="container-grid wrap-main-text-episodes">
-    <div class="container-grid wrap-quote" [innerHTML]="mainPageData[0].acf.quoteblock"> 
+    <div class="container-grid wrap-quote" [innerHTML]="mainPageData[0].acf.quoteblock">
       <div class="lds-dual-ring"></div>
     </div>
-    
+
     <main class="container-grid container-main-text-episodes">
       <main class="container-grid main-text-episodes">
         <div [innerHTML]="mainPageData[0].acf.maincontent"></div>
-        <a class="link-button btn btn-1002 evaluation" href="{{trippuslink}}">
+        <a class="link-button btn btn-1002 evaluation" target="_blank" href="{{trippuslink}}">
             <span class="button-link-text-3" id="button-link-text-2">{{btnevaluation}}</span></a>
-      </main>      
+      </main>
       <div class="rule rule-2" *ngIf="showWorksheetHR">
         <hr>
       </div>
       <div class="container-grid wrap-worksheet" [innerHTML]="mainPageData[0].acf.worksheetblock">
-        <div class="lds-dual-ring"></div>        
+        <div class="lds-dual-ring"></div>
       </div>
       <div class="rule rule-1" *ngIf="showExtraMaterialHR">
         <hr>
       </div>
       <div class="container-grid external-links" [innerHTML]="mainPageData[0].acf.extramaterialblock">
         <div class="lds-dual-ring"></div>
-      </div>      
+      </div>
       <section class="container-grid wrap-video-ep1" *ngIf="showExtraVideobox">
-        <div class="responsive-video vimeo">         
+        <div class="responsive-video vimeo">
           <iframe [src]="extravideoUrl" frameborder="0" allow="autoplay; fullscreen" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
       </section>

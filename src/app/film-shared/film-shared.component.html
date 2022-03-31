@@ -8,9 +8,10 @@
     <li class="list-item-container nav-item">
       <a class="link-text nav-link nav-col nav-size" routerLink="/about" title="About">About</a>
     </li>
-
-    <li class="list-item-container nav-item">
-      <a class="link-text nav-link nav-col nav-size" routerLink="/" title="Credits">Online</a>
+  </ul>
+  <ul class="list-container navbar-nav">
+    <li class="list-item-container nav-item online">
+      <h3 class="navbar-brand nav-col"><a routerLink="/" title="Go to: Centre Stage&nbsp;| Online" class="heading-text-2"><span class="heading-text-2" id="heading-text-1">Go to: Centre Stage&nbsp;| Online</span></a></h3>
     </li>
   </ul>
 </div>
@@ -70,10 +71,11 @@
     </div>
   </div>
 </div>
+
 <div class="container-grid language deutsch" *ngIf="tyskablock">
   <header class="container-grid wrap-title-episode">
     <header class="container-grid title-size">
-      <h1 class="title-episode">Reflective Film - Deutsch<br></h1>
+      <h1 class="title-episode">Centre Stage | Gleichstellung der Geschlechter in der Branche der darstellenden Künst<br></h1>
     </header>
   </header>
   <div class="container-grid con-video-bgr ep1">
@@ -83,103 +85,98 @@
   </div>
   <article class="container-grid wrap-main-text-episodes">
     <main class="container-grid container-main-text-episodes">
-      <main class="container-grid main-text-episodes">
-
-        <div class="paragraph main-text-ep">
-        <h3>Centre Stage | Reflexionen zur Gleichstellung der Geschlechter in der Branche der darstellenden Künste</h3>
-            <div style="font-weight:bold">
-              <div>Dies ist ein Kurzfilm, der die Diversit&auml;t innerhalb der darstellenden K&uuml;nste reflektiert. Sie k&ouml;nnen es gerne herunterladen, teilen und verwenden, wie Sie m&ouml;chten. Der Film steht mit Untertiteln in f&uuml;nf verschiedenen Sprachen &ndash; Englisch, Schwedisch, Spanisch, Franz&ouml;sisch und Deutsch &ndash; zum Download bereit.</div>
-              <br />
-              <div>Es hat 5 Kapitel, die auch separat funktionieren:</div>
-              <br />
-              <div>-Geschlechterstereotypen</div>
-              <br />
-              <div>-Zugang zu Entscheidungs- und F&uuml;hrungsrollen</div>
-              <br />
-              <div>-Zugang zu Ressourcen und das geschlechtsspezifische Lohngef&auml;lle</div>
-              <br />
-              <div>-Zugang zum k&uuml;nstlerischen Arbeitsmarkt</div>
-              <br />
-              <div>-Sexuelle Bel&auml;stigung</div>
-            </div>
-            <br />
-            <div>Der Film wird im Rahmen des Center Stage Project produziert, das die F&ouml;rderung der Chancengleichheit in den darstellenden K&uuml;nsten zum Ziel hat. Center Stage ist ein europ&auml;isches Kooperationsprojekt f&uuml;r professionelle K&uuml;nstlerinnen in den darstellenden K&uuml;nsten und der Musik und m&ouml;chte zu positiven Ver&auml;nderungen auf individueller und struktureller Ebene beitragen.</div>
-            <br />
-            <div>Der Film wird von Yolaperdono produziert und von Manuel Jim&eacute;nez N&uacute;&ntilde;ez geschrieben und inszeniert.</div>
-            <br />
-            <div>Center Stage umfasst auch einen Online-Kurs f&uuml;r darstellende K&uuml;nstlerinnen, die ihre Kommunikations- und k&uuml;nstlerischen F&uuml;hrungsqualit&auml;ten entwickeln m&ouml;chten. Der Kurs ist auf centerstageonline.org in mehreren Sprachen verf&uuml;gbar.</div>
-            <br />
-            <div>Center Stage wird durch das EU-Programm Creative Europe kofinanziert. Es ist eine Zusammenarbeit zwischen der Verwaltung f&uuml;r kulturelle Entwicklung der Region V&auml;stra G&ouml;taland (Schweden) - centrestage.se</div>
-            <br />
-            <div>Theaterforum (Irland) &ndash; theatreforum.ie</div>
-            <br />
-            <div>Agencia Andaluza de Instituciones Culturales (Spanien) - aaiicc.es</div>
-
-          </div>
-      </main>
+      <div class="container-grid reflective-text-wrapper">
+        <main class="container-grid main-text-episodes reflective-maintext">
+          <p class="paragraph main-text-ep">Dies ist ein Kurzfilm, der die Diversität innerhalb der darstellenden Künste reflektiert. Sie können es gerne herunterladen, teilen und verwenden, wie Sie möchten. Der Film steht mit Untertiteln in fünf verschiedenen Sprachen – Englisch, Schwedisch, Spanisch, Französisch und Deutsch – zum Download bereit.<br><br><span class="paragraph-text-4">Es hat 5 Kapitel, die auch separat funktionieren:<br></span>1. Geschlechterstereotypen<br>2. Zugang zu Entscheidungs- und Führungsrollen<br>3. Zugang zu Ressourcen und das geschlechtsspezifische Lohngefälle<br>4. Zugang zum künstlerischen Arbeitsmarkt<br>5. Sexuelle Belästigung<br></p>
+        </main>
+        <div class="container-grid reflecting-credit">
+          <main class="container-grid main-text-episodes reflective">
+            <h2 class="h2 reflective">Centre Stage Project<br></h2>
+            <p class="paragraph main-text-ep">Der Film wurde im Rahmen des Center Stage Project produziert, das die F&ouml;rderung der Chancengleichheit in den darstellenden K&uuml;nsten zum Ziel hat. Center Stage ist ein europ&auml;isches Kooperationsprojekt f&uuml;r professionelle K&uuml;nstlerinnen in darstellenden K&uuml;nsten und Musik und m&ouml;chte zu positiven Ver&auml;nderungen auf individueller und struktureller Ebene beitragen.</p>
+            <p class="paragraph main-text-ep">Der Film wurde von Yolaperdono produziert und von Manuel Jim&eacute;nez N&uacute;&ntilde;ez geschrieben und inszeniert.</p>
+            <p class="paragraph main-text-ep">Center Stage umfasst auch einen Online-Kurs f&uuml;r darstellende K&uuml;nstlerinnen, die ihre Kommunikations- und k&uuml;nstlerischen F&uuml;hrungsqualit&auml;ten weiterentwickeln m&ouml;chten. Der Kurs ist auf centerstageonline.org in mehreren Sprachen verf&uuml;gbar.</p><br />
+            <p class="paragraph main-text-ep">Center Stage wird durch das EU-Programm Creative Europe kofinanziert. Es ist eine Zusammenarbeit zwischen der Verwaltung f&uuml;r kulturelle Entwicklung der Region V&auml;stra G&ouml;taland (Schweden) - <a href="http://www.centrestage.se/" target="_blank">centrestage.se</a></p><br />
+            <p class="paragraph main-text-ep">Theaterforum (Irland) &ndash; <a title="Theaterforum" href="http://www.theatreforum.ie">theatreforum.ie</a></p><br />
+            <p class="paragraph main-text-ep">Agencia Andaluza de Instituciones Culturales (Spanien) - <a title="Agencia Andaluza de Instituciones Culturales" href="http://www-aaiicc.es">aaiicc.es</a></p><br />
+          </main>
+        </div>
+      </div>
       <div class="container-grid container-3">
         <div class="rule rule-1 upper-refllective">
           <hr>
         </div>
-        <h2 class="h2">Stream from Vimeo:</h2>
+        <h2 class="h2">Von Vimeo streamen:</h2>
         <div class="container-grid container-2">
-          <a class="link-button btn btn-1002 evaluation full-video" (click)="gotoVimeoViewfilm('full')">
-            <span class="button-link-text-7"><span class="button-link-text-7" id="button-link-text-1">Full video</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext1')">
-            <font color="#ffffff">Chapter 1</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext2')">
-            <font color="#ffffff">Chapter 2</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext3')">
-            <span class="button-link-text-8"><span class="button-link-text-8" id="button-link-text-2">Chapter 3</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext4')">
-            <font color="#ffffff">Chapter 4</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext5')">
-            <font color="#ffffff">Chapter 5</font>
-          </a>
+          <div class="container-grid complete-film"><a class="link-button btn complete" (click)="gotoVimeoViewfilm('full')">Der ganze film</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext1')">Kapitel 1: Geschlechterstereotypen</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext2')">Kapitel 2: Zugang zu Entscheidungs- und Führungsrollen</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext3')">Kapitel 3: Zugang zu Ressourcen und das geschlechtsspezifische Lohngefälle</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext4')">Kapitel 4: Zugang zum künstlerischen Arbeitsmarkt</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext5')">Kapitel 5: Sexuelle Belästigung</a></div>
         </div>
+      </div>
+      <div class="container-grid container-3" *ngIf="hideDownloadbuttons" >
+        <div class="rule upper-refllective rule-1 lower">
+          <hr>
+        </div>
+        <h2 class="h2 reflective">Streamen oder herunterladen von Vimeo:</h2>
+        <p class="paragraph paragraph-2">(Im nächsten Schritt werden Ihnen zwei Fragen gestellt) </p>
+        <div class="container-grid container-2">
+          <div class="container-grid complete-film download"><a class="link-button btn complete" (click)="openDownloadFilmForm('DE')">Herunterladen<br></a></div>
+          <div class="rule rule-2">
+            <hr>
+          </div>
+        </div>
+      </div>
+      <main class="container-grid container-main-text-episodes reflective download" *ngIf="downloadForm">
         <div class="rule rule-2">
           <hr>
         </div>
-      </div>
-      <div class="container-grid container-3" *ngIf="hideDownloadbuttons">
-        <h2 class="h2 reflective">Stream or download from Vimeo:<br></h2>
-        <p class="paragraph paragraph-2">(You will be asked two questions on the following page)</p>
-        <div class="container-grid container-2">
-          <a class="link-button btn btn-1002 evaluation full-video" (click)="openDownloadFilmForm('DE')">
-            <span class="button-link-text-7"><span class="button-link-text-7" id="button-link-text-1">Full video</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('DE')">
-            <font color="#ffffff">Chapter 1</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('DE')">
-            <font color="#ffffff">Chapter 2</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter"(click)="openDownloadFilmForm('DE')">
-            <span class="button-link-text-8"><span class="button-link-text-8" id="button-link-text-2">Chapter 3</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('DE')">
-            <font color="#ffffff">Chapter 4</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('DE')">
-            <font color="#ffffff">Chapter 5</font>
-          </a>
+        <div class="container-grid container-1">
+          <main class="container-grid main-text-episodes reflective">
+            <h2 class="h2 reflective">Wir freuen uns sehr, dass Sie den Film herunterladen möchten!<br></h2>
+            <p class="paragraph main-text-ep">Damit wir uns ein Bild davon machen können, wie der Film verbreitet wird und in welchen Kontexten er verwendet wird, sind wir Ihnen dankbar, dass Sie zwei Fragen beantworten, bevor Sie auf die Vimeo-Downloadseite gehen. Die Informationen sind wichtig, damit wir das Projekt bewerten können.<br><br>Danke!</p>
+          </main>
         </div>
-        <div class="rule rule-2">
-          <hr>
+        <div class="container-grid container-3">
+          <div class="rule rule-1 upper-refllective">
+            <hr>
+          </div>
+          <h2 class="h2 reflective">Streamen oder herunterladen von Vimeo:<br></h2>
+          <p class="paragraph paragraph-2">Bitte beantworten Sie diese beiden Fragen, um den Download durchführen zu können.</p>
+          <form [formGroup]="downloadFormgroup"  class="form-container form-container-2">
+            <p class="paragraph paragraph-3">Welche Organisation vertreten Sie?</p>
+            <input formControlName="txtorg" value="" name="Q1" type="text" class="input-5">
+            <p class="paragraph paragraph-4">Wenn Sie beabsichtigen, den Film zu zeigen, in welchem Kontext ist das?</p>
+            <input formControlName="txtintend" value="" name="Q2" type="text" class="input-6">
+          </form>
         </div>
-      </div>
+        <div class="container-grid container-3">
+          <div class="rule rule-1 upper-refllective">
+            <hr>
+          </div>
+          <div class="container-grid container-2">
+            <div class="container-grid complete-film"><a [class.disabled]="downloadFormgroup.valid ? null: true" class="link-button btn complete" (click)="gotoVimeoDownload('full')">Der ganze film</a></div>
+            <div class="container-grid chapter"><a [class.disabled]="downloadFormgroup.valid ? null: true" class="link-button btn chapter" (click)="gotoVimeoDownload('ext1')">Kapitel 1: Geschlechterstereotypen</a></div>
+            <div class="container-grid chapter"><a [class.disabled]="downloadFormgroup.valid ? null: true" class="link-button btn chapter" (click)="gotoVimeoDownload('ext2')">Kapitel 2: Zugang zu Entscheidungs- und Führungsrollen</a></div>
+            <div class="container-grid chapter"><a [class.disabled]="downloadFormgroup.valid ? null: true" class="link-button btn chapter" (click)="gotoVimeoDownload('ext3')">Kapitel 3: Zugang zu Ressourcen und das geschlechtsspezifische Lohngefälle</a></div>
+            <div class="container-grid chapter"><a [class.disabled]="downloadFormgroup.valid ? null: true" class="link-button btn chapter" (click)="gotoVimeoDownload('ext4')">Kapitel 4: Zugang zum künstlerischen Arbeitsmarkt</a></div>
+            <div class="container-grid chapter"><a [class.disabled]="downloadFormgroup.valid ? null: true" class="link-button btn chapter" (click)="gotoVimeoDownload('ext5')">Kapitel 5: Sexuelle Belästigung</a></div>
+            <div class="rule rule-2">
+              <hr>
+            </div>
+          </div>
+        </div>
+      </main>
     </main>
   </article>
+
 </div>
+
 <div class="container-grid language english" *ngIf="engelskablock">
   <header class="container-grid wrap-title-episode">
     <header class="container-grid title-size">
-      <h1 class="title-episode">Reflective Film - English<br></h1>
+      <h1 class="title-episode">Centre Stage | Gender equality reflections in the performing arts<br></h1>
     </header>
   </header>
   <div class="container-grid con-video-bgr ep1">
@@ -189,87 +186,93 @@
   </div>
   <article class="container-grid wrap-main-text-episodes">
     <main class="container-grid container-main-text-episodes">
-      <main class="container-grid main-text-episodes">
-        <div class="paragraph main-text-ep">
-          <h3>Centre Stage | Gender equality reflections in the performing arts</h3>
-          <div style="font-weight:bold">
-            <p>This is a short film reflecting on diversity within the performing arts. You&acute;re welcome to download, share and use it however you wish. The film is available for download with subtitles in five different languages &ndash; English, Swedish, Spanish, French and German.</p>
-            <p>It has 5 chapters that work separately as well:</p>
-            <p>-Gender stereotypes</p>
-            <p>-Access to decision-making and leadership roles</p>
-            <p>-Access to resources and the gender pay gap</p>
-            <p>-Access to the arts labour market</p>
-            <p>-Sexual harassment</p>
-          </div>
-          <p>The film is produced within the Centre Stage Project, aiming to promote equal opportunities in the performing arts. Centre Stage is a European collaborative project for professional women artists in the performing arts and music and aims to contribute to positive change at both individual and structural levels.</p>
-          <p>The film is produced by Yolaperdono and written and directed by Manuel Jim&eacute;nez N&uacute;&ntilde;ez.</p>
-          <p>Centre Stage also includes an online course for women performing artists who want to develop their communication and artistic leadership skills. The course is available in multiple languages at centrestageonline.org.</p>
-          <p>Centre Stage is co-financed by the EU programme Creative Europe. It is a collaboration between the V&auml;stra G&ouml;taland Region's administration for cultural development (Sweden) - centrestage.se Theatre Forum (Ireland) &ndash; theatreforum.ie Agencia Andaluza de Instituciones Culturales (Spain) - aaiicc.e</p>
+      <div class="container-grid reflective-text-wrapper">
+        <main class="container-grid main-text-episodes reflective-maintext">
+          <p class="paragraph main-text-ep">This is a short film reflecting on diversity within the performing arts. You´re welcome to download, share and use it however you wish. The film is available for download with subtitles in five different languages – English, Swedish, Spanish, French and German.<br><br><span class="paragraph-text-4">It has 5 chapters that work separately as well:<br></span>1. Gender stereotypes<br>2. Access to decision-making and leadership roles<br>3. Access to resources and the gender pay gap<br>4. Access to the arts labour market <br>5. Sexual harassment <br></p>
+        </main>
+        <div class="container-grid reflecting-credit">
+          <main class="container-grid main-text-episodes reflective">
+            <h2 class="h2 reflective">Centre Stage Project<br></h2>
+            <p class="paragraph main-text-ep">The film is produced within the Centre Stage Project, aiming to promote equal opportunities in the performing arts. Centre Stage is a European collaborative project for professional women artists in the performing arts and music and aims to contribute to positive change at both individual and structural levels. <br><br>The film is produced by Yolaperdono and written and directed by Manuel Jiménez Núñez.<br><br>Centre Stage also includes an online course for women performing artists who want to develop their communication and artistic leadership skills. The course is available in multiple languages at:&nbsp;<br><a title="Centrestage online" href="http://www.centrestageonline.org">centrestageonline.org</a><br><br>Centre Stage is co-financed by the EU programme Creative Europe. It is a collaboration between the Västra Götaland Region's administration for cultural development (Sweden)<br><a title="Centrestage" href="http://www.centrestage.se">centrestage.se</a><br><br>Theatre Forum (Ireland) <br><a title="" href="http://www.theatreforum.ie">theatreforum.ie</a><br><br>Agencia Andaluza de Instituciones Culturales (Spain)<br><a title="Agencia Andaluza de Instituciones Culturales" href="http://www-aaiicc.es">aaiicc.es</a><br></p>
+          </main>
         </div>
-      </main>
+      </div>
       <div class="container-grid container-3">
         <div class="rule rule-1 upper-refllective">
           <hr>
         </div>
         <h2 class="h2">Stream from Vimeo:</h2>
         <div class="container-grid container-2">
-          <a class="link-button btn btn-1002 evaluation full-video" (click)="gotoVimeoViewfilm('full')">
-            <span class="button-link-text-7"><span class="button-link-text-7" id="button-link-text-1">Full video</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext1')">
-            <font color="#ffffff">Chapter 1</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext2')">
-            <font color="#ffffff">Chapter 2</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext3')">
-            <span class="button-link-text-8"><span class="button-link-text-8" id="button-link-text-2">Chapter 3</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext4')">
-            <font color="#ffffff">Chapter 4</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext5')">
-            <font color="#ffffff">Chapter 5</font>
-          </a>
-        </div>
-        <div class="rule rule-2">
-          <hr>
+          <div class="container-grid complete-film"><a class="link-button btn complete"  (click)="gotoVimeoViewfilm('full')">The complete film</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext1')">Chapter 1: Gender stereotypes</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext2')">Chapter 2: Access to decision-making and leadership roles</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext3')">Chapter 3: Access to resources and the gender pay gap</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext4')">Chapter 4: Access to the arts labour market </a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext5')">Chapter 5: Sexual harassment</a></div>
         </div>
       </div>
       <div class="container-grid container-3" *ngIf="hideDownloadbuttons">
-        <h2 class="h2 reflective">Stream or download from Vimeo:<br></h2>
+        <div class="rule upper-refllective rule-1 lower">
+          <hr>
+        </div>
+        <h2 class="h2 reflective">Stream or download from Vimeo:</h2>
         <p class="paragraph paragraph-2">(You will be asked two questions in the next step)</p>
         <div class="container-grid container-2">
-          <a class="link-button btn btn-1002 evaluation full-video"  (click)="openDownloadFilmForm('EN')">
-            <span class="button-link-text-7"><span class="button-link-text-7" id="button-link-text-1">Full video</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('EN')">
-            <font color="#ffffff">Chapter 1</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('EN')">
-            <font color="#ffffff">Chapter 2</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('EN')">
-            <span class="button-link-text-8"><span class="button-link-text-8" id="button-link-text-2">Chapter 3</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('EN')">
-            <font color="#ffffff">Chapter 4</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('EN')">
-            <font color="#ffffff">Chapter 5</font>
-          </a>
+          <div class="container-grid complete-film download"><a class="link-button btn complete" (click)="openDownloadFilmForm('EN')">Download</a></div>
+          <div class="rule rule-2">
+            <hr>
+          </div>
         </div>
+      </div>
+      <main class="container-grid container-main-text-episodes reflective download" *ngIf="downloadForm">
         <div class="rule rule-2">
           <hr>
         </div>
-      </div>
+        <div class="container-grid container-1">
+          <main class="container-grid main-text-episodes reflective">
+            <h2 class="h2 reflective">We are so delighted that you want to download the film!<br></h2>
+            <p class="paragraph main-text-ep">In order for us to get an idea of how the film is distributed and in what contexts it is used, we are grateful that you answer two questions before you go to the Vimeo download page. The information is important for us to be able to evaluate the project.<br><br>Thank you!</p>
+          </main>
+
+        </div>
+        <div class="container-grid container-3">
+          <div class="rule rule-1 upper-refllective">
+            <hr>
+          </div>
+          <h2 class="h2 reflective">Stream or download from Vimeo:<br></h2>
+          <p class="paragraph paragraph-2">Please answer these two questions to be able to download.</p>
+          <form [formGroup]="downloadFormgroup"  class="form-container form-container-2">
+            <p class="paragraph paragraph-3">Which organisation do you represent?</p>
+            <input formControlName="txtorg" value="" name="Q1" type="text" class="input-5">
+            <p class="paragraph paragraph-4">If you intend to show the film, in which context is that?</p>
+            <input formControlName="txtintend" value="" name="Q2" type="text" class="input-6">
+          </form>
+        </div>
+        <div class="container-grid container-3">
+          <div class="rule rule-1 upper-refllective">
+            <hr>
+          </div>
+          <div class="container-grid container-2">
+            <div class="container-grid complete-film"><a class="link-button btn complete" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('full')" >The complete film</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext1')" >Chapter 1: Gender stereotypes</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext2')" >Chapter 2: Access to decision-making and leadership roles</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext3')" >Chapter 3: Access to resources and the gender pay gap</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext4')" >Chapter 4: Access to the arts labour market </a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext5')" >Chapter 5: Sexual harassment</a></div>
+            <div class="rule rule-2">
+              <hr>
+            </div>
+          </div>
+        </div>
+      </main>
     </main>
   </article>
 </div>
+
 <div class="container-grid language espanol" *ngIf="spanskablock">
   <header class="container-grid wrap-title-episode">
     <header class="container-grid title-size">
-      <h1 class="title-episode">Reflective Film - Español<br></h1>
+      <h1 class="title-episode">Centre Stage | Reflexiones en torno a la igualdad de género en las artes escénicas<br></h1>
     </header>
   </header>
   <div class="container-grid con-video-bgr ep1">
@@ -279,90 +282,93 @@
   </div>
   <article class="container-grid wrap-main-text-episodes">
     <main class="container-grid container-main-text-episodes">
-      <main class="container-grid main-text-episodes">
-        <div class="paragraph main-text-ep">
-          <h3>Centre Stage. Reflexiones en torno a la igualdad de g&eacute;nero en las artes esc&eacute;nicas</h3>
-          <div style="font-weight:bold">
-            <p>Presentamos este cortometraje concebido para reflexionar sobre la igualdad de g&eacute;nero en las artes esc&eacute;nicas. Se puede descargar, compartir y usar libremente. El corto est&aacute; disponible para descargarse en cinco idiomas (ingl&eacute;s, sueco, espa&ntilde;ol, franc&eacute;s y alem&aacute;n)</p>
-            <p>Consta de cinco cap&iacute;tulos que funcionan tambi&eacute;n de manera independiente:</p>
-            <p>-Estereotipos de g&eacute;nero</p>
-            <p>-Acceso a puestos de liderazgo y de toma de decisiones</p>
-            <p>-Acceso a financiaci&oacute;n y brecha salarial</p>
-            <p>-Acceso al mercado art&iacute;stico</p>
-            <p>-Acoso sexual</p>
-          </div>
-          <p>Este corto se ha producido en el marco del proyecto Centre Stage, que pretende promover la igualdad de oportunidades en las artes esc&eacute;nicas. Centre Stage es un proyecto de cooperaci&oacute;n europea para mujeres artistas profesionales de las artes esc&eacute;nicas y la m&uacute;sica y tiene como objetivo contribuir a un cambio positivo tanto a nivel individual como estructural.</p>
-          <p>El corto es una producci&oacute;n de Yolaperdono y est&aacute; escrito y dirigido por Manuel Jim&eacute;nez N&uacute;&ntilde;ez.</p>
-          <p>Centre Stage tambi&eacute;n incluye un curso online para mujeres artistas esc&eacute;nicas que quieran desarrollar sus competencias en materia de comunicaci&oacute;n y liderazgo art&iacute;stico. Est&aacute; disponible en <a href="http://www.centrestageonline.org/">http://www.centrestageonline.org/</a></p>
-          <p>Centre Stage es un proyecto cofinanciado por el programa Europa Creativa de la UE. Se trata de una colaboraci&oacute;n entre:</p>
-          <p>Administraci&oacute;n para el Desarrollo Cultural de la Regi&oacute;n de V&auml;stra G&ouml;taland (Suecia) <a href="http://centrestage.se/">http://centrestage.se/</a></p>
-          <p>Theatre Forum (Irlanda) <a href="https://theatreforum.ie/">https://theatreforum.ie/</a></p>
-          <p>Agencia Andaluza de Instituciones Culturales (Espa&ntilde;a) <a href="www.aaiicc.es" aria-invalid="true">www.aaiicc.es</a></p>
+      <div class="container-grid reflective-text-wrapper">
+        <main class="container-grid main-text-episodes reflective-maintext">
+          <p class="paragraph main-text-ep">Presentamos este cortometraje concebido para reflexionar sobre la igualdad de género en las artes escénicas. Se puede descargar, compartir y usar libremente. El corto está disponible para descargarse en cinco idiomas (inglés, sueco, español, francés y alemán)<br><br><span class="paragraph-text-4">Consta de cinco capítulos que funcionan también de manera independiente:<br></span>1. Estereotipos de género<br>2. Acceso a puestos de liderazgo y de toma de decisiones<br>3. Acceso a financiación y brecha salarial<br>4. Acceso al mercado artístico<br>5. Acoso sexual<br></p>
+        </main>
+        <div class="container-grid reflecting-credit">
+          <main class="container-grid main-text-episodes reflective">
+            <h2 class="h2 reflective">Centre Stage Project<br></h2>
+            <p class="paragraph main-text-ep">Este corto se ha producido en el marco del proyecto Centre Stage, que pretende promover la igualdad de oportunidades en las artes escénicas. Centre Stage es un proyecto de cooperación europea para mujeres artistas profesionales de las artes escénicas y la música y tiene como objetivo contribuir a un cambio positivo tanto a nivel individual como estructural.<br><br>El corto es una producción de Yolaperdono y está escrito y dirigido por Manuel Jiménez Núñez.<br><br>Centre Stage también incluye un curso online para mujeres artistas escénicas que quieran desarrollar sus competencias en materia de comunicación y liderazgo artístico. Está disponible en:&nbsp;<br><a title="Centrestage online" href="http://www.centrestageonline.org/">centrestageonline.org</a><br><br>Centre Stage es un proyecto cofinanciado por el programa Europa Creativa de la UE. Se trata de una colaboración entre:<br><br>Administración para el Desarrollo Cultural de la Región de Västra Götaland (Suecia) <a title="Centrestage" href="http://www.centrestage.se">centrestage.se</a><br><br>Theatre Forum (Irlanda) <br><a title="Theaterforum" href="http://www.theatreforum.ie">theatreforum.ie</a><br><br>Agencia Andaluza de Instituciones Culturales (España)<br><a title="Agencia Andaluza de Instituciones Culturales" href="http://www-aaiicc.es">aaiicc.es</a><br></p>
+          </main>
         </div>
-      </main>
+      </div>
       <div class="container-grid container-3">
         <div class="rule rule-1 upper-refllective">
           <hr>
         </div>
-        <h2 class="h2">Stream from Vimeo:</h2>
+        <h2 class="h2">Transmitir desde Vimeo:</h2>
         <div class="container-grid container-2">
-          <a class="link-button btn btn-1002 evaluation full-video" (click)="gotoVimeoViewfilm('full')">
-            <span class="button-link-text-7"><span class="button-link-text-7" id="button-link-text-1">Full video</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext1')">
-            <font color="#ffffff">Chapter 1</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext2')">
-            <font color="#ffffff">Chapter 2</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext3')">
-            <span class="button-link-text-8"><span class="button-link-text-8" id="button-link-text-2">Chapter 3</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext4')">
-            <font color="#ffffff">Chapter 4</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext5')">
-            <font color="#ffffff">Chapter 5</font>
-          </a>
-        </div>
-        <div class="rule rule-2">
-          <hr>
+          <div class="container-grid complete-film"><a class="link-button btn complete" (click)="gotoVimeoViewfilm('full')">Película completa</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext1')">Capítulo 1: Estereotipos de género</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext2')">Capítulo 2: Acceso a puestos de liderazgo y de toma de decisiones</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext3')">Capítulo 3: Acceso a financiación y brecha salarial</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext4')">Capítulo 4: Acceso al mercado artístico</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext5')">Capítulo 5: Acoso sexual</a></div>
         </div>
       </div>
       <div class="container-grid container-3" *ngIf="hideDownloadbuttons">
-        <h2 class="h2 reflective">Stream or download from Vimeo:<br></h2>
-        <p class="paragraph paragraph-2">(You will be asked two questions on the following page)</p>
-        <div class="container-grid container-2">
-          <a class="link-button btn btn-1002 evaluation full-video"  (click)="openDownloadFilmForm('SP')">
-            <span class="button-link-text-7"><span class="button-link-text-7" id="button-link-text-1">Full video</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('SP')">
-            <font color="#ffffff">Chapter 1</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('SP')">
-            <font color="#ffffff">Chapter 2</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('SP')">
-            <span class="button-link-text-8"><span class="button-link-text-8" id="button-link-text-2">Chapter 3</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('SP')">
-            <font color="#ffffff">Chapter 4</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('SP')">
-            <font color="#ffffff">Chapter 5</font>
-          </a>
+        <div class="rule upper-refllective rule-1 lower">
+          <hr>
         </div>
+        <h2 class="h2 reflective">Transmitir o descargar desde Vimeo:</h2>
+        <p class="paragraph paragraph-2">(Se le harán dos preguntas en el siguiente paso)</p>
+        <div class="container-grid container-2">
+          <div class="container-grid complete-film download"><a class="link-button btn complete" (click)="openDownloadFilmForm('SP')">Descargar</a></div>
+          <div class="rule rule-2">
+            <hr>
+          </div>
+        </div>
+      </div>
+
+      <main class="container-grid container-main-text-episodes reflective download" *ngIf="downloadForm">
         <div class="rule rule-2">
           <hr>
         </div>
-      </div>
+        <div class="container-grid container-1">
+          <main class="container-grid main-text-episodes reflective">
+            <h2 class="h2 reflective">¡Estamos encantados de que quieras descargar la película!<br></h2>
+            <p class="paragraph main-text-ep">Para que podamos tener una idea de cómo se distribuye la película y en qué contextos se usa, le agradecemos que responda dos preguntas antes de ir a la página de descarga de Vimeo. La información es importante para que podamos evaluar el proyecto.<br><br>¡Gracias!</p>
+          </main>
+        </div>
+        <div class="container-grid container-3">
+          <div class="rule rule-1 upper-refllective">
+            <hr>
+          </div>
+          <h2 class="h2 reflective">Transmitir o descargar desde Vimeo:<br></h2>
+          <p class="paragraph paragraph-2">Por favor responda estas dos preguntas para poder descargar.</p>
+          <form [formGroup]="downloadFormgroup"  class="form-container form-container-2">
+            <p class="paragraph paragraph-3">¿A qué organización representa?</p>
+            <input formControlName="txtorg" value="" name="Q1" type="text" class="input-5">
+            <p class="paragraph paragraph-4">Si tiene la intención de mostrar la película, ¿en qué contexto es eso?</p>
+            <input formControlName="txtintend" value="" name="Q2" type="text" class="input-6">
+          </form>
+        </div>
+        <div class="container-grid container-3">
+          <div class="rule rule-1 upper-refllective">
+            <hr>
+          </div>
+          <div class="container-grid container-2">
+            <div class="container-grid complete-film"><a class="link-button btn complete" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('full')">Película completa</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext1')">Capítulo 1: Estereotipos de género</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext2')">Capítulo 2: Acceso a puestos de liderazgo y de toma de decisiones</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext3')">Capítulo 3: Acceso a financiación y brecha salarial</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext4')">Capítulo 4: Acceso al mercado artístico</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext5')">Capítulo 5: Acoso sexual</a></div>
+            <div class="rule rule-2">
+              <hr>
+            </div>
+          </div>
+        </div>
+      </main>
     </main>
   </article>
 </div>
+
 <div class="container-grid language francais" *ngIf="franskablock">
   <header class="container-grid wrap-title-episode">
     <header class="container-grid title-size">
-      <h1 class="title-episode">Reflective Film - Français<br></h1>
+      <h1 class="title-episode">Centre Stage | Réflexions sur l'égalité des genres dans les arts de la scène<br></h1>
     </header>
   </header>
   <div class="container-grid con-video-bgr ep1">
@@ -372,81 +378,88 @@
   </div>
   <article class="container-grid wrap-main-text-episodes">
     <main class="container-grid container-main-text-episodes">
-      <main class="container-grid main-text-episodes">
-        <div class="paragraph main-text-ep">
-          <h3>Centre de la sc&egrave;ne | R&eacute;flexions sur l'&eacute;galit&eacute; des genres dans les arts de la sc&egrave;ne</h3>
-          <div style="font-weight:bold">
-            <p>Il s'agit d'un court m&eacute;trage refl&eacute;tant la diversit&eacute; au sein des arts de la sc&egrave;ne. Vous pouvez le t&eacute;l&eacute;charger, le partager et l'utiliser comme bon vous semble. Le film est disponible en t&eacute;l&eacute;chargement avec des sous-titres en cinq langues diff&eacute;rentes : anglais, su&eacute;dois, espagnol, fran&ccedil;ais et allemand. Il comporte 5 chapitres qui fonctionnent &eacute;galement s&eacute;par&eacute;ment :</p>
-            <p>-St&eacute;r&eacute;otypes de genre</p>
-            <p>-Acc&egrave;s &agrave; des r&ocirc;les d&eacute;cisionnels et de leadership</p>
-            <p>-Acc&egrave;s aux ressources et &eacute;cart de r&eacute;mun&eacute;ration entre les sexes</p>
-            <p>-Acc&egrave;s au march&eacute; du travail artistique</p>
-            <p>-Harc&egrave;lement sexuel</p>
-          </div>
-          <p>Le film est produit dans le cadre du Center Stage Project, qui vise &agrave; promouvoir l'&eacute;galit&eacute; des chances dans les arts de la sc&egrave;ne. Center Stage est un projet collaboratif europ&eacute;en pour les femmes artistes professionnelles des arts de la sc&egrave;ne et de la musique et vise &agrave; contribuer &agrave; un changement positif aux niveaux individuel et structurel. Le film est produit par Yolaperdono et &eacute;crit et r&eacute;alis&eacute; par Manuel Jim&eacute;nez N&uacute;&ntilde;ez.</p>
-          <p>Center Stage comprend &eacute;galement un cours en ligne pour les femmes artistes de la sc&egrave;ne qui souhaitent d&eacute;velopper leurs comp&eacute;tences en communication et en leadership artistique. Le cours est disponible en plusieurs langues sur <a href="www.centrestageonline.org" aria-invalid="true">www.centrestageonline.org</a></p>
-          <p>Center Stage est cofinanc&eacute; par le programme europ&eacute;en Creative Europe. Il s'agit d'une collaboration entre l'administration du d&eacute;veloppement culturel de la r&eacute;gion de V&auml;stra G&ouml;taland (Su&egrave;de) - centerstage.se Theatre Forum (Irlande) &ndash; theatreforum.ie Agencia Andaluza de Instituciones Culturales (Espagne) - aaiicc.es</p>
+      <div class="container-grid reflective-text-wrapper">
+        <main class="container-grid main-text-episodes reflective-maintext">
+          <p class="paragraph main-text-ep">Il s'agit d'un court métrage reflétant la diversité au sein des arts de la scène. Vous pouvez le télécharger, le partager et l'utiliser comme bon vous semble. Le film est disponible en téléchargement avec des sous-titres en cinq langues différentes : anglais, suédois, espagnol, français et allemand.<br><br><span class="paragraph-text-4">Il comporte 5 chapitres qui fonctionnent également séparément:<br></span>1. Stéréotypes de genre<br>2. Accès à des rôles décisionnels et de leadership<br>3. Accès aux ressources et écart de rémunération entre les sexes<br>4. Accès au marché du travail artistique<br>5. Harcèlement sexuel<br></p>
+        </main>
+        <div class="container-grid reflecting-credit">
+          <main class="container-grid main-text-episodes reflective">
+            <h2 class="h2 reflective">Centre Stage Project<br></h2>
+            <p class="paragraph main-text-ep">Le film est produit dans le cadre du Centre Stage Project, qui vise à promouvoir l'égalité des chances dans les arts de la scène. Center Stage est un projet collaboratif européen pour les femmes artistes professionnelles des arts de la scène et de la musique et vise à contribuer à un changement positif aux niveaux individuel et structurel.<br><br>Le film est produit par Yolaperdono et écrit et réalisé par Manuel Jiménez Núñez.<br><br>Center Stage comprend également un cours en ligne pour les femmes artistes de la scène qui souhaitent développer leurs compétences en communication et en leadership artistique. Le cours est disponible en plusieurs langues sur:&nbsp;<br><a title="Centrestage online" href="http://www.centrestageonline.org/">centrestageonline.org</a><br><br>Center Stage est cofinancé par le programme européen Creative Europe. <br>Il s'agit d'une collaboration entre:<br><br>L'administration du développement culturel de la région de Västra Götaland (Suède)<br><a title="Centrestage" href="http://www.centrestage.se">centerstage.se</a><br><br>Theatre Forum (Irlande)<br><a title="Theaterforum" href="http://www.theatreforum.ie">theatreforum.ie</a><br><br>Agencia Andaluza de Instituciones Culturales (Espagne)<br><a title="Agencia Andaluza de Instituciones Culturales" href="http://www-aaiicc.es">aaiicc.es</a><br></p>
+          </main>
         </div>
-      </main>
+      </div>
       <div class="container-grid container-3">
         <div class="rule rule-1 upper-refllective">
           <hr>
         </div>
-        <h2 class="h2">Stream from Vimeo:</h2>
+        <h2 class="h2">Diffusez depuis Vimeo:</h2>
         <div class="container-grid container-2">
-          <a class="link-button btn btn-1002 evaluation full-video" (click)="gotoVimeoViewfilm('full')">
-            <span class="button-link-text-7"><span class="button-link-text-7" id="button-link-text-1">Full video</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext1')">
-            <font color="#ffffff">Chapter 1</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext2')">
-            <font color="#ffffff">Chapter 2</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext3')">
-            <span class="button-link-text-8"><span class="button-link-text-8" id="button-link-text-2">Chapter 3</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext4')">
-            <font color="#ffffff">Chapter 4</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext5')">
-            <font color="#ffffff">Chapter 5</font>
-          </a>
-        </div>
-        <div class="rule rule-2">
-          <hr>
+          <div class="container-grid complete-film"><a class="link-button btn complete" (click)="gotoVimeoViewfilm('full')">Film complet</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext1')">Chapitre 1: Stéréotypes de genre</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext2')">Chapitre 2: Accès à des rôles décisionnels et de leadership</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext3')">Chapitre 3: Accès aux ressources et écart de rémunération entre les sexes</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext4')">Chapitre 4: Accès au marché du travail artistique</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext5')">Chapitre 5: Harcèlement sexuel</a></div>
         </div>
       </div>
       <div class="container-grid container-3" *ngIf="hideDownloadbuttons">
-        <h2 class="h2 reflective">Stream or download from Vimeo:<br></h2>
-        <p class="paragraph paragraph-2">(You will be asked two questions on the following page)</p>
-        <div class="container-grid container-2">
-          <a class="link-button btn btn-1002 evaluation full-video"  (click)="openDownloadFilmForm('FR')">
-            <span class="button-link-text-7"><span class="button-link-text-7" id="button-link-text-1">Full video</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('FR')">
-            <font color="#ffffff">Chapter 1</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('FR')">
-            <font color="#ffffff">Chapter 2</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('FR')">
-            <span class="button-link-text-8"><span class="button-link-text-8" id="button-link-text-2">Chapter 3</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('FR')">
-            <font color="#ffffff">Chapter 4</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('FR')">
-            <font color="#ffffff">Chapter 5</font>
-          </a>
+        <div class="rule upper-refllective rule-1 lower">
+          <hr>
         </div>
+        <h2 class="h2 reflective">Diffusez ou téléchargez depuis Vimeo:</h2>
+        <p class="paragraph paragraph-2">(Il vous sera posé deux questions à l'étape suivante)</p>
+        <div class="container-grid container-2">
+          <div class="container-grid complete-film download"><a class="link-button btn complete" (click)="openDownloadFilmForm('FR')">Télécharger</a></div>
+          <div class="rule rule-2">
+            <hr>
+          </div>
+        </div>
+      </div>
+      <main class="container-grid container-main-text-episodes reflective download" *ngIf="downloadForm">
         <div class="rule rule-2">
           <hr>
         </div>
-      </div>
+        <div class="container-grid container-1">
+          <main class="container-grid main-text-episodes reflective">
+            <h2 class="h2 reflective">Nous sommes ravis que vous souhaitiez télécharger le film!<br></h2>
+            <p class="paragraph main-text-ep">Afin que nous ayons une idée de la façon dont le film est distribué et dans quels contextes il est utilisé, nous vous remercions de répondre à deux questions avant de vous rendre sur la page de téléchargement de Vimeo. L'information est importante pour que nous puissions évaluer le projet.<br><br>Merci!</p>
+          </main>
+        </div>
+        <div class="container-grid container-3">
+          <div class="rule rule-1 upper-refllective">
+            <hr>
+          </div>
+          <h2 class="h2 reflective">Diffusez ou téléchargez depuis Vimeo:<br></h2>
+          <p class="paragraph paragraph-2">Veuillez répondre à ces deux questions pour pouvoir télécharger.</p>
+          <form [formGroup]="downloadFormgroup"  class="form-container form-container-2">
+            <p class="paragraph paragraph-3">Quelle organisation représentez-vous?</p>
+            <input formControlName="txtorg" value="" name="Q1" type="text" class="input-5">
+            <p class="paragraph paragraph-4">Si vous avez l'intention de montrer le film, dans quel contexte est-ce?</p>
+            <input formControlName="txtintend" value="" name="Q2" type="text" class="input-6">
+          </form>
+        </div>
+        <div class="container-grid container-3">
+          <div class="rule rule-1 upper-refllective">
+            <hr>
+          </div>
+          <div class="container-grid container-2">
+            <div class="container-grid complete-film"><a class="link-button btn complete" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('full')">Film complet</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext1')">Chapitre 1: Stéréotypes de genre</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext2')">Chapitre 2: Accès à des rôles décisionnels et de leadership</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext3')">Chapitre 3: Accès aux ressources et écart de rémunération entre les sexes</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext4')">Chapitre 4: Accès au marché du travail artistique</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext5')">Chapitre 5: Harcèlement sexuel</a></div>
+            <div class="rule rule-2">
+              <hr>
+            </div>
+          </div>
+        </div>
+      </main>
     </main>
   </article>
 </div>
+
 <div class="container-grid language polskie" *ngIf="polskablock">
   <header class="container-grid wrap-title-episode">
     <header class="container-grid title-size">
@@ -516,10 +529,11 @@
     </main>
   </article>
 </div>
+
 <div class="container-grid language svenska" *ngIf="svenskablock">
   <header class="container-grid wrap-title-episode">
     <header class="container-grid title-size">
-      <h1 class="title-episode">Reflective Film - Svenska<br></h1>
+      <h1 class="title-episode">Centre Stage | Reflektioner över jämställdheten i scenkonstbranschen<br></h1>
     </header>
   </header>
   <div class="container-grid con-video-bgr ep1">
@@ -529,134 +543,84 @@
   </div>
   <article class="container-grid wrap-main-text-episodes">
     <main class="container-grid container-main-text-episodes">
-      <main class="container-grid main-text-episodes">
-        <div class="paragraph main-text-ep">
-          <h3>Centre Stage | Reflektioner &ouml;ver j&auml;mst&auml;lldheten i scenkonstbranschen</h3>
-          <div style="font-weight:bold">
-            <p>Det h&auml;r &auml;r en kortfilm f&ouml;r reflektion om j&auml;mst&auml;lldhet inom scenkonstbranschen. Hj&auml;rtligt v&auml;lkommen att ladda ner, dela och anv&auml;nd precis som du vill. Filmen finns tillg&auml;nglig med undertexter p&aring; fem olika spr&aring;k &ndash; engelska, svenska, spanska, franska och tyska.</p>
-            <p>Filmen finns ocks&aring; uppdelad i fem kapitel som kan anv&auml;ndas frist&aring;ende:</p>
-            <p>- Stereotypa k&ouml;nsroller</p>
-            <p>- Tillg&aring;ng till beslutsfattande och ledande positioner</p>
-            <p>- Tillg&aring;ng till resurser samt l&ouml;neklyftor</p>
-            <p>- Tillg&aring;ng till arbetsmarknaden</p>
-            <p>- Sexuella trakasserier</p>
-          </div>
-          <p>Filmen &auml;r en del av projektet Centre Stage, som str&auml;var efter en j&auml;mst&auml;lld scenkonstbransch. Centre Stage &auml;r ett europeiskt samarbetsprojekt f&ouml;r professionellt yrkesverksamma kvinnor inom scenkonst och musik, och ska bidra till en positiv f&ouml;r&auml;ndring b&aring;de f&ouml;r individen och p&aring; en strukturell niv&aring;.</p>
-          <p>Filmen &auml;r producerad av Yolaperdono och skriven och regisserad av Manuel Jim&eacute;nez N&uacute;&ntilde;ez.</p>
-          <p>Projektet Centre Stage best&aring;r ocks&aring; av en onlinekurs f&ouml;r kvinnor inom scenkonsten som vill utvecklas inom kommunikation och sitt konstn&auml;rliga ledarskap. Kursen finns p&aring; flera spr&aring;k, den &auml;r gratis och webbaserad. Du hittar den p&aring; centrestageonline.org</p>
-          <p>Centre Stage &auml;r medfinansierat av EU-programmet Kreativa Europa. Det &auml;r ett samarbetsprojekt mellan:<br />V&auml;stra G&ouml;talandsregionens f&ouml;rvaltning f&ouml;r kulturutveckling (Sverige): centrestage.se och vgr.se/kulturutveckling<br />Theatre Forum (Irland) &ndash; theatreforum.ie<br />Agencia Andaluza de Instituciones Culturales (Spanien) - aaiicc.es</p>
+      <div class="container-grid reflective-text-wrapper">
+        <main class="container-grid main-text-episodes reflective-maintext">
+          <p class="paragraph main-text-ep">Det här är en kortfilm för reflektion om jämställdhet inom scenkonstbranschen. Hjärtligt välkommen att ladda ner, dela och använd precis som du vill. Filmen finns tillgänglig med undertexter på fem olika språk – engelska, svenska, spanska, franska och tyska.<br><br><span class="paragraph-text-4">Filmen finns också uppdelad i fem kapitel som kan användas fristående:<br></span>1. Stereotypa könsroller<br>2. Tillgång till beslutsfattande och ledande positioner<br>3. Tillgång till resurser samt löneklyftor<br>4. Tillgång till arbetsmarknaden<br>5. Sexuella trakasserier<br></p>
+        </main>
+        <div class="container-grid reflecting-credit">
+          <main class="container-grid main-text-episodes reflective">
+            <h2 class="h2 reflective">Centre Stage Project<br></h2>
+            <p class="paragraph main-text-ep">Filmen är en del av projektet Centre Stage, som strävar efter en jämställd scenkonstbransch. Centre Stage är ett europeiskt samarbetsprojekt för professionellt yrkesverksamma kvinnor inom scenkonst och musik, och ska bidra till en positiv förändring både för individen och på en strukturell nivå.<br><br>Filmen är producerad av Yolaperdono och skriven och regisserad av Manuel Jiménez Núñez.<br><br>Projektet Centre Stage består också av en onlinekurs för kvinnor inom scenkonsten som vill utvecklas inom kommunikation och sitt konstnärliga ledarskap. Kursen finns på flera språk, den är gratis och webbaserad. Du hittar den på:&nbsp;<br><a title="centrestageonline.org" href="http://www.centrestageonline.org">centrestageonline.org</a><br><br>Centre Stage är medfinansierat av EU-programmet Kreativa Europa. Det är ett samarbetsprojekt mellan: <br><br>Västra Götalandsregionens förvaltning för kulturutveckling (Sverige): <br><a title="Centrestage" href="http://www.centrestage.se">centrestage.se</a> och <a title="Västra Götalandsregionens förvaltning för kulturutveckling" href="http://www.vgr.se/kulturutveckling">vgr.se/kulturutveckling</a><br><br>Theatre Forum (Irland)<br><a title="Theaterforum" href="http://www.theatreforum.ie">theatreforum.ie</a><br><br>Agencia Andaluza de Instituciones Culturales (Spanien)<br><a title="Agencia Andaluza de Instituciones Culturales" href="http://www-aaiicc.es">aaiicc.es</a><br></p>
+          </main>
         </div>
-      </main>
+      </div>
       <div class="container-grid container-3">
         <div class="rule rule-1 upper-refllective">
           <hr>
         </div>
-        <h2 class="h2">Stream from Vimeo:</h2>
+        <h2 class="h2">Streama från Vimeo:</h2>
         <div class="container-grid container-2">
-          <a class="link-button btn btn-1002 evaluation full-video" (click)="gotoVimeoViewfilm('full')">
-            <span class="button-link-text-7"><span class="button-link-text-7" id="button-link-text-1">Full video</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext1')">
-            <font color="#ffffff">Chapter 1</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext2')">
-            <font color="#ffffff">Chapter 2</font>
-          </a><a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext3')">
-            <span class="button-link-text-8"><span class="button-link-text-8" id="button-link-text-2">Chapter 3</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext4')">
-            <font color="#ffffff">Chapter 4</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="gotoVimeoViewfilm('ext5')">
-            <font color="#ffffff">Chapter 5</font>
-          </a>
-        </div>
-        <div class="rule rule-2">
-          <hr>
+          <div class="container-grid complete-film"><a class="link-button btn complete" (click)="gotoVimeoViewfilm('full')">Hela filmen</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext1')">Kapitel 1: Stereotypa könsroller</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext2')">Kapitel 2: Tillgång till beslutsfattande och ledande positioner</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext3')">Kapitel 3: Tillgång till resurser samt löneklyftor</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext4')">Kapitel 4:&nbsp;Tillgång till arbetsmarknaden</a></div>
+          <div class="container-grid chapter"><a class="link-button btn chapter" (click)="gotoVimeoViewfilm('ext5')">Kapitel 5:&nbsp;Sexuella trakasserier</a></div>
         </div>
       </div>
       <div class="container-grid container-3" *ngIf="hideDownloadbuttons">
-        <h2 class="h2 reflective">Stream or download from Vimeo:<br></h2>
-        <p class="paragraph paragraph-2">(You will be asked two questions on the following page)</p>
-        <div class="container-grid container-2">
-          <a class="link-button btn btn-1002 evaluation full-video"  (click)="openDownloadFilmForm('SV')">
-            <span class="button-link-text-7"><span class="button-link-text-7" id="button-link-text-1">Full video</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('SV')">
-            <font color="#ffffff">Chapter 1</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('SV')">
-            <font color="#ffffff">Chapter 2</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('SV')">
-            <span class="button-link-text-8"><span class="button-link-text-8" id="button-link-text-2">Chapter 3</span></span>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('SV')">
-            <font color="#ffffff">Chapter 4</font>
-          </a>
-          <a class="link-button btn btn-1002 evaluation chapter" (click)="openDownloadFilmForm('SV')">
-            <font color="#ffffff">Chapter 5</font>
-          </a>
+        <div class="rule upper-refllective rule-1 lower">
+          <hr>
         </div>
+        <h2 class="h2 reflective">Streama eller ladda ner från Vimeo:</h2>
+        <p class="paragraph paragraph-2">(Du kommer att få två frågor i nästa steg) </p>
+        <div class="container-grid container-2">
+          <div class="container-grid complete-film download"><a class="link-button btn complete" (click)="openDownloadFilmForm('SV')">Ladda ner</a></div>
+          <div class="rule rule-2">
+            <hr>
+          </div>
+        </div>
+      </div>
+      <main class="container-grid container-main-text-episodes reflective download" *ngIf="downloadForm">
         <div class="rule rule-2">
           <hr>
         </div>
-      </div>
-    </main>
-  </article>
-</div>
-
-<div class="container-grid" *ngIf="downloadForm">
-  <!-- <header class="container-grid wrap-title-episode">
-    <header class="container-grid title-size">
-      <h1 class="title-episode"*ngIf="tyskablock">Reflective Film tyska<br></h1>
-    </header>
-  </header> -->
-  <article class="container-grid wrap-main-text-episodes reflective">
-    <main class="container-grid container-main-text-episodes reflective">
-      <div class="container-grid container-1">
-        <main class="container-grid main-text-episodes reflective">
-          <h2 class="h2 reflective">We are so delighted that you want to download the film!<br></h2>
-          <p class="paragraph main-text-ep">In order for us to get an idea of how the film is distributed and in what contexts it is used, we are grateful that you answer two questions before you go to the Vimeo download page. The information is important for us to be able to evaluate the project.<br><br>Thank you!</p>
-        </main>
-      </div>
-      <div class="container-grid container-3">
-        <div class="rule rule-1 upper-refllective">
-          <hr>
+        <div class="container-grid container-1">
+          <main class="container-grid main-text-episodes reflective">
+            <h2 class="h2 reflective">Vi är så glada att du vill ladda ner filmen!<br></h2>
+            <p class="paragraph main-text-ep">För att vi ska få en uppfattning om hur filmen distribueras och i vilka sammanhang den används är vi tacksamma om du svarar på två frågor innan du går till Vimeos nedladdningssida. Informationen är viktig för att vi ska kunna utvärdera projektet.<br><br>Tack!</p>
+          </main>
         </div>
-        <h2 class="h2 reflective">Stream or download from Vimeo:<br></h2>
-        <p class="paragraph paragraph-2">Please answer these two questions to be able to download.</p>
-        <form [formGroup]="downloadFormgroup"  class="form-container form-container-2">
-          <p class="paragraph paragraph-3">Which organisation do you represent?</p>
-          <input formControlName="txtorg" value="" name="Q1" type="text" class="input-5">
-          <p class="paragraph paragraph-4">If you intend to show the film, in which context is that?</p>
-          <input formControlName="txtintend" value="" name="Q2" type="text" class="input-6">
-        </form>
-        <div class="container-grid container-2">
-
-          <a [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('full')" class="link-button btn btn-1002 evaluation full-video" >
-            <span class="button-link-text-7"><span class="button-link-text-7" id="button-link-text-1">Full video</span></span>
-          </a>
-          <a [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext1')" class="link-button btn btn-1002 evaluation chapter">
-            <font color="#ffffff">Chapter 1</font>
-          </a>
-          <a [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext2')" class="link-button btn btn-1002 evaluation chapter">
-            <font color="#ffffff">Chapter 2</font>
-          </a>
-          <a [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext3')" class="link-button btn btn-1002 evaluation chapter">
-            <span class="button-link-text-8"><span class="button-link-text-8" id="button-link-text-2">Chapter 3</span></span>
-          </a>
-          <a [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext4')" class="link-button btn btn-1002 evaluation chapter" >
-            <font color="#ffffff">Chapter 4</font>
-          </a>
-          <a [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext5')" class="link-button btn btn-1002 evaluation chapter" >
-            <font color="#ffffff">Chapter 5</font>
-          </a>
+        <div class="container-grid container-3">
+          <div class="rule rule-1 upper-refllective">
+            <hr>
+          </div>
+          <h2 class="h2 reflective">Streama eller ladda ner från Vimeo:<br></h2>
+          <p class="paragraph paragraph-2">Var vänlig och svara på dessa två frågor för att kunna ladda ner.</p>
+          <form [formGroup]="downloadFormgroup"  class="form-container form-container-2">
+            <p class="paragraph paragraph-3">Vilken organisation representerar du?</p>
+            <input formControlName="txtorg" value="" name="Q1" type="text" class="input-5">
+            <p class="paragraph paragraph-4">Om du tänker visa filmen, i vilket sammanhang är det då?</p>
+            <input formControlName="txtintend" value="" name="Q2" type="text" class="input-6">
+          </form>
         </div>
-        <div class="rule rule-2">
-          <hr>
+        <div class="container-grid container-3">
+          <div class="rule rule-1 upper-refllective">
+            <hr>
+          </div>
+          <div class="container-grid container-2">
+            <div class="container-grid complete-film"><a class="link-button btn complete" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('full')">Hela filmen</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext1')">Kapitel 1: Stereotypa könsroller</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext2')">Kapitel 2: Tillgång till beslutsfattande och ledande positioner</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext3')">Kapitel 3: Tillgång till resurser samt löneklyftor</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext4')">Kapitel 4: Tillgång till arbetsmarknaden</a></div>
+            <div class="container-grid chapter"><a class="link-button btn chapter" [class.disabled]="downloadFormgroup.valid ? null: true" (click)="gotoVimeoDownload('ext5')">Kapitel 5: Sexuella trakasserier</a></div>
+            <div class="rule rule-2">
+              <hr>
+            </div>
+          </div>
         </div>
-      </div>
+      </main>
     </main>
   </article>
 </div>

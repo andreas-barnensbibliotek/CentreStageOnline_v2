@@ -101,7 +101,7 @@ export class registerUserFormData {
                 btntext:"Download all Worksheets (zip)"
             },
             trippuslink:{
-                btntext:"https://forms.office.com/Pages/ResponsePage.aspx?id=VaJi_CBC5EebWkGO7jHaX54Y88cPA-9MuhufCsvXBbNUMzdBTk1aMFNDRzlOOVNVSjlQWDA5TEY0Ri4u"
+                btntext:"https://forms.office.com/Pages/ResponsePage.aspx?id=VaJi_CBC5EebWkGO7jHaX54Y88cPA-9MuhufCsvXBbNUMkMzMUpVR0JZTk1XTllKREhESVVXVFNLSy4u"
             }
         },
         {
@@ -287,7 +287,7 @@ export class registerUserFormData {
                 btntext:"Pobierz wszystkie arkusze (zip)"
             },
             trippuslink:{
-                btntext:"https://forms.office.com/Pages/ResponsePage.aspx?id=VaJi_CBC5EebWkGO7jHaX54Y88cPA-9MuhufCsvXBbNUMzdBTk1aMFNDRzlOOVNVSjlQWDA5TEY0Ri4u"
+                btntext:"https://forms.office.com/Pages/ResponsePage.aspx?id=VaJi_CBC5EebWkGO7jHaX54Y88cPA-9MuhufCsvXBbNUOVdSVVdUNzU2QUVSSDdQVU03UVY4VVJWSS4u"
             }
         },
         {
@@ -380,7 +380,7 @@ export class registerUserFormData {
                 btntext:"Laden Sie alle Arbeitsblätter herunter (zip)"
             },
             trippuslink:{
-                btntext:"https://forms.office.com/Pages/ResponsePage.aspx?id=VaJi_CBC5EebWkGO7jHaX54Y88cPA-9MuhufCsvXBbNUMzdBTk1aMFNDRzlOOVNVSjlQWDA5TEY0Ri4u"
+                btntext:"https://forms.office.com/Pages/ResponsePage.aspx?id=VaJi_CBC5EebWkGO7jHaX54Y88cPA-9MuhufCsvXBbNUODgyNkowV0xTVlVNNUtGTklWRU9TOUxUTy4u"
             }
         },
         {
@@ -473,7 +473,7 @@ export class registerUserFormData {
                 btntext:"Télécharger toutes les feuilles de travail (zip)"
             },
             trippuslink:{
-                btntext:"https://forms.office.com/Pages/ResponsePage.aspx?id=VaJi_CBC5EebWkGO7jHaX54Y88cPA-9MuhufCsvXBbNUMzdBTk1aMFNDRzlOOVNVSjlQWDA5TEY0Ri4u"
+                btntext:"https://forms.office.com/Pages/ResponsePage.aspx?id=VaJi_CBC5EebWkGO7jHaX54Y88cPA-9MuhufCsvXBbNUNlhVT0NQRVhHT1ZCOE5IMjMwNEs3SFZHUy4u"
             }
         },
         {
@@ -566,7 +566,7 @@ export class registerUserFormData {
                 btntext:"Descargar todas las hojas de trabajo (zip)"
             },
             trippuslink:{
-                btntext:"https://forms.office.com/Pages/ResponsePage.aspx?id=VaJi_CBC5EebWkGO7jHaX54Y88cPA-9MuhufCsvXBbNUMzdBTk1aMFNDRzlOOVNVSjlQWDA5TEY0Ri4u"
+                btntext:"https://forms.office.com/Pages/ResponsePage.aspx?id=VaJi_CBC5EebWkGO7jHaX54Y88cPA-9MuhufCsvXBbNURVZYTlVSMVVSRURBUks4WkZHV05DM08wSy4u"
             }
         }
     ]
