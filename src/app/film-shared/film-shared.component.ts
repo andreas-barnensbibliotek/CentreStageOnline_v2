@@ -24,7 +24,7 @@ export class FilmSharedComponent implements OnInit {
   polskablock:boolean= false;
   svenskablock:boolean= false;
   downloadForm:boolean= false;
-  hideDownloadbuttons:boolean= true;
+  hideDownloadbuttons:boolean= false;
   valtSprak:string= "EN";
 
   filmlinks= {
@@ -155,7 +155,7 @@ export class FilmSharedComponent implements OnInit {
         this.svenskablock= true;
         break;
     };
-    this.hideDownloadbuttons= true;
+    this.hideDownloadbuttons= false;
   }
 
   resetSprakBlock(){
@@ -165,7 +165,7 @@ export class FilmSharedComponent implements OnInit {
     this.franskablock= false;
     this.polskablock= false;
     this.svenskablock= false;
-    this.hideDownloadbuttons= true;
+    this.hideDownloadbuttons= false;
     this.downloadForm= false;
   }
 
